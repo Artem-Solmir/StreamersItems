@@ -1,14 +1,21 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+import { Trans, useTranslation } from 'react-i18next'
+import { LanguageSwitcher } from '@/components/LanguageSwitcher'
+import heroImg from '@/assets/hero.png'
+import reactLogo from '@/assets/react.svg'
+import viteLogo from '@/assets/vite.svg'
 import './App.css'
 
-function App() {
+export const App = () => {
+  const { t } = useTranslation()
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <header className="appHeader">
+        <LanguageSwitcher />
+      </header>
+
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
@@ -16,17 +23,23 @@ function App() {
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
         <div>
-          <h1>Get started</h1>
+          <h1>{t('home.getStarted')}</h1>
           <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
+            <Trans
+              i18nKey="home.editHint"
+              components={{
+                1: <code />,
+                2: <code />,
+              }}
+            />
           </p>
         </div>
         <button
           type="button"
           className="counter"
-          onClick={() => setCount((count) => count + 1)}
+          onClick={() => setCount((value) => value + 1)}
         >
-          Count is {count}
+          {t('home.counter', { count })}
         </button>
       </section>
 
@@ -37,19 +50,19 @@ function App() {
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#documentation-icon"></use>
           </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
+          <h2>{t('home.documentation')}</h2>
+          <p>{t('home.documentationSubtitle')}</p>
           <ul>
             <li>
-              <a href="https://vite.dev/" target="_blank">
+              <a href="https://vite.dev/" target="_blank" rel="noreferrer">
                 <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
+                {t('home.exploreVite')}
               </a>
             </li>
             <li>
-              <a href="https://react.dev/" target="_blank">
+              <a href="https://react.dev/" target="_blank" rel="noreferrer">
                 <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
+                {t('home.learnMore')}
               </a>
             </li>
           </ul>
@@ -58,11 +71,15 @@ function App() {
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#social-icon"></use>
           </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
+          <h2>{t('home.connect')}</h2>
+          <p>{t('home.connectSubtitle')}</p>
           <ul>
             <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
+              <a
+                href="https://github.com/vitejs/vite"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <svg
                   className="button-icon"
                   role="presentation"
@@ -74,7 +91,7 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="https://chat.vite.dev/" target="_blank">
+              <a href="https://chat.vite.dev/" target="_blank" rel="noreferrer">
                 <svg
                   className="button-icon"
                   role="presentation"
@@ -86,7 +103,7 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="https://x.com/vite_js" target="_blank">
+              <a href="https://x.com/vite_js" target="_blank" rel="noreferrer">
                 <svg
                   className="button-icon"
                   role="presentation"
@@ -98,7 +115,11 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
+              <a
+                href="https://bsky.app/profile/vite.dev"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <svg
                   className="button-icon"
                   role="presentation"
@@ -118,5 +139,3 @@ function App() {
     </>
   )
 }
-
-export default App

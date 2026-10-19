@@ -11,6 +11,13 @@ npm run dev
 
 Сборка: `npm run build` · Превью сборки: `npm run preview`
 
+## Языки (i18n)
+
+- **English** (`en`) — основной язык и fallback.
+- **Русский** (`ru`).
+
+Переводы: `src/features/i18n/locales/en.json` и `ru.json`. Переключатель в шапке; выбор сохраняется в `localStorage` (`locale`).
+
 ## Деплой на Vercel (бесплатно)
 
 1. Зайдите на [vercel.com](https://vercel.com) и войдите через **GitHub**.

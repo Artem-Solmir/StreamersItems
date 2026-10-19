@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "title": "StreamersItems"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "ru": "Russian"
+  },
+  "home": {
+    "getStarted": "Get started",
+    "editHint": "Edit <1>src/App.tsx</1> and save to test <2>HMR</2>",
+    "counter": "Count is {{count}}",
+    "documentation": "Documentation",
+    "documentationSubtitle": "Your questions, answered",
+    "exploreVite": "Explore Vite",
+    "learnMore": "Learn more",
+    "connect": "Connect with us",
+    "connectSubtitle": "Join the Vite community"
+  }
+}

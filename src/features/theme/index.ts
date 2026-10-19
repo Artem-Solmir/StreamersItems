@@ -1,9 +1,17 @@
 export {
+  applyPreference,
   applyTheme,
-  getStoredTheme,
+  getStoredPreference,
   getSystemTheme,
-  resolveInitialTheme,
+  resolveEffectiveTheme,
+  resolveInitialPreference,
   THEME_STORAGE_KEY,
 } from '@/features/theme/theme'
 export { useThemeStore } from '@/features/theme/useThemeStore'
-export { DEFAULT_THEME, THEME_MODES, type ThemeMode } from '@/features/theme/types'
+export {
+  DEFAULT_THEME_PREFERENCE,
+  THEME_MODES,
+  THEME_PREFERENCES,
+  type ThemeMode,
+  type ThemePreference,
+} from '@/features/theme/types'

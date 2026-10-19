@@ -20,7 +20,7 @@ npm run dev
 
 ## Тема оформления
 
-Светлая и тёмная темы (`src/features/theme`, переключатель в шапке). Выбор в `localStorage` (`theme`); CSS-переменные на `[data-theme='light'|'dark']` в `src/index.css`.
+Светлая и тёмная темы (`src/features/theme`, переключатель в шапке). По умолчанию **«как в системе»** (`system`); можно зафиксировать light/dark. Выбор в `localStorage` (`theme`); CSS на `[data-theme='light'|'dark']` в `src/index.css`.
 
 ## Деплой на Vercel (бесплатно)
 

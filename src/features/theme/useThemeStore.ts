@@ -1,21 +1,21 @@
 import { create } from 'zustand'
 import {
-  applyTheme,
-  resolveInitialTheme,
+  applyPreference,
+  resolveInitialPreference,
   THEME_STORAGE_KEY,
 } from '@/features/theme/theme'
-import type { ThemeMode } from '@/features/theme/types'
+import type { ThemePreference } from '@/features/theme/types'
 
 interface ThemeStore {
-  theme: ThemeMode
-  setTheme: (theme: ThemeMode) => void
+  preference: ThemePreference
+  setPreference: (preference: ThemePreference) => void
 }
 
 export const useThemeStore = create<ThemeStore>((set) => ({
-  theme: resolveInitialTheme(),
-  setTheme: (theme) => {
-    localStorage.setItem(THEME_STORAGE_KEY, theme)
-    applyTheme(theme)
-    set({ theme })
+  preference: resolveInitialPreference(),
+  setPreference: (preference) => {
+    localStorage.setItem(THEME_STORAGE_KEY, preference)
+    applyPreference(preference)
+    set({ preference })
   },
 }))

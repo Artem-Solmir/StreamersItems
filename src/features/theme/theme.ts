@@ -1,33 +1,64 @@
-import { DEFAULT_THEME, type ThemeMode } from '@/features/theme/types'
+import {
+  DEFAULT_THEME_PREFERENCE,
+  type ThemeMode,
+  type ThemePreference,
+} from '@/features/theme/types'
 
 export const THEME_STORAGE_KEY = 'theme'
 
-export const isThemeMode = (value: string): value is ThemeMode =>
-  value === 'light' || value === 'dark'
+export const isThemePreference = (value: string): value is ThemePreference =>
+  value === 'system' || value === 'light' || value === 'dark'
 
 export const getSystemTheme = (): ThemeMode => {
   if (typeof window === 'undefined') {
-    return DEFAULT_THEME
+    return 'light'
   }
   return window.matchMedia('(prefers-color-scheme: dark)').matches
     ? 'dark'
     : 'light'
 }
 
-export const getStoredTheme = (): ThemeMode | null => {
+export const getStoredPreference = (): ThemePreference | null => {
   if (typeof window === 'undefined') {
     return null
   }
   const stored = localStorage.getItem(THEME_STORAGE_KEY)
-  return stored && isThemeMode(stored) ? stored : null
+  return stored && isThemePreference(stored) ? stored : null
 }
 
-export const resolveInitialTheme = (): ThemeMode =>
-  getStoredTheme() ?? getSystemTheme()
+export const resolveInitialPreference = (): ThemePreference =>
+  getStoredPreference() ?? DEFAULT_THEME_PREFERENCE
+
+export const resolveEffectiveTheme = (
+  preference: ThemePreference,
+): ThemeMode => (preference === 'system' ? getSystemTheme() : preference)
 
 export const applyTheme = (theme: ThemeMode) => {
   document.documentElement.dataset.theme = theme
   document.documentElement.style.colorScheme = theme
 }
 
-applyTheme(resolveInitialTheme())
+export const applyPreference = (preference: ThemePreference) => {
+  applyTheme(resolveEffectiveTheme(preference))
+}
+
+const onSystemThemeChange = () => {
+  const preference = getStoredPreference() ?? DEFAULT_THEME_PREFERENCE
+  if (preference === 'system') {
+    applyTheme(getSystemTheme())
+  }
+}
+
+export const initTheme = () => {
+  applyPreference(resolveInitialPreference())
+
+  if (typeof window === 'undefined') {
+    return
+  }
+
+  window
+    .matchMedia('(prefers-color-scheme: dark)')
+    .addEventListener('change', onSystemThemeChange)
+}
+
+initTheme()

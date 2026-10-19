@@ -7,6 +7,11 @@
     "en": "English",
     "ru": "Russian"
   },
+  "theme": {
+    "label": "Theme",
+    "light": "Light",
+    "dark": "Dark"
+  },
   "home": {
     "getStarted": "Get started",
     "editHint": "Edit <1>src/App.tsx</1> and save to test <2>HMR</2>",

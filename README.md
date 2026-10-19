@@ -18,6 +18,10 @@ npm run dev
 
 Переводы: `src/features/i18n/locales/en.json` и `ru.json`. Переключатель в шапке; выбор сохраняется в `localStorage` (`locale`).
 
+## Тема оформления
+
+Светлая и тёмная темы (`src/features/theme`, переключатель в шапке). Выбор в `localStorage` (`theme`); CSS-переменные на `[data-theme='light'|'dark']` в `src/index.css`.
+
 ## Деплой на Vercel (бесплатно)
 
 1. Зайдите на [vercel.com](https://vercel.com) и войдите через **GitHub**.

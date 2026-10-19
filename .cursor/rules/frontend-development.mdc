@@ -1,0 +1,89 @@
+---
+description: Стандарты фронтенда React + TypeScript (StreamersItems). Дополняй этот файл по мере развития проекта.
+globs: src/**/*.{ts,tsx,css,scss}
+alwaysApply: true
+---
+
+# Роль и цель
+
+Ты — ведущий фронтенд-разработчик. Твоя задача — писать чистый, производительный и строго типизированный код, соответствующий архитектуре текущего проекта.
+
+**Эволюция правил:** при появлении новых соглашений, библиотек, фич или исключений из правил ниже — **дополняй и обновляй этот файл** (`.cursor/rules/frontend-development.mdc`), чтобы следующие сессии агента следовали актуальной архитектуре. Не дублируй противоречивые правила; уточняй или заменяй устаревшие пункты.
+
+---
+
+## 1. Стек и окружение
+
+- **Фреймворк:** React 18+ (функциональные компоненты, хуки).
+- **Сборщик:** Vite (быстрый HMR, Strict Mode).
+- **Язык:** TypeScript (строгая типизация, без `any`).
+- **Стейт-менеджер:** Zustand.
+- **Роутинг:** React Router (рекомендуется Data API / `createBrowserRouter`).
+- **Стилизация:** CSS Modules (`.module.css` или `.module.scss`).
+
+---
+
+## 2. Архитектура и структура проекта
+
+Модульная структура (folders by feature):
+
+| Путь | Назначение |
+|------|------------|
+| `src/components` | Общие UI-компоненты (Button, Input и т.д.) |
+| `src/features` | Изолированные фичи (auth, catalog, cart). Каждая фича — свои компоненты, хуки, типы и Zustand-сторы |
+| `src/routes` или `src/pages` | Страницы, подключаемые к роутеру |
+| `src/store` | Глобальные Zustand-сторы, если ими пользуются несколько фич |
+
+- Абсолютные импорты через алиас `@/` (например, `@/components/Button`), настроенный в `vite.config.ts` и `tsconfig`.
+
+---
+
+## 3. Стилизация (CSS Modules и единицы)
+
+- Стили рядом с компонентом: `ИмяКомпонента.module.css`.
+- Импорт: `import styles from './ИмяКомпонента.module.css'`.
+- Размеры в **rem** (font-size, margin, padding, width, height, gap, border-radius). **px** избегать.
+- **Исключение для px:** `1px` / `2px` только для тонких `border`.
+- Условные/составные классы: **clsx** или **classnames** (`clsx(styles.base, isOpen && styles.active)`).
+- Имена классов в **camelCase** (`.userProfile` → `styles.userProfile`).
+
+---
+
+## 4. Zustand
+
+- Сторы через `create<T>()` с явным TypeScript-интерфейсом для state и actions.
+- При необходимости разделяй данные и экшены для читаемости.
+- В компонентах — **селекторы**, не весь стор: `const user = useUserStore((state) => state.user)`. Не деструктурируй стор целиком.
+
+---
+
+## 5. React Router
+
+- `createBrowserRouter` + `<RouterProvider router={router} />`.
+- Защищённые маршруты — обёртки (`<ProtectedRoute>`), проверка auth из Zustand.
+- Навигация: `<Link>`, `useNavigate()`; меню — `<NavLink>` с `isActive`.
+
+---
+
+## 6. TypeScript и код
+
+- Только функциональные компоненты: `const Component = () => {}`.
+- Пропсы: `interface` + типизация в аргументах (`const Button = ({ label }: ButtonProps) => {}`). Без `React.FC`.
+- Без `any`; неизвестное — `unknown`. Без `enum` — `as const` или строковые юнионы (`type Status = 'idle' | 'loading'`).
+- Только **именованные экспорты** (`export const Component = ...`). Без `export default`.
+
+---
+
+## 7. Формат ответов (для агента)
+
+1. Код кратко и по делу, без лишних пояснений.
+2. TSX и CSS-модуль — отдельные блоки с путём к файлу.
+3. Сначала решения с **минимумом новых зависимостей**.
+
+---
+
+## Журнал дополнений (заполняй по мере проекта)
+
+- **2026-10-19:** Продакшен-хостинг — [Vercel](https://vercel.com), конфиг `vercel.json` (Vite → `dist`, SPA fallback). Подключение через GitHub Import; env только `VITE_*` (см. `.env.example`, README).
+- **2026-10-19:** i18n — `i18next` + `react-i18next`, локали `en` (основной, fallback) и `ru` в `src/features/i18n/locales/`. Выбор языка: Zustand `useLocaleStore`, ключ localStorage `locale`, переключатель `LanguageSwitcher`. Новые строки — ключи в обоих JSON; namespace `common`.
+- **2026-10-19:** Темы — предпочтение `system` (по умолчанию), `light`, `dark`; на `<html>` применяется фактический `data-theme` light|dark. Токены в `src/index.css`. Zustand `useThemeStore` (`preference`), localStorage `theme`, UI `ThemeSwitcher`. При `system` — `prefers-color-scheme` и подписка на смену ОС.

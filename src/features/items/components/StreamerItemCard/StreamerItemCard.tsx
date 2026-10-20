@@ -64,7 +64,14 @@ export const StreamerItemCard = ({
       />
 
       <div className={styles.imageWrapper}>
-        <img src={item.imageUrl} alt="" className={styles.itemImage} loading="lazy" />
+        <img
+          src={item.imageUrl}
+          alt=""
+          className={styles.itemImage}
+          loading="lazy"
+          decoding="async"
+          draggable={false}
+        />
 
         <div className={styles.streamerBadge}>
           {item.streamer.isLive ? <span className={styles.liveDot} /> : null}

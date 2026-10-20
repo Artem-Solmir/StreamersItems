@@ -7,6 +7,16 @@ const PROJECT_ID = 'project-01-cs2-loadouts'
 const avatar = (seed: string) =>
   `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(seed)}`
 
+/** Static files from /public/items — served as real assets (not SPA fallback). */
+const ITEM_IMAGES = {
+  akGold: '/items/ak-gold.png',
+  awpDragonLore: '/items/awp-dragon-lore.png',
+  knifeDoppler: '/items/knife-doppler.svg',
+  m4Printstream: '/items/m4-printstream.svg',
+  glovesVice: '/items/gloves-vice.svg',
+  uspTicket: '/items/usp-ticket.svg',
+} as const
+
 const item = (
   id: string,
   data: Omit<StreamerItem, 'id' | 'projectId'>,
@@ -21,7 +31,7 @@ const ITEMS: StreamerItem[] = [
     localeKey: 'p1BusterGoldAk',
     name: 'AK-47 | Gold Arabesque',
     game: 'Counter-Strike 2',
-    imageUrl: '/assets/hero.png',
+    imageUrl: ITEM_IMAGES.akGold,
     streamer: {
       name: 'Buster',
       avatarUrl: avatar('buster'),
@@ -35,7 +45,7 @@ const ITEMS: StreamerItem[] = [
     localeKey: 'p1DonkKnife',
     name: '★ Butterfly Knife | Doppler',
     game: 'Counter-Strike 2',
-    imageUrl: '/assets/react.svg',
+    imageUrl: ITEM_IMAGES.knifeDoppler,
     streamer: {
       name: 'donk',
       avatarUrl: avatar('donk'),
@@ -49,7 +59,7 @@ const ITEMS: StreamerItem[] = [
     localeKey: 'p1S1mpleAwp',
     name: 'AWP | Dragon Lore',
     game: 'Counter-Strike 2',
-    imageUrl: '/assets/hero.png',
+    imageUrl: ITEM_IMAGES.awpDragonLore,
     streamer: {
       name: 's1mple',
       avatarUrl: avatar('s1mple'),
@@ -63,7 +73,7 @@ const ITEMS: StreamerItem[] = [
     localeKey: 'p1ShroudM4',
     name: 'M4A1-S | Printstream',
     game: 'Counter-Strike 2',
-    imageUrl: '/assets/vite.svg',
+    imageUrl: ITEM_IMAGES.m4Printstream,
     streamer: {
       name: 'Shroud',
       avatarUrl: avatar('shroud'),
@@ -76,7 +86,7 @@ const ITEMS: StreamerItem[] = [
     localeKey: 'p1OverdriveGloves',
     name: '★ Sport Gloves | Vice',
     game: 'Counter-Strike 2',
-    imageUrl: '/assets/react.svg',
+    imageUrl: ITEM_IMAGES.glovesVice,
     streamer: {
       name: 'OverDrive',
       avatarUrl: avatar('overdrive'),
@@ -89,7 +99,7 @@ const ITEMS: StreamerItem[] = [
     localeKey: 'p1StarterUsp',
     name: 'USP-S | Ticket to Hell',
     game: 'Counter-Strike 2',
-    imageUrl: '/assets/vite.svg',
+    imageUrl: ITEM_IMAGES.uspTicket,
     streamer: {
       name: 'Buster',
       avatarUrl: avatar('buster'),

@@ -45,6 +45,37 @@
           "funFact": "Ticket to Hell is a community favorite for budget blue loadouts — cheap entry, big personality."
         }
       }
+    },
+    "tarkovLoot": {
+      "label": "Project 2",
+      "title": "Streamer Tarkov loot",
+      "subtitle": "Raid staples and flex finds from Escape from Tarkov creators — bitcoins, LEDX, Labs keys, and stash porn. Tap a slot to mark it collected.",
+      "items": {
+        "p2LvndmarkBitcoin": {
+          "description": "LVNDMARK’s Physical Bitcoin — the loot chat treats like a slot machine jackpot every wipe.",
+          "funFact": "Bitcoins spawn on maps and in safes; streamers often price them in «how many kits» instead of roubles."
+        },
+        "p2PestilyLedx": {
+          "description": "Pestily’s LEDX hunt energy — the medical loot that turns a «quick labs» into a highlight reel.",
+          "funFact": "LEDX is a Therapist task item and one of the highest-value medical spawns in the game."
+        },
+        "p2SummitRedKeycard": {
+          "description": "summit1g and the Red Keycard — Labs access as content, with extra sweat when the timer’s ticking.",
+          "funFact": "Red keycards open the main Labs loot rooms; they’re single-use and brutally contested."
+        },
+        "p2VeritasThicc": {
+          "description": "Veritas flexing a T H I C C Items case — stash organization as streamer personality.",
+          "funFact": "THICC cases hold a massive grid; they’re endgame storage flex and a long-term economy sink."
+        },
+        "p2JesseSlick": {
+          "description": "JesseKazam’s Slick — min-max armor that still looks clean on the death replay.",
+          "funFact": "The Slick has high durability with no mag penalty — a go-to for lightweight meta builds."
+        },
+        "p2SlobGrizzly": {
+          "description": "DeadlySlob’s Grizzly — old-school healing that every veteran remembers from early wipes.",
+          "funFact": "Grizzlies heal a huge chunk over time; they’re bulky but forgiving when you’re learning maps."
+        }
+      }
     }
   },
   "inventory": {

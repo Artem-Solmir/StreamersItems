@@ -45,11 +45,14 @@ export const CyberInventorySection = ({
   }
 
   return (
-    <section className={styles.section} aria-labelledby="cyber-inventory-title">
+    <section
+      className={styles.section}
+      aria-labelledby={`inventory-title-${project.id}`}
+    >
       <div className={styles.header}>
         <div>
           <p className={styles.projectLabel}>{t(labelKey)}</p>
-          <h2 id="cyber-inventory-title" className={styles.title}>
+          <h2 id={`inventory-title-${project.id}`} className={styles.title}>
             {t(titleKey)}
           </h2>
           <p className={styles.subtitle}>{t(subtitleKey)}</p>

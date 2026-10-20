@@ -1,22 +1,32 @@
 import { useTranslation } from 'react-i18next'
 import { StreamerItemCard } from '@/features/items/components/StreamerItemCard'
-import { MOCK_STREAMER_ITEMS } from '@/features/items/data/mockStreamerItems'
 import { useUiClickSound } from '@/features/items/hooks/useUiClickSound'
+import { FIRST_STREAMER_ITEMS_PROJECT } from '@/features/projects/registry'
+import type { StreamerItemsProject } from '@/features/projects/types'
 import { useCollectedItemsStore } from '@/features/items/store/useCollectedItemsStore'
 import { useInventoryUiStore } from '@/features/items/store/useInventoryUiStore'
 import styles from '@/features/items/components/CyberInventorySection/CyberInventorySection.module.css'
 
-export const CyberInventorySection = () => {
+interface CyberInventorySectionProps {
+  project?: StreamerItemsProject
+}
+
+export const CyberInventorySection = ({
+  project = FIRST_STREAMER_ITEMS_PROJECT,
+}: CyberInventorySectionProps) => {
   const { t } = useTranslation()
+  const items = project.items
+  const titleKey = `${project.translationKey}.title`
+  const subtitleKey = `${project.translationKey}.subtitle`
+  const labelKey = `${project.translationKey}.label`
   const { playCollect } = useUiClickSound()
   const soundEnabled = useInventoryUiStore((state) => state.soundEnabled)
   const toggleSound = useInventoryUiStore((state) => state.toggleSound)
   const toggleCollected = useCollectedItemsStore((state) => state.toggleCollected)
   const isCollected = useCollectedItemsStore((state) => state.isCollected)
-  const collectedIds = useCollectedItemsStore((state) => state.collectedIds)
 
-  const collectedCount = Object.keys(collectedIds).length
-  const total = MOCK_STREAMER_ITEMS.length
+  const collectedCount = items.filter((entry) => isCollected(entry.id)).length
+  const total = items.length
 
   const onToggleItem = (itemId: string) => {
     const nowCollected = toggleCollected(itemId)
@@ -29,10 +39,14 @@ export const CyberInventorySection = () => {
     <section className={styles.section} aria-labelledby="cyber-inventory-title">
       <div className={styles.header}>
         <div>
+          <p className={styles.projectLabel}>{t(labelKey)}</p>
           <h2 id="cyber-inventory-title" className={styles.title}>
-            {t('inventory.title')}
+            {t(titleKey)}
           </h2>
-          <p className={styles.subtitle}>{t('inventory.subtitle')}</p>
+          <p className={styles.subtitle}>{t(subtitleKey)}</p>
+          <p className={styles.projectMeta}>
+            {project.primaryGame} · {t('projects.itemCount', { count: total })}
+          </p>
         </div>
         <div className={styles.controls}>
           <span className={styles.stats}>
@@ -50,10 +64,11 @@ export const CyberInventorySection = () => {
       </div>
 
       <ul className={styles.grid}>
-        {MOCK_STREAMER_ITEMS.map((item) => (
+        {items.map((item) => (
           <li key={item.id}>
             <StreamerItemCard
               item={item}
+              projectTranslationKey={project.translationKey}
               isCollected={isCollected(item.id)}
               onToggleCollect={() => onToggleItem(item.id)}
             />

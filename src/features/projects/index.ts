@@ -1,0 +1,7 @@
+export { PROJECT_01_CS2_LOADOUTS } from '@/features/projects/data/project-01-cs2-loadouts'
+export {
+  FIRST_STREAMER_ITEMS_PROJECT,
+  getProjectBySlug,
+  STREAMER_ITEM_PROJECTS,
+} from '@/features/projects/registry'
+export type { StreamerItemsProject } from '@/features/projects/types'

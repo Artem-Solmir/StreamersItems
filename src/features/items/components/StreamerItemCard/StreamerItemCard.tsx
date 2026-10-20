@@ -4,20 +4,28 @@ import clsx from 'clsx'
 import { useTilt } from '@/features/items/hooks/useTilt'
 import type { StreamerItem } from '@/features/items/types'
 import styles from '@/features/items/components/StreamerItemCard/StreamerItemCard.module.css'
+import { useTranslation } from 'react-i18next'
 
 interface StreamerItemCardProps {
   item: StreamerItem
+  projectTranslationKey: string
   isCollected: boolean
   onToggleCollect: () => void
 }
 
 export const StreamerItemCard = ({
   item,
+  projectTranslationKey,
   isCollected,
   onToggleCollect,
 }: StreamerItemCardProps) => {
+  const { t } = useTranslation()
   const cardRef = useRef<HTMLElement>(null)
   useTilt(cardRef)
+
+  const copyBase = `${projectTranslationKey}.items.${item.localeKey}`
+  const description = t(`${copyBase}.description`)
+  const funFact = t(`${copyBase}.funFact`)
 
   const cardStyle = {
     '--rarity-color': item.rarityColor,
@@ -43,7 +51,7 @@ export const StreamerItemCard = ({
       role="button"
       tabIndex={0}
       aria-pressed={isCollected}
-      aria-label={item.name}
+      aria-label={`${item.name}. ${description}`}
       onClick={onToggleCollect}
       onKeyDown={onKeyDown}
     >
@@ -75,6 +83,11 @@ export const StreamerItemCard = ({
       <div className={styles.itemInfo}>
         <span className={styles.gameName}>{item.game}</span>
         <h3 className={styles.itemName}>{item.name}</h3>
+        <p className={styles.itemDescription}>{description}</p>
+        <div className={styles.funFact}>
+          <span className={styles.funFactLabel}>{t('inventory.funFactLabel')}</span>
+          <p className={styles.funFactText}>{funFact}</p>
+        </div>
       </div>
     </article>
   )

@@ -38,3 +38,7 @@ npm run dev
 ### React Router
 
 В `vercel.json` настроен fallback на `index.html`, чтобы прямые переходы по маршрутам не отдавали 404.
+
+### Analytics
+
+Подключён [@vercel/analytics](https://vercel.com/docs/analytics) (`<Analytics />` в `src/main.tsx`). Метрики смотрите в Vercel → проект → **Analytics** (на Hobby может понадобиться включить Web Analytics в настройках проекта).

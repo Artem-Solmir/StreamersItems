@@ -13,13 +13,48 @@
     "light": "Light",
     "dark": "Dark"
   },
+  "projects": {
+    "itemCount": "{{count}} items",
+    "cs2Loadouts": {
+      "label": "Project 1",
+      "title": "Streamer CS2 loadouts",
+      "subtitle": "The first StreamersItems collection — iconic skins and knives from streamers you follow. Tap a slot to mark it collected.",
+      "items": {
+        "p1BusterGoldAk": {
+          "description": "A full-gold AK from Buster’s on-stream flex loadout — the kind of skin chat spams «inspect» for.",
+          "funFact": "Gold Arabesque drops from Operation Riptide cases — one of the few AK finishes that looks like jewelry in inspect."
+        },
+        "p1DonkKnife": {
+          "description": "donk’s butterfly doppler is basically a highlight reel accessory: flashy, loud, and always center stage.",
+          "funFact": "Butterfly knives have a unique flip animation — CS2 players call it free morale before the first duel."
+        },
+        "p1S1mpleAwp": {
+          "description": "The Dragon Lore AWP linked with s1mple’s legacy — a trophy-skin energy even as a showcase piece.",
+          "funFact": "Dragon Lore is a Cobblestone collection skin; real souvenir versions can sell for more than a compact car."
+        },
+        "p1ShroudM4": {
+          "description": "Shroud’s clean Printstream M4 fits his «headshot first, chat second» aesthetic on custom servers.",
+          "funFact": "Printstream uses a monochrome sci-fi print that stays readable in both bright and dark maps."
+        },
+        "p1OverdriveGloves": {
+          "description": "Neon Vice gloves from OverDrive’s colorful CS2 wardrobe — gloves that steal the killfeed spotlight.",
+          "funFact": "Sport Gloves changed how players match skins: full loadouts are often built around glove color first."
+        },
+        "p1StarterUsp": {
+          "description": "Buster’s starter USP — not the flashiest gun, but every inventory legend begins with pistol rounds.",
+          "funFact": "Ticket to Hell is a community favorite for budget blue loadouts — cheap entry, big personality."
+        }
+      }
+    }
+  },
   "inventory": {
     "title": "Cyber inventory",
     "subtitle": "Interactive streamer item slots — rarity glow, tilt, glitch on vault items. Tap a slot to mark it collected.",
     "collected": "{{count}} / {{total}} collected",
     "soundOn": "UI sounds: on",
     "soundOff": "UI sounds: off",
-    "hint": "Neon live dot = streamer online. Legendary and secret items glitch on hover."
+    "hint": "Neon live dot = streamer online. Legendary and secret items glitch on hover.",
+    "funFactLabel": "Fun fact"
   },
   "home": {
     "getStarted": "Get started",

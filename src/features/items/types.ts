@@ -16,6 +16,9 @@ export interface StreamerItemStreamer {
 
 export interface StreamerItem {
   id: string
+  projectId: string
+  /** Suffix for i18n: `{projectTranslationKey}.items.{localeKey}` */
+  localeKey: string
   name: string
   game: string
   imageUrl: string

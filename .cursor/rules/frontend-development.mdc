@@ -87,3 +87,4 @@ alwaysApply: true
 - **2026-10-19:** Продакшен-хостинг — [Vercel](https://vercel.com), конфиг `vercel.json` (Vite → `dist`, SPA fallback). Подключение через GitHub Import; env только `VITE_*` (см. `.env.example`, README).
 - **2026-10-19:** i18n — `i18next` + `react-i18next`, локали `en` (основной, fallback) и `ru` в `src/features/i18n/locales/`. Выбор языка: Zustand `useLocaleStore`, ключ localStorage `locale`, переключатель `LanguageSwitcher`. Новые строки — ключи в обоих JSON; namespace `common`.
 - **2026-10-19:** Темы — предпочтение `system` (по умолчанию), `light`, `dark`; на `<html>` применяется фактический `data-theme` light|dark. Токены в `src/index.css`. Zustand `useThemeStore` (`preference`), localStorage `theme`, UI `ThemeSwitcher`. При `system` — `prefers-color-scheme` и подписка на смену ОС.
+- **2026-10-20:** Vercel Web Analytics — `@vercel/analytics`, компонент `<Analytics />` в `src/main.tsx`.

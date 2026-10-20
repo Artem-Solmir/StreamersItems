@@ -23,5 +23,24 @@
     "learnMore": "Подробнее о React",
     "connect": "Сообщество",
     "connectSubtitle": "Присоединяйтесь к сообществу Vite"
+  },
+  "twitch": {
+    "title": "Стримеры Twitch",
+    "subtitle": "Статус эфира и ссылки на каналы из настроек проекта.",
+    "live": "В эфире",
+    "offline": "Не в сети",
+    "viewers": "{{count}} зрителей",
+    "openChannel": "Открыть на Twitch",
+    "refresh": "Обновить",
+    "refreshing": "Обновление…",
+    "loading": "Загрузка данных Twitch…",
+    "empty": "Нет каналов для отображения.",
+    "errors": {
+      "loginsMissing": "Укажите логины в VITE_TWITCH_STREAMER_LOGINS (через запятую).",
+      "notConfigured": "Twitch API не настроен на сервере (TWITCH_CLIENT_ID / TWITCH_CLIENT_SECRET).",
+      "upstreamFailed": "Не удалось получить данные Twitch. Попробуйте позже.",
+      "network": "Не удалось вызвать API. Локально используйте vercel dev или деплой на Vercel.",
+      "unknown": "Ошибка при загрузке данных Twitch."
+    }
   }
 }

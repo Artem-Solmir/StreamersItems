@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Trans, useTranslation } from 'react-i18next'
 import { LanguageSwitcher } from '@/components/LanguageSwitcher'
 import { ThemeSwitcher } from '@/components/ThemeSwitcher'
+import { TwitchLiveSection } from '@/features/twitch/components/TwitchLiveSection'
 import heroImg from '@/assets/hero.png'
 import reactLogo from '@/assets/react.svg'
 import viteLogo from '@/assets/vite.svg'
@@ -44,6 +45,8 @@ export const App = () => {
           {t('home.counter', { count })}
         </button>
       </section>
+
+      <TwitchLiveSection />
 
       <div className="ticks"></div>
 

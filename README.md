@@ -45,3 +45,18 @@ npm run dev
 - [@vercel/speed-insights](https://vercel.com/docs/speed-insights) — `<SpeedInsights />` в `src/main.tsx` → Vercel → **Speed Insights**.
 
 На Hobby при необходимости включите Web Analytics / Speed Insights в настройках проекта.
+
+## Twitch
+
+Интеграция с [Twitch Helix API](https://dev.twitch.tv/docs/api/): блок «Twitch streamers» на главной, серверный прокси `GET /api/twitch/channels`.
+
+1. [Twitch Developer Console](https://dev.twitch.tv/console/apps) → создайте приложение → **Client ID** и **Client Secret**.
+2. **Vercel** → Settings → Environment Variables:
+   - `TWITCH_CLIENT_ID`
+   - `TWITCH_CLIENT_SECRET`
+   - `VITE_TWITCH_STREAMER_LOGINS` — логины через запятую, например `shroud,ninja`
+3. Redeploy production.
+
+Локально с API: `npx vercel dev` (с `.env` по образцу `.env.example`). Обычный `npm run dev` не поднимает `/api/*`.
+
+Код: `src/features/twitch/`, `api/twitch/channels.ts`.

@@ -23,5 +23,24 @@
     "learnMore": "Learn more",
     "connect": "Connect with us",
     "connectSubtitle": "Join the Vite community"
+  },
+  "twitch": {
+    "title": "Twitch streamers",
+    "subtitle": "Live status and links for channels configured in the project.",
+    "live": "Live",
+    "offline": "Offline",
+    "viewers": "{{count}} viewers",
+    "openChannel": "Open on Twitch",
+    "refresh": "Refresh",
+    "refreshing": "Refreshing…",
+    "loading": "Loading Twitch data…",
+    "empty": "No channels to show.",
+    "errors": {
+      "loginsMissing": "Add streamer logins to VITE_TWITCH_STREAMER_LOGINS (comma-separated).",
+      "notConfigured": "Twitch API is not configured on the server (TWITCH_CLIENT_ID / TWITCH_CLIENT_SECRET).",
+      "upstreamFailed": "Could not load data from Twitch. Try again later.",
+      "network": "Could not reach the Twitch API route. On local dev, run vercel dev or deploy to Vercel.",
+      "unknown": "Something went wrong while loading Twitch data."
+    }
   }
 }

@@ -4,8 +4,18 @@ import type { StreamerItemsProject } from '@/features/projects/types'
 
 const PROJECT_ID = 'project-01-cs2-loadouts'
 
-const avatar = (seed: string) =>
-  `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(seed)}`
+/** Twitch profile images (300×300 CDN). Updated via /api/twitch/users when configured. */
+const TWITCH_AVATARS = {
+  buster:
+    'https://static-cdn.jtvnw.net/jtv_user_pictures/96d66837-22f0-4393-89c5-2e5c2408485b-profile_image-300x300.png',
+  donk: 'https://static-cdn.jtvnw.net/user-default-pictures-uv/41780b5a-def8-11e9-94d9-784f43822e80-profile_image-300x300.png',
+  s1mple:
+    'https://static-cdn.jtvnw.net/jtv_user_pictures/146bf883-600b-4edd-a73c-01794e9a6901-profile_image-300x300.png',
+  shroud:
+    'https://static-cdn.jtvnw.net/jtv_user_pictures/c754eebf-745b-4e0a-814a-10bcaecaabbc-profile_image-300x300.png',
+  m0nesy:
+    'https://static-cdn.jtvnw.net/jtv_user_pictures/48ebf0b9-c1ac-4a87-af36-6e05a123461e-profile_image-300x300.png',
+} as const
 
 /** Static files from /public/items — served as real assets (not SPA fallback). */
 const ITEM_IMAGES = {
@@ -34,7 +44,8 @@ const ITEMS: StreamerItem[] = [
     imageUrl: ITEM_IMAGES.akGold,
     streamer: {
       name: 'Buster',
-      avatarUrl: avatar('buster'),
+      twitchLogin: 'buster',
+      avatarUrl: TWITCH_AVATARS.buster,
       isLive: true,
     },
     rarity: 'legendary',
@@ -48,7 +59,8 @@ const ITEMS: StreamerItem[] = [
     imageUrl: ITEM_IMAGES.knifeDoppler,
     streamer: {
       name: 'donk',
-      avatarUrl: avatar('donk'),
+      twitchLogin: 'donk',
+      avatarUrl: TWITCH_AVATARS.donk,
       isLive: true,
     },
     rarity: 'legendary',
@@ -62,7 +74,8 @@ const ITEMS: StreamerItem[] = [
     imageUrl: ITEM_IMAGES.awpDragonLore,
     streamer: {
       name: 's1mple',
-      avatarUrl: avatar('s1mple'),
+      twitchLogin: 's1mple',
+      avatarUrl: TWITCH_AVATARS.s1mple,
       isLive: false,
     },
     rarity: 'secret',
@@ -76,7 +89,8 @@ const ITEMS: StreamerItem[] = [
     imageUrl: ITEM_IMAGES.m4Printstream,
     streamer: {
       name: 'Shroud',
-      avatarUrl: avatar('shroud'),
+      twitchLogin: 'shroud',
+      avatarUrl: TWITCH_AVATARS.shroud,
       isLive: false,
     },
     rarity: 'epic',
@@ -88,8 +102,9 @@ const ITEMS: StreamerItem[] = [
     game: 'Counter-Strike 2',
     imageUrl: ITEM_IMAGES.glovesVice,
     streamer: {
-      name: 'OverDrive',
-      avatarUrl: avatar('overdrive'),
+      name: 'm0NESY',
+      twitchLogin: 'm0nesy',
+      avatarUrl: TWITCH_AVATARS.m0nesy,
       isLive: true,
     },
     rarity: 'rare',
@@ -102,7 +117,8 @@ const ITEMS: StreamerItem[] = [
     imageUrl: ITEM_IMAGES.uspTicket,
     streamer: {
       name: 'Buster',
-      avatarUrl: avatar('buster'),
+      twitchLogin: 'buster',
+      avatarUrl: TWITCH_AVATARS.buster,
       isLive: true,
     },
     rarity: 'common',

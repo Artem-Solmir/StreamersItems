@@ -1,4 +1,6 @@
+import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useStreamerAvatarsStore } from '@/features/streamers/useStreamerAvatarsStore'
 import { StreamerItemCard } from '@/features/items/components/StreamerItemCard'
 import { useUiClickSound } from '@/features/items/hooks/useUiClickSound'
 import { FIRST_STREAMER_ITEMS_PROJECT } from '@/features/projects/registry'
@@ -19,6 +21,13 @@ export const CyberInventorySection = ({
   const titleKey = `${project.translationKey}.title`
   const subtitleKey = `${project.translationKey}.subtitle`
   const labelKey = `${project.translationKey}.label`
+  const loadAvatars = useStreamerAvatarsStore((state) => state.loadAvatars)
+
+  useEffect(() => {
+    const logins = items.map((entry) => entry.streamer.twitchLogin)
+    void loadAvatars(logins)
+  }, [items, loadAvatars])
+
   const { playCollect } = useUiClickSound()
   const soundEnabled = useInventoryUiStore((state) => state.soundEnabled)
   const toggleSound = useInventoryUiStore((state) => state.toggleSound)

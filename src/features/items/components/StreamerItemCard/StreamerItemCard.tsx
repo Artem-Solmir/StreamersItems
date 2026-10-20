@@ -5,6 +5,7 @@ import { useTilt } from '@/features/items/hooks/useTilt'
 import type { StreamerItem } from '@/features/items/types'
 import styles from '@/features/items/components/StreamerItemCard/StreamerItemCard.module.css'
 import { useTranslation } from 'react-i18next'
+import { useStreamerAvatarsStore } from '@/features/streamers/useStreamerAvatarsStore'
 
 interface StreamerItemCardProps {
   item: StreamerItem
@@ -22,6 +23,12 @@ export const StreamerItemCard = ({
   const { t } = useTranslation()
   const cardRef = useRef<HTMLElement>(null)
   useTilt(cardRef)
+
+  const streamerAvatarUrl = useStreamerAvatarsStore(
+    (state) =>
+      state.avatarsByLogin[item.streamer.twitchLogin.toLowerCase()] ??
+      item.streamer.avatarUrl,
+  )
 
   const copyBase = `${projectTranslationKey}.items.${item.localeKey}`
   const description = t(`${copyBase}.description`)
@@ -76,12 +83,13 @@ export const StreamerItemCard = ({
         <div className={styles.streamerBadge}>
           {item.streamer.isLive ? <span className={styles.liveDot} /> : null}
           <img
-            src={item.streamer.avatarUrl}
+            src={streamerAvatarUrl}
             alt=""
             className={styles.streamerAvatar}
             width={16}
             height={16}
             loading="lazy"
+            decoding="async"
           />
           <span className={styles.streamerName}>{item.streamer.name}</span>
         </div>

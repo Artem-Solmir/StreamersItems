@@ -39,6 +39,9 @@ npm run dev
 
 В `vercel.json` настроен fallback на `index.html`, чтобы прямые переходы по маршрутам не отдавали 404.
 
-### Analytics
+### Analytics и Speed Insights
 
-Подключён [@vercel/analytics](https://vercel.com/docs/analytics) (`<Analytics />` в `src/main.tsx`). Метрики смотрите в Vercel → проект → **Analytics** (на Hobby может понадобиться включить Web Analytics в настройках проекта).
+- [@vercel/analytics](https://vercel.com/docs/analytics) — `<Analytics />` в `src/main.tsx` → Vercel → **Analytics**.
+- [@vercel/speed-insights](https://vercel.com/docs/speed-insights) — `<SpeedInsights />` в `src/main.tsx` → Vercel → **Speed Insights**.
+
+На Hobby при необходимости включите Web Analytics / Speed Insights в настройках проекта.

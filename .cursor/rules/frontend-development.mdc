@@ -94,3 +94,4 @@ alwaysApply: true
 - **2026-10-20:** Vercel Web Analytics — `@vercel/analytics`, компонент `<Analytics />` в `src/main.tsx`.
 - **2026-10-20:** Vercel Speed Insights — `@vercel/speed-insights`, компонент `<SpeedInsights />` в `src/main.tsx`.
 - **2026-10-20:** Продукт — сайт про **внутриигровые предметы стримеров**; доменные фичи: стримеры, игры, items, каталог (см. раздел «Продукт» выше).
+- **2026-10-20:** UI «Кибер-инвентарь» — `src/features/items`, `StreamerItemCard` (glow `--rarity-color`, tilt, glitch), токены `--bg-main` / `--bg-card` / `--accent-neon`, Zustand collect + UI sound.

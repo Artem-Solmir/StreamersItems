@@ -13,6 +13,14 @@
     "light": "Light",
     "dark": "Dark"
   },
+  "inventory": {
+    "title": "Cyber inventory",
+    "subtitle": "Interactive streamer item slots — rarity glow, tilt, glitch on vault items. Tap a slot to mark it collected.",
+    "collected": "{{count}} / {{total}} collected",
+    "soundOn": "UI sounds: on",
+    "soundOff": "UI sounds: off",
+    "hint": "Neon live dot = streamer online. Legendary and secret items glitch on hover."
+  },
   "home": {
     "getStarted": "Get started",
     "editHint": "Edit <1>src/App.tsx</1> and save to test <2>HMR</2>",

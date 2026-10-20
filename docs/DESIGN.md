@@ -1,61 +1,56 @@
-# StreamersItems — предварительный дизайн
+# StreamersItems — дизайн
 
-> Живые wireframes: см. Canvas «StreamersItems — предварительный дизайн» в Cursor.
+> Wireframes: Canvas «StreamersItems — предварительный дизайн» в Cursor.
 
-## Концепция
+## Продукт
 
-**Каталог внутриигровых предметов стримеров** — спокойный «inventory / catalog» UI: предмет на первом плане, интерфейс не перегружает (не лаунчер и не маркетплейс с ценами в v1).
+**Каталог внутриигровых предметов стримеров.** Цепочка: стример → игра → предмет.
 
-### Принципы
+## Концепция UI: «Интерактивный кибер-инвентарь»
 
-1. **Clarity over hype** — читаемость, сетка карточек, минимум декора.
-2. **Streamer → game → item** — навигация и фильтры следуют этой цепочке.
-3. **Rarity as color** — компактные бейджи редкости (по игре — своя палитра позже).
-4. **Trust** — дата обновления, владелец, ссылка на Twitch; без выдуманных цен.
+Вместо плоской сетки — **слоты инвентаря** на фоне «глубокого космоса»: неон, **динамическое свечение редкости** (`--rarity-color`), **tilt**, **CSS-глитч** (legendary/secret), **UI-звук** при collect (Zustand + Web Audio).
+
+### Палитра (dark — основной cyber-look)
+
+| Token | Value | Назначение |
+|-------|-------|------------|
+| `--bg-main` | `#0b0e14` | Фон приложения |
+| `--bg-card` | `#131822` | Слот карточки |
+| `--accent-neon` | `#00ffcc` | Live, collected, акцент |
+| `--twitch-purple` | `#9146ff` | Стример / rare glow |
+| `--rarity-color` | per item | Inline на карточке |
+
+Light theme — осветлённые значения в `src/index.css`.
+
+### Реализованные компоненты
+
+- `StreamerItemCard` — слот предмета
+- `CyberInventorySection` — сетка, счётчик коллекции, toggle звука
+- `useCollectedItemsStore`, `useInventoryUiStore`
+
+### UX-фишки
+
+1. **UI audio** — короткий тон при collect (можно выключить).
+2. **Glitch** — `enableGlitch` / rarity `secret` | `legendary`.
+3. **Tilt** — `useTilt`; off при `prefers-reduced-motion`.
 
 ## IA и маршруты (MVP)
 
 | Маршрут | Экран |
 |---------|--------|
-| `/` | Главная: поиск, featured items, trending streamers, фильтр по играм |
+| `/` | Кибер-инвентарь / featured items, streamers (развитие) |
 | `/streamers` | Список стримеров |
-| `/streamers/:login` | Профиль: аватар, live, табы по играм, сетка предметов |
-| `/items/:id` | Карточка предмета: арт, редкость, мета, владелец |
-| `/games/:slug` | Предметы и стримеры по игре |
+| `/streamers/:login` | Профиль + сетка предметов |
+| `/items/:id` | Карточка предмета |
+| `/games/:slug` | По игре |
 
-## Shell (общий каркас)
+## Shell (целевой)
 
-- **Header:** логотип, глобальный поиск, nav (Browse / Streamers / Games / Trending), язык, тема.
-- **Footer (позже):** about, legal, ссылки.
-- **Контент:** max-width ~70rem, padding в rem, CSS Modules по фичам.
+Header: логотип, поиск, nav, язык, тема. CSS Modules, max-width ~70rem.
 
-## Ключевые компоненты
-
-| Компонент | Назначение |
-|-----------|------------|
-| `ItemCard` | Превью, название, игра, редкость, @streamer |
-| `StreamerRow` / `StreamerCard` | Аватар, login, счётчик items, live/offline |
-| `GamePill` / `RarityBadge` | Фильтры и метки |
-| `SearchBar` | Items, streamers, games |
-| `AppLayout` | Header + outlet (React Router) |
-
-## Визуальные токены (на базе текущего `index.css`)
-
-- **Accent:** существующий фиолетовый (`--accent`); для ссылок «на Twitch» можно добавить `--twitch: #9146FF`.
-- **Surfaces:** `--bg`, `--code-bg` для карточек, `--border` для разделителей.
-- **Типографика (целевая):** display 2–2.5rem; UI 1rem / 0.875rem; mono для float, ID.
-- **Радиусы:** карточки 0.75rem, превью предмета 0.5rem.
-- **Темы:** light / dark / system — уже реализованы.
-
-## Главная (блоки сверху вниз)
-
-1. Hero + одна строка value prop + quick filters по играм.
-2. **Featured items** — сетка 4→2→1 колонки.
-3. **Trending streamers** + боковая колонка **By game** (counts).
-
-## Следующие шаги в коде
+## Следующие шаги
 
 1. React Router + `AppLayout`.
-2. Design tokens в `src/styles/tokens.css` (вынести из `index.css`).
-3. Фичи `src/features/items`, `streamers`, `games` с mock-данными.
-4. Заменить Vite-заготовку на реальную главную.
+2. Токены в `src/styles/tokens.css`.
+3. Данные items/streamers вне mock.
+4. Страницы streamer / item detail в cyber-стиле.

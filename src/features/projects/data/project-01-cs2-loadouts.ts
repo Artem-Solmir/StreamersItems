@@ -18,13 +18,14 @@ const TWITCH_AVATARS = {
 } as const
 
 /** Static files from /public/items — served as real assets (not SPA fallback). */
+/** PNGs from Steam economy CDN (ByMykel/CSGO-API icon URLs, 360×360). */
 const ITEM_IMAGES = {
   akGold: '/items/ak-gold.png',
   awpDragonLore: '/items/awp-dragon-lore.png',
-  knifeDoppler: '/items/knife-doppler.svg',
-  m4Printstream: '/items/m4-printstream.svg',
-  glovesVice: '/items/gloves-vice.svg',
-  uspTicket: '/items/usp-ticket.svg',
+  knifeDoppler: '/items/knife-doppler.png',
+  m4Printstream: '/items/m4-printstream.png',
+  glovesVice: '/items/gloves-vice.png',
+  uspTicket: '/items/usp-ticket.png',
 } as const
 
 const item = (

@@ -10,6 +10,9 @@ export type ItemRarity = (typeof ITEM_RARITIES)[number]
 
 export interface StreamerItemStreamer {
   name: string
+  /** Twitch login for profile photo refresh via Helix API */
+  twitchLogin: string
+  /** Fallback avatar (Twitch CDN snapshot) when API is unavailable */
   avatarUrl: string
   isLive?: boolean
 }

@@ -1,4 +1,5 @@
 export { PROJECT_01_CS2_LOADOUTS } from '@/features/projects/data/project-01-cs2-loadouts'
+export { PROJECT_02_ESCAPE_FROM_TARKOV } from '@/features/projects/data/project-02-escape-from-tarkov'
 export {
   FIRST_STREAMER_ITEMS_PROJECT,
   getProjectBySlug,

@@ -45,6 +45,37 @@
           "funFact": "Ticket to Hell — любимец бюджетных синих loadout’ов: дёшево взять, характер на максимум."
         }
       }
+    },
+    "tarkovLoot": {
+      "label": "Проект 2",
+      "title": "Лут стримеров в Tarkov",
+      "subtitle": "Рейдовые находки и flex из Escape from Tarkov — биткоины, LEDX, ключи Labs и stash porn. Нажмите на слот, чтобы отметить «собрано».",
+      "items": {
+        "p2LvndmarkBitcoin": {
+          "description": "Physical Bitcoin у LVNDMARK — лут, который чат каждый вайп встречает как джекпот.",
+          "funFact": "Биткоины спавнятся на картах и в сейфах; стримеры часто меряют их в «скольких аптечках», а не в рублях."
+        },
+        "p2PestilyLedx": {
+          "description": "LEDX в стиле Pestily — медлут, из-за которого «быстрый Labs» превращается в хайлайт.",
+          "funFact": "LEDX нужен на квест Therapist и остаётся одним из самых дорогих медицинских спавнов."
+        },
+        "p2SummitRedKeycard": {
+          "description": "summit1g и Red Keycard — Labs как контент, с лишним потом, когда тикает таймер.",
+          "funFact": "Красная ключ-карта открывает главные комнаты Labs; одноразовая и жёстко контested."
+        },
+        "p2VeritasThicc": {
+          "description": "T H I C C Items case у Veritas — организация stash как часть стримерского образа.",
+          "funFact": "THICC case — огромная сетка; endgame-хранилище и долгая цель в экономике."
+        },
+        "p2JesseSlick": {
+          "description": "Slick у JesseKazam — min-max броня, которая всё ещё выглядит аккуратно на реплее смерти.",
+          "funFact": "Slick даёт высокую прочность без штрафа к магазинам — база лёгких meta-сборок."
+        },
+        "p2SlobGrizzly": {
+          "description": "Grizzly у DeadlySlob — лечение, которое помнят ветераны ранних вайпов.",
+          "funFact": "Grizzly лечит много HP со временем; громоздкий, но прощает ошибки на картах."
+        }
+      }
     }
   },
   "inventory": {

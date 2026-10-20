@@ -1,0 +1,216 @@
+.cardContainer {
+  position: relative;
+  background: var(--bg-card, #131822);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  overflow: hidden;
+  transition:
+    transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+    border-color 0.3s ease;
+  cursor: pointer;
+  text-align: left;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.cardContainer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% -20%,
+    var(--rarity-color, #9146ff) 0%,
+    transparent 60%
+  );
+  opacity: 0.15;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.cardContainer:hover {
+  border-color: var(--rarity-color, #9146ff);
+}
+
+.cardContainer:hover::before {
+  opacity: 0.4;
+}
+
+.cardContainer:focus-visible {
+  outline: 0.125rem solid var(--accent-neon, #00ffcc);
+  outline-offset: 0.125rem;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  margin-bottom: 0.75rem;
+}
+
+.itemImage {
+  max-width: 85%;
+  max-height: 85%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.5));
+}
+
+.streamerBadge {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  background: rgba(11, 14, 20, 0.85);
+  backdrop-filter: blur(0.25rem);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.liveDot {
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: 50%;
+  background: var(--accent-neon, #00ffcc);
+  box-shadow: 0 0 0.375rem var(--accent-neon, #00ffcc);
+  flex-shrink: 0;
+}
+
+.streamerAvatar {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.streamerName {
+  font-size: 0.75rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.itemInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.itemName {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.gameName {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.collectedIndicator {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #3b3b3b;
+  box-shadow: 0 0 0.25rem #3b3b3b;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.collectedIndicatorActive {
+  background: var(--accent-neon, #00ffcc);
+  box-shadow: 0 0 0.5rem var(--accent-neon, #00ffcc);
+}
+
+@keyframes glitchShift {
+  0% {
+    transform: translate(0, 0);
+    filter: hue-rotate(0deg);
+  }
+  25% {
+    transform: translate(-0.0625rem, 0.0625rem);
+    filter: hue-rotate(15deg);
+  }
+  50% {
+    transform: translate(0.0625rem, -0.0625rem);
+    filter: hue-rotate(-10deg);
+  }
+  75% {
+    transform: translate(-0.0625rem, -0.0625rem);
+  }
+  100% {
+    transform: translate(0, 0);
+    filter: hue-rotate(0deg);
+  }
+}
+
+.cardContainerGlitch:hover .itemImage {
+  animation: glitchShift 0.35s steps(2, end) infinite;
+}
+
+.cardContainerGlitch:hover::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 255, 204, 0.08) 45%,
+    transparent 55%
+  );
+  pointer-events: none;
+  mix-blend-mode: screen;
+  animation: glitchShift 0.25s steps(2, end) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cardContainer,
+  .cardContainer::before,
+  .collectedIndicator {
+    transition: none;
+  }
+
+  .cardContainerGlitch:hover .itemImage,
+  .cardContainerGlitch:hover::after {
+    animation: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  [data-theme='light'] .cardContainer {
+    border-color: rgba(0, 0, 0, 0.08);
+  }
+
+  [data-theme='light'] .itemName {
+    color: var(--text-h);
+  }
+
+  [data-theme='light'] .gameName {
+    color: var(--text);
+  }
+
+  [data-theme='light'] .streamerBadge {
+    background: rgba(255, 255, 255, 0.92);
+    border-color: var(--border);
+  }
+
+  [data-theme='light'] .streamerName {
+    color: var(--text-h);
+  }
+}

@@ -37,9 +37,18 @@ npm run dev
 
 Клиентские переменные только с префиксом `VITE_`. В Vercel: **Project → Settings → Environment Variables**. Локально — файл `.env` (не коммитится; см. `.env.example` при добавлении).
 
-### React Router
+### React Router / SPA fallback
 
-В `vercel.json` настроен fallback на `index.html`, чтобы прямые переходы по маршрутам не отдавали 404.
+В `vercel.json` fallback на `index.html` срабатывает только для запросов с `Accept: text/html`, чтобы `/items/*` и другие файлы из `public/` не подменялись HTML.
+
+### Если деплой не стартует после merge в `main`
+
+1. [Vercel Dashboard](https://vercel.com) → проект **StreamersItems** → **Deployments** — есть ли деплой для последнего коммита на `main`?
+2. **Settings → Git** — репозиторий подключён, **Production Branch** = `main`.
+3. Нет ли **Ignored Build Step**, который отменяет сборку.
+4. **Deployments → … → Redeploy** на нужном коммите или пустой push в `main`, чтобы снова сработал webhook.
+
+На GitHub у последних merge часто **нет** Vercel check — значит webhook не доходит; переподключение Git в Vercel обычно помогает.
 
 ### Analytics и Speed Insights
 

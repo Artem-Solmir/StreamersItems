@@ -59,7 +59,7 @@
 }
 
 #root {
-  width: 1126px;
+  width: min(100%, 80rem);
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -69,6 +69,12 @@
   flex-direction: column;
   box-sizing: border-box;
   background: var(--bg);
+}
+
+@media (max-width: 1024px) {
+  #root {
+    border-inline: none;
+  }
 }
 
 body {

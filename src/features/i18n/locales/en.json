@@ -54,32 +54,152 @@
     "tarkovLoot": {
       "label": "Project 2",
       "title": "Streamer Tarkov loot",
-      "subtitle": "Raid staples and flex finds from Escape from Tarkov creators — bitcoins, LEDX, Labs keys, and stash porn. Tap a slot to mark it collected.",
+      "subtitle": "Streamer items for Escape from Tarkov — Collector-style loot with category filters. Tap a slot to mark it collected.",
       "items": {
-        "p2LvndmarkBitcoin": {
-          "description": "LVNDMARK’s Physical Bitcoin — the loot chat treats like a slot machine jackpot every wipe.",
-          "funFact": "Bitcoins spawn on maps and in safes; streamers often price them in «how many kits» instead of roubles."
+        "p2NutSackBalaclava": {
+          "description": "TheBurntPeanut’s Nut Sack balaclava — meme-tier headwear from the streamer item pool.",
+          "funFact": "Added in late 2025; spawns on Scavs like other streamer cosmetics."
         },
-        "p2PestilyLedx": {
-          "description": "Pestily’s LEDX hunt energy — the medical loot that turns a «quick labs» into a highlight reel.",
-          "funFact": "LEDX is a Therapist task item and one of the highest-value medical spawns in the game."
+        "p2DomontovichUshanka": {
+          "description": "Domontovich ushanka — cold-raid cosplay with a creator tag.",
+          "funFact": "Part of the expanding streamer item roster tied to Russian creators."
         },
-        "p2SummitRedKeycard": {
-          "description": "summit1g and the Red Keycard — Labs access as content, with extra sweat when the timer’s ticking.",
-          "funFact": "Red keycards open the main Labs loot rooms; they’re single-use and brutally contested."
+        "p2PestilyMask": {
+          "description": "Pestily plague mask — the mask chat recognizes before the voice line.",
+          "funFact": "Classic streamer item since early Tarkov wipes."
         },
-        "p2VeritasThicc": {
-          "description": "Veritas flexing a T H I C C Items case — stash organization as streamer personality.",
-          "funFact": "THICC cases hold a massive grid; they’re endgame storage flex and a long-term economy sink."
+        "p2ShroudHalfMask": {
+          "description": "Shroud half-mask — minimal face cover, maximum streamer recognition.",
+          "funFact": "Drops from Scavs; a staple flex slot."
         },
-        "p2JesseSlick": {
-          "description": "JesseKazam’s Slick — min-max armor that still looks clean on the death replay.",
-          "funFact": "The Slick has high durability with no mag penalty — a go-to for lightweight meta builds."
+        "p2JohnbGlasses": {
+          "description": "JohnB Liquid DNB glasses — Dunduk’s signature shades as in-game loot.",
+          "funFact": "Often called «Dunduk glasses» in the community."
         },
-        "p2SlobGrizzly": {
-          "description": "DeadlySlob’s Grizzly — old-school healing that every veteran remembers from early wipes.",
-          "funFact": "Grizzlies heal a huge chunk over time; they’re bulky but forgiving when you’re learning maps."
+        "p2ViibiinSneaker": {
+          "description": "Viibiin sneaker — footwear loot that feels like a highlight reel drop.",
+          "funFact": "Safes and jacket raids love hiding these."
+        },
+        "p2NoiceguyPressPass": {
+          "description": "Press pass issued for NoiceGuy — Labs energy in item form.",
+          "funFact": "Sports bags and streamer loot tables."
+        },
+        "p2RavenFigurine": {
+          "description": "Raven figurine — trophy from Markstrom’s tournament win.",
+          "funFact": "High-value safe spawn; pure flex."
+        },
+        "p2LootLordPlushie": {
+          "description": "Loot Lord plushie — AquaFPS / Lupo mascot in plush form.",
+          "funFact": "Sports bags; chat always calls it Lupo."
+        },
+        "p2MastichinFigurine": {
+          "description": "Mastichin figurine — mustache memes turned into barter loot.",
+          "funFact": "Newer figurine line from recent wipes."
+        },
+        "p2SheefggPiggyBank": {
+          "description": "SheefGG piggy bank — mini stash for roubles with streamer branding.",
+          "funFact": "Marked rooms and late-wipe economy flex."
+        },
+        "p2MutkevichFigurine": {
+          "description": "Politician Mutkevich figurine — satire you can hand in or flex.",
+          "funFact": "Part of the trader figurine set."
+        },
+        "p2RyzhyFigurine": {
+          "description": "Ryzhy figurine — red-scav personality as a shelf piece.",
+          "funFact": "Pairs with other «figurine» streamer items."
+        },
+        "p2DuckFigurine": {
+          "description": "Duck figurine — the mandarin-plush meme the community calls «tangerine duck».",
+          "funFact": "Event reward turned collectible barter item."
+        },
+        "p2Kc130Model": {
+          "description": "LM KC-130 model aircraft — AirwingMarine’s aviation nod.",
+          "funFact": "Labs manager office / arsenal spawns on some wipes."
+        },
+        "p2YmxWater": {
+          "description": "Bottle of YMXC water — creator-branded hydration loot.",
+          "funFact": "Food spawns and ration crates on Customs and beyond."
+        },
+        "p2GigabeefMeat": {
+          "description": "Can of GigaBeef meat — tushonka energy with streamer label.",
+          "funFact": "Ration crates; wipe 1.1 streamer food trio."
+        },
+        "p2FrenchBaguette": {
+          "description": "French bakery baguette — Cocaoo_’s long bread for short raids.",
+          "funFact": "Food spawns; part of the 2026 food streamer set."
+        },
+        "p2HolodilnickBag": {
+          "description": "Mr. Holodilnick thermal bag — lunchbox loot with creator branding.",
+          "funFact": "Thermal bag slot; keeps the meme cold."
+        },
+        "p2InseqWrench": {
+          "description": "Inseq gas pipe wrench — adjustable wrench with streamer paint.",
+          "funFact": "Technical crates; bright red tool flex."
+        },
+        "p2Fireklean": {
+          "description": "#FireKlean gun lube — Klean’s iconic gold tube.",
+          "funFact": "Labs tech / streamer item classic since 2018."
+        },
+        "p2DeadlyslobBeardOil": {
+          "description": "Deadlyslob’s beard oil — OG streamer item from early wipes.",
+          "funFact": "Shoreline and interchange counters; collector veteran bait."
+        },
+        "p2LvndmarkRatPoison": {
+          "description": "LVNDMARK’s rat poison — meme consumable with serious flea price.",
+          "funFact": "Sports bags and filing cabinets."
+        },
+        "p2MazoniDumbbell": {
+          "description": "Mazoni golden dumbbell — gym bro loot for hideout flex.",
+          "funFact": "Safes; cultist circle FIR tricks on some wipes."
+        },
+        "p2TigzresqSplint": {
+          "description": "Tigzresq splint — medical streamer item for leg meta jokes.",
+          "funFact": "Medical spawns across maps."
+        },
+        "p2MissamForkliftKey": {
+          "description": "Missam forklift key — DanExert / Missam forklift meme key.",
+          "funFact": "Jacket pockets; tiny key, big chat reaction."
+        },
+        "p2VeritasGuitarPick": {
+          "description": "Veritas guitar pick — tiny loot, huge streamer recognition.",
+          "funFact": "Safes and Labs saferoom routes."
+        },
+        "p2TamatthiKunai": {
+          "description": "Tamatthi kunai knife replica — melee memento, not meta, all style.",
+          "funFact": "Safes; streamer item since 2024 drops."
+        },
+        "p2DundukFloppy": {
+          "description": "Dunduk floppy disk — retro storage for Tarkov.Help vibes.",
+          "funFact": "Filing cabinets and safes."
+        },
+        "p2DesmondpilakCd": {
+          "description": "DesmondPilak CD — album loot from the Tarkov DJ.",
+          "funFact": "Safe spawns; audio meme item."
+        },
+        "p2CyborgKillerVhs": {
+          "description": "Cassette with «Cyborg Killer» — Проходимец VHS collectable.",
+          "funFact": "Filing cabinets; VHS streamer nostalgia."
+        },
+        "p2SilverBadge": {
+          "description": "Silver Badge — polished streamer medallion.",
+          "funFact": "Older collector piece; still a status slot."
+        },
+        "p2WzWallet": {
+          "description": "WZ Wallet — WillerZ wallet loot.",
+          "funFact": "Scav pockets; economy streamer classic."
+        },
+        "p2BatteredAntiqueBook": {
+          "description": "Battered antique book — DobbyKillStreak’s dusty tome.",
+          "funFact": "Safe loot; quest hand-in history on some accounts."
         }
+      },
+      "filterAll": "All categories",
+      "categories": {
+        "gear": "Gear, masks & headwear",
+        "figurines": "Figurines & plushies",
+        "food": "Food & drinks",
+        "tools": "Tools & household",
+        "valuables": "Valuables & electronics"
       }
     }
   },
@@ -90,7 +210,9 @@
     "soundOn": "UI sounds: on",
     "soundOff": "UI sounds: off",
     "hint": "Neon live dot = streamer online. Legendary and secret items glitch on hover.",
-    "funFactLabel": "Fun fact"
+    "funFactLabel": "Fun fact",
+    "categoryFiltersLabel": "Item categories",
+    "filteredCount": "{{collected}} / {{count}} in category"
   },
   "home": {
     "getStarted": "Get started",

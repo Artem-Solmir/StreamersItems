@@ -1,4 +1,5 @@
-import { useEffect } from 'react'
+import { useEffect, useMemo, useState } from 'react'
+import clsx from 'clsx'
 import { useTranslation } from 'react-i18next'
 import { useStreamerAvatarsStore } from '@/features/streamers/useStreamerAvatarsStore'
 import { StreamerItemCard } from '@/features/items/components/StreamerItemCard'
@@ -17,7 +18,16 @@ export const CyberInventorySection = ({
   project = FIRST_STREAMER_ITEMS_PROJECT,
 }: CyberInventorySectionProps) => {
   const { t } = useTranslation()
+  const [activeGroupId, setActiveGroupId] = useState<string>('all')
   const items = project.items
+  const itemGroups = project.itemGroups ?? []
+
+  const visibleItems = useMemo(() => {
+    if (activeGroupId === 'all' || itemGroups.length === 0) {
+      return items
+    }
+    return items.filter((entry) => entry.itemGroup === activeGroupId)
+  }, [activeGroupId, itemGroups.length, items])
   const titleKey = `${project.translationKey}.title`
   const subtitleKey = `${project.translationKey}.subtitle`
   const labelKey = `${project.translationKey}.label`
@@ -36,6 +46,9 @@ export const CyberInventorySection = ({
 
   const collectedCount = items.filter((entry) => isCollected(entry.id)).length
   const total = items.length
+  const visibleCollectedCount = visibleItems.filter((entry) =>
+    isCollected(entry.id),
+  ).length
 
   const onToggleItem = (itemId: string) => {
     const nowCollected = toggleCollected(itemId)
@@ -58,6 +71,16 @@ export const CyberInventorySection = ({
           <p className={styles.subtitle}>{t(subtitleKey)}</p>
           <p className={styles.projectMeta}>
             {project.primaryGame} · {t('projects.itemCount', { count: total })}
+            {itemGroups.length > 0 && activeGroupId !== 'all' ? (
+              <>
+                {' '}
+                ·{' '}
+                {t('inventory.filteredCount', {
+                  count: visibleItems.length,
+                  collected: visibleCollectedCount,
+                })}
+              </>
+            ) : null}
           </p>
         </div>
         <div className={styles.controls}>
@@ -75,8 +98,44 @@ export const CyberInventorySection = ({
         </div>
       </div>
 
+      {itemGroups.length > 0 ? (
+        <div
+          className={styles.categoryFilters}
+          role="tablist"
+          aria-label={t('inventory.categoryFiltersLabel')}
+        >
+          <button
+            type="button"
+            role="tab"
+            className={clsx(
+              styles.categoryChip,
+              activeGroupId === 'all' && styles.categoryChipActive,
+            )}
+            aria-selected={activeGroupId === 'all'}
+            onClick={() => setActiveGroupId('all')}
+          >
+            {t(`${project.translationKey}.filterAll`)}
+          </button>
+          {itemGroups.map((group) => (
+            <button
+              key={group.id}
+              type="button"
+              role="tab"
+              className={clsx(
+                styles.categoryChip,
+                activeGroupId === group.id && styles.categoryChipActive,
+              )}
+              aria-selected={activeGroupId === group.id}
+              onClick={() => setActiveGroupId(group.id)}
+            >
+              {t(`${project.translationKey}.categories.${group.categoryKey}`)}
+            </button>
+          ))}
+        </div>
+      ) : null}
+
       <ul className={styles.grid}>
-        {items.map((item) => (
+        {visibleItems.map((item) => (
           <li key={item.id}>
             <StreamerItemCard
               item={item}

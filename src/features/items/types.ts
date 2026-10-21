@@ -29,4 +29,6 @@ export interface StreamerItem {
   rarity: ItemRarity
   rarityColor: string
   enableGlitch?: boolean
+  /** Optional grouping id (see project `itemGroups`, e.g. Tarkov collector category). */
+  itemGroup?: string
 }

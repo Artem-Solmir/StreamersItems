@@ -54,32 +54,152 @@
     "tarkovLoot": {
       "label": "Проект 2",
       "title": "Лут стримеров в Tarkov",
-      "subtitle": "Рейдовые находки и flex из Escape from Tarkov — биткоины, LEDX, ключи Labs и stash porn. Нажмите на слот, чтобы отметить «собрано».",
+      "subtitle": "Стримерские предметы Escape from Tarkov — лут в духе Collector с фильтром по категориям. Нажмите на слот, чтобы отметить «собрано».",
       "items": {
-        "p2LvndmarkBitcoin": {
-          "description": "Physical Bitcoin у LVNDMARK — лут, который чат каждый вайп встречает как джекпот.",
-          "funFact": "Биткоины спавнятся на картах и в сейфах; стримеры часто меряют их в «скольких аптечках», а не в рублях."
+        "p2NutSackBalaclava": {
+          "description": "Балаклава Nut Sack от TheBurntPeanut — мемный headwear из пула стримерских предметов.",
+          "funFact": "Добавлена в конце 2025; спавнится на Scav, как другая streamer-косметика."
         },
-        "p2PestilyLedx": {
-          "description": "LEDX в стиле Pestily — медлут, из-за которого «быстрый Labs» превращается в хайлайт.",
-          "funFact": "LEDX нужен на квест Therapist и остаётся одним из самых дорогих медицинских спавнов."
+        "p2DomontovichUshanka": {
+          "description": "Ушанка Домонтовича — зимний cosplay с авторской меткой.",
+          "funFact": "Часть расширяющегося списка предметов русскоязычных стримеров."
         },
-        "p2SummitRedKeycard": {
-          "description": "summit1g и Red Keycard — Labs как контент, с лишним потом, когда тикает таймер.",
-          "funFact": "Красная ключ-карта открывает главные комнаты Labs; одноразовая и жёстко контested."
+        "p2PestilyMask": {
+          "description": "Маска чумного доктора Pestily — узнаётся в чате раньше голоса.",
+          "funFact": "Классика streamer items с ранних вайпов."
         },
-        "p2VeritasThicc": {
-          "description": "T H I C C Items case у Veritas — организация stash как часть стримерского образа.",
-          "funFact": "THICC case — огромная сетка; endgame-хранилище и долгая цель в экономике."
+        "p2ShroudHalfMask": {
+          "description": "Полумаска Shroud — минимум маски, максимум узнаваемости.",
+          "funFact": "Дроп с Scav; любимый flex-слот."
         },
-        "p2JesseSlick": {
-          "description": "Slick у JesseKazam — min-max броня, которая всё ещё выглядит аккуратно на реплее смерти.",
-          "funFact": "Slick даёт высокую прочность без штрафа к магазинам — база лёгких meta-сборок."
+        "p2JohnbGlasses": {
+          "description": "Очки JohnB Liquid DNB — фирменные «очки Dunduk» в луте.",
+          "funFact": "В комьюнити часто зовут «очки Dunduk»."
         },
-        "p2SlobGrizzly": {
-          "description": "Grizzly у DeadlySlob — лечение, которое помнят ветераны ранних вайпов.",
-          "funFact": "Grizzly лечит много HP со временем; громоздкий, но прощает ошибки на картах."
+        "p2ViibiinSneaker": {
+          "description": "Кроссовки Viibiin — обувь, которую рады видеть в хайлайте.",
+          "funFact": "Сейфы и куртки прячут их с удовольствием."
+        },
+        "p2NoiceguyPressPass": {
+          "description": "Пресс-карта NoiceGuy — Labs-энергия в виде предмета.",
+          "funFact": "Спорт-сумки и таблицы streamer loot."
+        },
+        "p2RavenFigurine": {
+          "description": "Статуэтка ворона — трофей победы Markstrom на турнире.",
+          "funFact": "Дорогой safe spawn; чистый flex."
+        },
+        "p2LootLordPlushie": {
+          "description": "Плюш Loot Lord — маскот AquaFPS / Lupo.",
+          "funFact": "Sports bag; чат зовёт его Lupo."
+        },
+        "p2MastichinFigurine": {
+          "description": "Фигурка Mastichin — усы как barter-лут.",
+          "funFact": "Новая линейка figurine на свежих вайпах."
+        },
+        "p2SheefggPiggyBank": {
+          "description": "Копилка SheefGG — мини-кейс под рубли со стримерским брендом.",
+          "funFact": "Marked rooms; flex экономики."
+        },
+        "p2MutkevichFigurine": {
+          "description": "Фигурка депутата Муткевича — сатира, которую сдают или flex'ят.",
+          "funFact": "Из набора trader figurines."
+        },
+        "p2RyzhyFigurine": {
+          "description": "Фигурка Рыжего — scav-персона в миниатюре.",
+          "funFact": "Соседствует с другими figurine-предметами."
+        },
+        "p2DuckFigurine": {
+          "description": "Фигурка утки — «мандариновая уточка» из ивентов и мемов.",
+          "funFact": "Коллекционный barter после ивентов."
+        },
+        "p2Kc130Model": {
+          "description": "Модель LM KC-130 — отсылка AirwingMarine к авиации.",
+          "funFact": "Labs office / arsenal на некоторых вайпах."
+        },
+        "p2YmxWater": {
+          "description": "Бутылка воды YMXC — брендированная вода стримера.",
+          "funFact": "Food spawns и ration crates."
+        },
+        "p2GigabeefMeat": {
+          "description": "Банка тушенки GigaBeef — стримерская тушонка.",
+          "funFact": "Ration crates; food trio 2026."
+        },
+        "p2FrenchBaguette": {
+          "description": "Французский багет — длинный хлеб Cocaoo_.",
+          "funFact": "Food spawns; часть food streamer набора."
+        },
+        "p2HolodilnickBag": {
+          "description": "Термосумка Mr. Holodilnick — ланчбокс с брендом.",
+          "funFact": "Thermal bag; мем про холод."
+        },
+        "p2InseqWrench": {
+          "description": "Красный разводной ключ Inseq — яркий tool flex.",
+          "funFact": "Technical crates."
+        },
+        "p2Fireklean": {
+          "description": "#FireKlean — золотая смазка Klean.",
+          "funFact": "Labs tech; классика с 2018."
+        },
+        "p2DeadlyslobBeardOil": {
+          "description": "Масло для бороды Deadlyslob — OG streamer item.",
+          "funFact": "Shoreline / Interchange; bait для вeteranов."
+        },
+        "p2LvndmarkRatPoison": {
+          "description": "Крысиный яд LVNDMARK — мем с серьёзной ценой на барахолке.",
+          "funFact": "Sports bags и шкафы."
+        },
+        "p2MazoniDumbbell": {
+          "description": "Золотая гантель Mazoni — gym flex для hideout.",
+          "funFact": "Safes; иногда FIR через Cultist Circle."
+        },
+        "p2TigzresqSplint": {
+          "description": "Шина Tigzresq — мед streamer item про ноги.",
+          "funFact": "Medical spawns."
+        },
+        "p2MissamForkliftKey": {
+          "description": "Ключ Missam — мем погрузчика DanExert.",
+          "funFact": "Куртки; маленький ключ, громкая реакция чата."
+        },
+        "p2VeritasGuitarPick": {
+          "description": "Медиатор Veritas — маленький лут, большая узнаваемость.",
+          "funFact": "Safes и Labs saferoom."
+        },
+        "p2TamatthiKunai": {
+          "description": "Реплика кунай Tamatthi — стиль, не meta.",
+          "funFact": "Safes; streamer item с 2024."
+        },
+        "p2DundukFloppy": {
+          "description": "Дискета Dunduk — retro под Tarkov.Help.",
+          "funFact": "Шкафы и сейфы."
+        },
+        "p2DesmondpilakCd": {
+          "description": "CD DesmondPilak — музыкальный streamer loot.",
+          "funFact": "Safes."
+        },
+        "p2CyborgKillerVhs": {
+          "description": "Кассета «Киборг-убийца» — VHS от Проходимца.",
+          "funFact": "Шкафы; ностальгия по VHS."
+        },
+        "p2SilverBadge": {
+          "description": "Серебряный жетон — полированная streamer медаль.",
+          "funFact": "Старый collector piece; статусный слот."
+        },
+        "p2WzWallet": {
+          "description": "Кошелёк WZ — wallet loot WillerZ.",
+          "funFact": "Карманы Scav; классика экономики."
+        },
+        "p2BatteredAntiqueBook": {
+          "description": "Потрепанная антикварная книга — том DobbyKillStreak.",
+          "funFact": "Safe loot; история hand-in на квестах."
         }
+      },
+      "filterAll": "Все категории",
+      "categories": {
+        "gear": "Экипировка, маски и головные уборы",
+        "figurines": "Фигурки и игрушки",
+        "food": "Еда и напитки",
+        "tools": "Инструменты и бытовые предметы",
+        "valuables": "Ценности, электроника и сувениры"
       }
     }
   },
@@ -90,7 +210,9 @@
     "soundOn": "Звук UI: вкл.",
     "soundOff": "Звук UI: выкл.",
     "hint": "Мятная точка — стример в эфире. Легендарные и secret-предметы дают глитч при наведении.",
-    "funFactLabel": "Факт"
+    "funFactLabel": "Факт",
+    "categoryFiltersLabel": "Категории предметов",
+    "filteredCount": "{{collected}} / {{count}} в категории"
   },
   "home": {
     "getStarted": "Начать",

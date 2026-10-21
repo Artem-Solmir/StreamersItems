@@ -19,14 +19,14 @@ const TWITCH_AVATARS = {
     'https://static-cdn.jtvnw.net/jtv_user_pictures/b1f8692d1f66c5cb-profile_image-300x300.jpeg',
 } as const
 
-/** Stylized slot icons in /public/items/tarkov (tarkov.dev CDN fallback when API is up). */
+/** 512px WebP from assets.tarkov.dev (same pipeline as tarkov.dev / KappaTracker). */
 const ITEM_IMAGES = {
-  bitcoin: '/items/tarkov/bitcoin.svg',
-  ledx: '/items/tarkov/ledx.svg',
-  redKeycard: '/items/tarkov/red-keycard.svg',
-  thiccCase: '/items/tarkov/thicc-case.svg',
-  slick: '/items/tarkov/slick.svg',
-  grizzly: '/items/tarkov/grizzly.svg',
+  bitcoin: '/items/tarkov/bitcoin.webp',
+  ledx: '/items/tarkov/ledx.webp',
+  redKeycard: '/items/tarkov/red-keycard.webp',
+  thiccCase: '/items/tarkov/thicc-case.webp',
+  slick: '/items/tarkov/slick.webp',
+  grizzly: '/items/tarkov/grizzly.webp',
 } as const
 
 const item = (

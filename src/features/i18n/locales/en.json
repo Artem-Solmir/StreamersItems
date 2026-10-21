@@ -57,149 +57,190 @@
       "subtitle": "Streamer items for Escape from Tarkov — Collector-style loot with category filters. Tap a slot to mark it collected.",
       "items": {
         "p2NutSackBalaclava": {
-          "description": "TheBurntPeanut’s Nut Sack balaclava — meme-tier headwear from the streamer item pool.",
-          "funFact": "Added in late 2025; spawns on Scavs like other streamer cosmetics."
+          "description": "A knit headpiece that covers the head and face, leaving only the eyes exposed. Made of dense wool and great against the cold. Bears a \"Nut Sack\" label.",
+          "funFact": "Dedicated to streamer TheBurntPeanut. In English slang, \"nut sack\" has a very cheeky meaning, so a balaclava with this name sparked endless jokes on stream."
         },
         "p2DomontovichUshanka": {
-          "description": "Domontovich ushanka — cold-raid cosplay with a creator tag.",
-          "funFact": "Part of the expanding streamer item roster tied to Russian creators."
+          "description": "A regular winter ushanka with a cockade. The owner's surname — Domontovich — is neatly embroidered on the inside.",
+          "funFact": "Made for Andrey Domontovich, the Russian streamer behind Dyadya Dyoma, known for cozy streams and guides where he often wore this kind of hat."
+        },
+        "p2GloriousEMask": {
+          "description": "A stylish protective half-mask that offers light ballistic protection for the face. \"Glorious E\" is stamped on the inside.",
+          "funFact": "Glorious_E is known for hyper-aggressive gunplay and almost always running Tarkov with glasses and a half-mask. BSG copied his look straight into the game."
         },
         "p2PestilyMask": {
-          "description": "Pestily plague mask — the mask chat recognizes before the voice line.",
-          "funFact": "Classic streamer item since early Tarkov wipes."
+          "description": "An authentic leather plague doctor mask with a long beak. Looks ominous and smells of herbs and old leather.",
+          "funFact": "Dedicated to Pestily, the face of Tarkov worldwide. During charity marathons that raised hundreds of thousands for kids, he wore a real plague mask on stream when donation goals were hit."
         },
         "p2ShroudHalfMask": {
-          "description": "Shroud half-mask — minimal face cover, maximum streamer recognition.",
-          "funFact": "Drops from Scavs; a staple flex slot."
+          "description": "A neoprene half-mask with the Shroud logo. Keeps dust, smoke, and unwanted stares out of your airways.",
+          "funFact": "FPS legend Shroud jumped into Tarkov early. BSG was so happy they added this mask quickly — for a long time it was the flex of a rich, experienced player."
+        },
+        "p2SmokeBalaclava": {
+          "description": "A black tactical balaclava made of fire-resistant material. A favorite piece for stealthy operators.",
+          "funFact": "Tied to Smoke, a hardcore sim and DayZ veteran known for cinematic tactical play and a deep radio voice. The black mask fits his low-profile style."
         },
         "p2JohnbGlasses": {
-          "description": "JohnB Liquid DNB glasses — Dunduk’s signature shades as in-game loot.",
-          "funFact": "Often called «Dunduk glasses» in the community."
+          "description": "Sunglasses in a futuristic frame with mirrored lenses. \"Liquid DNB\" is printed on the temple.",
+          "funFact": "Dedicated to British DJ and streamer John B (Drum & Bass). He streamed Tarkov from his studio, always in neon futuristic shades."
         },
         "p2ViibiinSneaker": {
-          "description": "Viibiin sneaker — footwear loot that feels like a highlight reel drop.",
-          "funFact": "Safes and jacket raids love hiding these."
+          "description": "A name-brand athletic shoe that has clearly seen a few fights. The Viibiin logo is visible on the sole.",
+          "funFact": "Viibiin is hyperactive with wild movement and constant jumping. The in-game sneaker jokes that his PMC never stops sprinting."
         },
-        "p2NoiceguyPressPass": {
-          "description": "Press pass issued for NoiceGuy — Labs energy in item form.",
-          "funFact": "Sports bags and streamer loot tables."
+        "p2DrdBodyArmor": {
+          "description": "A concealed-carry light vest customized with bright graffiti and a DRD logo. Protection is mediocre, style is not.",
+          "funFact": "A nod to DrLupo (old tag DrD). You can actually wear it, but protection is deliberately weak — pure fashion flex."
+        },
+        "p2FakeMustache": {
+          "description": "Fake adhesive mustache. Great for disguises or just ruining your squad's seriousness.",
+          "funFact": "A wink at Sequisha's legendary real mustache. Players pair it with glasses to cosplay \"undercover agents\" and troll teammates."
         },
         "p2RavenFigurine": {
-          "description": "Raven figurine — trophy from Markstrom’s tournament win.",
-          "funFact": "High-value safe spawn; pure flex."
+          "description": "An elegant raven figurine cast in dark metal. Looks like a trophy from an old tournament win.",
+          "funFact": "It mirrors a real trophy — added after Markstrom won the first official Tarkov Twitch Rivals streamer tournament."
+        },
+        "p2AxelParrot": {
+          "description": "A hand-painted porcelain parrot figurine. \"Axel\" is neatly written on the stand.",
+          "funFact": "For Axel_TV, whose real pet parrot often shouted over the game and made hearing footsteps impossible."
         },
         "p2LootLordPlushie": {
-          "description": "Loot Lord plushie — AquaFPS / Lupo mascot in plush form.",
-          "funFact": "Sports bags; chat always calls it Lupo."
+          "description": "A small plush in a crown and robe, known locally as the \"Loot Lord\". Luck for loot goblins.",
+          "funFact": "Another DrLupo item — chat crowned him Loot Lord for absurd container RNG. The plush is basically channel merch."
         },
-        "p2MastichinFigurine": {
-          "description": "Mastichin figurine — mustache memes turned into barter loot.",
-          "funFact": "Newer figurine line from recent wipes."
+        "p2BearBuddy": {
+          "description": "A plush bear in mini BEAR PMC camo. Tough but cute company for any fighter.",
+          "funFact": "For Mishka_Bear — the nickname became loot. Real merch sold out in minutes after fans fell in love with it."
+        },
+        "p2BakeezyCookbook": {
+          "description": "A worn cookbook full of margin notes and improvised recipes. \"BakeEzy\" on the cover.",
+          "funFact": "BakeEzy would discuss cooking with chat during slow raids. The book jokes that cuisine beats gunfights in Tarkov."
+        },
+        "p2AntiqueBook": {
+          "description": "An old leather-bound tome. Yellowed pages and text in a long-forgotten language.",
+          "funFact": "For lore nerd Kotton, one of Tarkov's earliest streamers. The text is a dev Easter egg thanking alpha testers."
         },
         "p2SheefggPiggyBank": {
-          "description": "SheefGG piggy bank — mini stash for roubles with streamer branding.",
-          "funFact": "Marked rooms and late-wipe economy flex."
-        },
-        "p2MutkevichFigurine": {
-          "description": "Politician Mutkevich figurine — satire you can hand in or flex.",
-          "funFact": "Part of the trader figurine set."
-        },
-        "p2RyzhyFigurine": {
-          "description": "Ryzhy figurine — red-scav personality as a shelf piece.",
-          "funFact": "Pairs with other «figurine» streamer items."
-        },
-        "p2DuckFigurine": {
-          "description": "Duck figurine — the mandarin-plush meme the community calls «tangerine duck».",
-          "funFact": "Event reward turned collectible barter item."
-        },
-        "p2Kc130Model": {
-          "description": "LM KC-130 model aircraft — AirwingMarine’s aviation nod.",
-          "funFact": "Labs manager office / arsenal spawns on some wipes."
+          "description": "A ceramic piggy bank with the SheefGG logo. Coins rattle inside; surprisingly sturdy.",
+          "funFact": "SheefGG runs insane ruble challenges. In-game it's functional: 1 inventory slot, 4 inner slots for cash only."
         },
         "p2YmxWater": {
-          "description": "Bottle of YMXC water — creator-branded hydration loot.",
-          "funFact": "Food spawns and ration crates on Customs and beyond."
+          "description": "A bottle of pristine artesian water branded YMXC. Quenches thirst in Tarkov's hot summers.",
+          "funFact": "Dedicated to Chinese streamer YMXC — a nod to Asia's huge role in Tarkov's growth."
+        },
+        "p2LupoCoffee": {
+          "description": "A tin of premium coffee beans from Dr. Lupo. The smell alone could revive a dead PMC.",
+          "funFact": "DrLupo's third item — he loves good coffee. IRL his coffee brand donates to St. Jude Children's Hospital."
         },
         "p2GigabeefMeat": {
-          "description": "Can of GigaBeef meat — tushonka energy with streamer label.",
-          "funFact": "Ration crates; wipe 1.1 streamer food trio."
+          "description": "High-calorie military stew. \"GigaBeef\" on the label — filling and reliable.",
+          "funFact": "For GigaBeef's deep-dive mechanics content. The stew can is a metaphor for dense, nutritious videos."
+        },
+        "p2RatCola": {
+          "description": "Highly carbonated cola-flavored energy drink. Favorite of local \"rats\" camping exits.",
+          "funFact": "General Sam popularized rat play. The can shows a rat; RatCola is the unofficial anthem of campers."
+        },
+        "p2EnglishTea42": {
+          "description": "A pack of elite English tea, \"42 Signature Blend\". Refined taste amid a ruined city.",
+          "funFact": "For Sacriel — 42 is his favorite number (Hitchhiker's Guide). True Brit; tea on nearly every stream."
         },
         "p2FrenchBaguette": {
-          "description": "French bakery baguette — Cocaoo_’s long bread for short raids.",
-          "funFact": "Food spawns; part of the 2026 food streamer set."
-        },
-        "p2HolodilnickBag": {
-          "description": "Mr. Holodilnick thermal bag — lunchbox loot with creator branding.",
-          "funFact": "Thermal bag slot; keeps the meme cold."
-        },
-        "p2InseqWrench": {
-          "description": "Inseq gas pipe wrench — adjustable wrench with streamer paint.",
-          "funFact": "Technical crates; bright red tool flex."
+          "description": "A crispy French baguette from a local bakery. Somehow still fresh in the chaos.",
+          "funFact": "For French streamer Mika. Chat joked the baguet was the deadliest melee weapon thanks to its stiff, long model."
         },
         "p2Fireklean": {
-          "description": "#FireKlean gun lube — Klean’s iconic gold tube.",
-          "funFact": "Labs tech / streamer item classic since 2018."
+          "description": "Premium synthetic gun oil for cleaning and lubrication. Smooth action even in hard frost.",
+          "funFact": "The first streamer item in Tarkov history — for Klean. Real-world FireKlean even sued bloggers who said it was just cooking oil."
         },
         "p2DeadlyslobBeardOil": {
-          "description": "Deadlyslob’s beard oil — OG streamer item from early wipes.",
-          "funFact": "Shoreline and interchange counters; collector veteran bait."
+          "description": "Deadlyslob's tactical beard oil. Soft hair and a woody, rugged scent.",
+          "funFact": "For Canadian pioneer DeadlySlob. His beard is iconic — Nikita Buyanov personally signed off on the oil."
         },
         "p2LvndmarkRatPoison": {
-          "description": "LVNDMARK’s rat poison — meme consumable with serious flea price.",
-          "funFact": "Sports bags and filing cabinets."
+          "description": "LVNDMARK-brand rodent poison. Highly toxic — handle with care.",
+          "funFact": "LVNDMARK hates rat play. Devs trolled him with rat poison as his named item."
         },
-        "p2MazoniDumbbell": {
-          "description": "Mazoni golden dumbbell — gym bro loot for hideout flex.",
-          "funFact": "Safes; cultist circle FIR tricks on some wipes."
+        "p2InseqWrench": {
+          "description": "A heavy professional pipe wrench painted bright red. \"Inseq\" stamped on the handle.",
+          "funFact": "Polish streamer Inseq — red wrench nods to Half-Life and Gordon Freeman's crowbar."
         },
         "p2TigzresqSplint": {
-          "description": "Tigzresq splint — medical streamer item for leg meta jokes.",
-          "funFact": "Medical spawns across maps."
+          "description": "Elastic Tigzresq splint for fractures. Quick to apply, holds the limb steady.",
+          "funFact": "Tigz breaks legs constantly with stunt jumps — the splint is gentle trolling of his playstyle."
         },
-        "p2MissamForkliftKey": {
-          "description": "Missam forklift key — DanExert / Missam forklift meme key.",
-          "funFact": "Jacket pockets; tiny key, big chat reaction."
-        },
-        "p2VeritasGuitarPick": {
-          "description": "Veritas guitar pick — tiny loot, huge streamer recognition.",
-          "funFact": "Safes and Labs saferoom routes."
-        },
-        "p2TamatthiKunai": {
-          "description": "Tamatthi kunai knife replica — melee memento, not meta, all style.",
-          "funFact": "Safes; streamer item since 2024 drops."
+        "p2OldFiresteel": {
+          "description": "Old reliable magnesium firesteel. Fire in any weather when matches are soaked.",
+          "funFact": "For survivalist Eroktic, famous for yelling \"Fire! Fire!\" during early Tarkov firefights."
         },
         "p2DundukFloppy": {
-          "description": "Dunduk floppy disk — retro storage for Tarkov.Help vibes.",
-          "funFact": "Filing cabinets and safes."
+          "description": "An old 3.5\" floppy labeled \"Dunduk\" in marker. Secrets or an old game — who knows.",
+          "funFact": "For Russian streamer Dunduk — a floppy in the SSD era jokes about his old-school tactics."
+        },
+        "p2Golden1GPhone": {
+          "description": "Exclusive smartphone in solid gold. Dead electronics, excellent bullion.",
+          "funFact": "Summit1g's iconic phone-check during raids got his PMC killed constantly — hence the golden 1GPhone."
         },
         "p2DesmondpilakCd": {
-          "description": "DesmondPilak CD — album loot from the Tarkov DJ.",
-          "funFact": "Safe spawns; audio meme item."
+          "description": "A CD in a cracked case. \"DesmondPilak\" scrawled on the disc.",
+          "funFact": "DesmondPilak loves retro music and played old tracks on long raids — the CD is that vibe."
         },
         "p2CyborgKillerVhs": {
-          "description": "Cassette with «Cyborg Killer» — Проходимец VHS collectable.",
-          "funFact": "Filing cabinets; VHS streamer nostalgia."
-        },
-        "p2SilverBadge": {
-          "description": "Silver Badge — polished streamer medallion.",
-          "funFact": "Older collector piece; still a status slot."
+          "description": "Rare VHS of a late-80s action cult classic. Video-store era treasure.",
+          "funFact": "\"Cyborg Killer\" is a community meme for scarily accurate Scav bots that headshoted through bushes across the map."
         },
         "p2WzWallet": {
-          "description": "WZ Wallet — WillerZ wallet loot.",
-          "funFact": "Scav pockets; economy streamer classic."
+          "description": "Worn leather wallet embossed WZ. Hidden pockets for valuable bills or cards.",
+          "funFact": "WillerZ parkour king — wallet nods to stashes in impossible spots via geometry bugs."
         },
-        "p2BatteredAntiqueBook": {
-          "description": "Battered antique book — DobbyKillStreak’s dusty tome.",
-          "funFact": "Safe loot; quest hand-in history on some accounts."
+        "p2GingyKeychain": {
+          "description": "Handmade fabric key pouch with a Gingy print. Keeps small keys together.",
+          "funFact": "One of the few useful streamer items — a real key container early wipe, not just a trinket."
+        },
+        "p2MissamForkliftKey": {
+          "description": "Small key stamped with Missam's logo. Starts a diesel forklift — in theory.",
+          "funFact": "Players hunted Factory for a drivable forklift quest for ages — it's just a collectible souvenir."
+        },
+        "p2VeritasGuitarPick": {
+          "description": "Veritas-branded guitar pick, tough plastic, barely worn.",
+          "funFact": "Veritas is a pro musician and dev of the Battle Buddy Tarkov app."
+        },
+        "p2BaddieRedBeard": {
+          "description": "Bright red fake beard. Belonged to some eccentric local survivor.",
+          "funFact": "Baddie's real ginger beard — equippable in-game and visible from a kilometer away."
+        },
+        "p2TamatthiKunai": {
+          "description": "Souvenir kunai replica. Soft metal, useless in combat, looks cool.",
+          "funFact": "Tamatthi loves anime — the kunai mocks useless mall-ninja loot in a military sim."
+        },
+        "p2Kc130Model": {
+          "description": "Scale model of a Lockheed KC-130 transport. Detailed aviation souvenir.",
+          "funFact": "Onepeg patch/economy breakdowns — the KC-130 is the plane that drops airdrops in Tarkov."
+        },
+        "p2SilverBadge": {
+          "description": "Old award token of fine silver with heraldic engraving on the face.",
+          "funFact": "DeadlySlob's second item — originally meant as a prize for internal streamer hardcore events."
+        },
+        "p2AntiqueAxe": {
+          "description": "Old forged axe with carved handle. Blade still razor sharp.",
+          "funFact": "For Grimmmz — added during the \"hatchet runners\" era of naked melee loot sprints."
+        },
+        "p2GoldenRooster": {
+          "description": "Porcelain rooster figurine gilded with gold leaf. Rich Tarkov citizens hid these in safes.",
+          "funFact": "Became a Collector quest item — homage to the \"rooster\" meme for noisy newbie PMCs in RU chat."
+        },
+        "p2GoldenEgg": {
+          "description": "Heavy gold jewelry piece studded with small gems. Any looter's dream.",
+          "funFact": "BadJuJu's \"steel balls\" joke — what you need to solo Labs against cheaters and Raiders."
         }
       },
       "filterAll": "All categories",
       "categories": {
         "gear": "Gear, masks & headwear",
-        "figurines": "Figurines & plushies",
+        "figurines": "Figurines, toys & books",
         "food": "Food & drinks",
-        "tools": "Tools & household",
-        "valuables": "Valuables & electronics"
+        "tools": "Tools, chemicals & medicine",
+        "electronics": "Electronics, containers & keys",
+        "valuables": "Valuables & souvenirs"
       }
     }
   },

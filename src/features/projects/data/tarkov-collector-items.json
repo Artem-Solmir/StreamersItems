@@ -1,0 +1,442 @@
+[
+  {
+    "id": "p2-nut-sack-balaclava",
+    "localeKey": "p2NutSackBalaclava",
+    "name": "Nut Sack balaclava",
+    "file": "nut-sack-balaclava.webp",
+    "itemGroup": "gear",
+    "streamerName": "TheBurntPeanut",
+    "twitchLogin": "theburntpeanut",
+    "rarity": "epic"
+  },
+  {
+    "id": "p2-domontovich-ushanka",
+    "localeKey": "p2DomontovichUshanka",
+    "name": "Domontovich ushanka hat",
+    "file": "domontovich-ushanka.webp",
+    "itemGroup": "gear",
+    "streamerName": "Domontovich",
+    "twitchLogin": "domontovich",
+    "rarity": "rare"
+  },
+  {
+    "id": "p2-glorious-e-mask",
+    "localeKey": "p2GloriousEMask",
+    "name": "Glorious E Lightweight Armored Mask",
+    "file": "glorious-e-lightweight-armored-mask.png",
+    "itemGroup": "gear",
+    "streamerName": "Glorious_E",
+    "twitchLogin": "glorious_e",
+    "rarity": "epic"
+  },
+  {
+    "id": "p2-pestily-mask",
+    "localeKey": "p2PestilyMask",
+    "name": "Pestily plague mask",
+    "file": "pestily-plague-mask.png",
+    "itemGroup": "gear",
+    "streamerName": "Pestily",
+    "twitchLogin": "pestily",
+    "rarity": "legendary"
+  },
+  {
+    "id": "p2-shroud-half-mask",
+    "localeKey": "p2ShroudHalfMask",
+    "name": "Shroud half-mask",
+    "file": "shroud-half-mask.png",
+    "itemGroup": "gear",
+    "streamerName": "Shroud",
+    "twitchLogin": "shroud",
+    "rarity": "epic"
+  },
+  {
+    "id": "p2-smoke-balaclava",
+    "localeKey": "p2SmokeBalaclava",
+    "name": "Smoke balaclava",
+    "file": "smoke-balaclava.png",
+    "itemGroup": "gear",
+    "streamerName": "Smoke",
+    "twitchLogin": "smoke",
+    "rarity": "rare"
+  },
+  {
+    "id": "p2-johnb-glasses",
+    "localeKey": "p2JohnbGlasses",
+    "name": "JohnB Liquid DNB glasses",
+    "file": "johnb-liquid-dnb-glasses.png",
+    "itemGroup": "gear",
+    "streamerName": "John B",
+    "twitchLogin": "johnb",
+    "rarity": "rare"
+  },
+  {
+    "id": "p2-viibiin-sneaker",
+    "localeKey": "p2ViibiinSneaker",
+    "name": "Viibiin sneaker",
+    "file": "viibiin-sneaker.png",
+    "itemGroup": "gear",
+    "streamerName": "Viibiin",
+    "twitchLogin": "viibiin",
+    "rarity": "rare"
+  },
+  {
+    "id": "p2-drd-body-armor",
+    "localeKey": "p2DrdBodyArmor",
+    "name": "DRD body armor",
+    "file": "drd-body-armor.png",
+    "itemGroup": "gear",
+    "streamerName": "DrLupo",
+    "twitchLogin": "drlupo",
+    "rarity": "epic"
+  },
+  {
+    "id": "p2-fake-mustache",
+    "localeKey": "p2FakeMustache",
+    "name": "Fake mustache",
+    "file": "fake-mustache.png",
+    "itemGroup": "gear",
+    "streamerName": "Sequisha",
+    "twitchLogin": "sequisha",
+    "rarity": "common"
+  },
+  {
+    "id": "p2-raven-figurine",
+    "localeKey": "p2RavenFigurine",
+    "name": "Raven figurine",
+    "file": "raven-figurine.png",
+    "itemGroup": "figurines",
+    "streamerName": "Markstrom",
+    "twitchLogin": "markstrom",
+    "rarity": "legendary"
+  },
+  {
+    "id": "p2-axel-parrot",
+    "localeKey": "p2AxelParrot",
+    "name": "Axel parrot figurine",
+    "file": "axel-parrot-figurine.png",
+    "itemGroup": "figurines",
+    "streamerName": "Axel_TV",
+    "twitchLogin": "axel_tv",
+    "rarity": "rare"
+  },
+  {
+    "id": "p2-loot-lord-plushie",
+    "localeKey": "p2LootLordPlushie",
+    "name": "Loot Lord plushie",
+    "file": "loot-lord-plushie.png",
+    "itemGroup": "figurines",
+    "streamerName": "DrLupo",
+    "twitchLogin": "drlupo",
+    "rarity": "epic"
+  },
+  {
+    "id": "p2-bear-buddy",
+    "localeKey": "p2BearBuddy",
+    "name": "BEAR Buddy plush toy",
+    "file": "bear-buddy-plush-toy.png",
+    "itemGroup": "figurines",
+    "streamerName": "Mishka_Bear",
+    "twitchLogin": "mishka_bear",
+    "rarity": "rare"
+  },
+  {
+    "id": "p2-bakeezy-cookbook",
+    "localeKey": "p2BakeezyCookbook",
+    "name": "BakeEzy cook book",
+    "file": "bakeezy-cook-book.png",
+    "itemGroup": "figurines",
+    "streamerName": "BakeEzy",
+    "twitchLogin": "bakeezy",
+    "rarity": "common"
+  },
+  {
+    "id": "p2-antique-book",
+    "localeKey": "p2AntiqueBook",
+    "name": "Battered antique book",
+    "file": "battered-antique-book.png",
+    "itemGroup": "figurines",
+    "streamerName": "Kotton",
+    "twitchLogin": "kotton",
+    "rarity": "rare"
+  },
+  {
+    "id": "p2-sheefgg-piggy-bank",
+    "localeKey": "p2SheefggPiggyBank",
+    "name": "SheefGG piggy bank",
+    "file": "sheefgg-piggy-bank.png",
+    "itemGroup": "figurines",
+    "streamerName": "SheefGG",
+    "twitchLogin": "sheefgg",
+    "rarity": "legendary"
+  },
+  {
+    "id": "p2-ymx-water",
+    "localeKey": "p2YmxWater",
+    "name": "Bottle of YMXC water",
+    "file": "bottle-of-ymxc-water.png",
+    "itemGroup": "food",
+    "streamerName": "YMXC",
+    "twitchLogin": "ymxc",
+    "rarity": "rare"
+  },
+  {
+    "id": "p2-lupo-coffee",
+    "localeKey": "p2LupoCoffee",
+    "name": "Can of Dr. Lupo's coffee beans",
+    "file": "can-of-dr-lupo-coffee-beans.png",
+    "itemGroup": "food",
+    "streamerName": "DrLupo",
+    "twitchLogin": "drlupo",
+    "rarity": "epic"
+  },
+  {
+    "id": "p2-gigabeef-meat",
+    "localeKey": "p2GigabeefMeat",
+    "name": "Can of GigaBeef meat",
+    "file": "can-of-gigabeef-meat.png",
+    "itemGroup": "food",
+    "streamerName": "GigaBeef",
+    "twitchLogin": "gigabeef",
+    "rarity": "rare"
+  },
+  {
+    "id": "p2-rat-cola",
+    "localeKey": "p2RatCola",
+    "name": "Can of RatCola soda",
+    "file": "can-of-ratcola-soda.webp",
+    "itemGroup": "food",
+    "streamerName": "General Sam",
+    "twitchLogin": "generalsam",
+    "rarity": "epic"
+  },
+  {
+    "id": "p2-english-tea-42",
+    "localeKey": "p2EnglishTea42",
+    "name": "42 Signature Blend English Tea",
+    "file": "42-signature-blend-english-tea.png",
+    "itemGroup": "food",
+    "streamerName": "Sacriel",
+    "twitchLogin": "sacriel",
+    "rarity": "rare"
+  },
+  {
+    "id": "p2-french-baguette",
+    "localeKey": "p2FrenchBaguette",
+    "name": "French bakery baguette",
+    "file": "french-bakery-baguette.png",
+    "itemGroup": "food",
+    "streamerName": "Mika",
+    "twitchLogin": "mika",
+    "rarity": "common"
+  },
+  {
+    "id": "p2-fireklean",
+    "localeKey": "p2Fireklean",
+    "name": "#FireKlean gun lube",
+    "file": "fireklean-gun-lube.png",
+    "itemGroup": "tools",
+    "streamerName": "Klean",
+    "twitchLogin": "klean",
+    "rarity": "legendary"
+  },
+  {
+    "id": "p2-deadlyslob-beard-oil",
+    "localeKey": "p2DeadlyslobBeardOil",
+    "name": "Deadlyslob's beard oil",
+    "file": "deadlyslob-beard-oil.png",
+    "itemGroup": "tools",
+    "streamerName": "DeadlySlob",
+    "twitchLogin": "deadlyslob",
+    "rarity": "common"
+  },
+  {
+    "id": "p2-lvndmark-rat-poison",
+    "localeKey": "p2LvndmarkRatPoison",
+    "name": "LVNDMARK's rat poison",
+    "file": "lvndmark-rat-poison.png",
+    "itemGroup": "tools",
+    "streamerName": "LVNDMARK",
+    "twitchLogin": "lvndmark",
+    "rarity": "epic"
+  },
+  {
+    "id": "p2-inseq-wrench",
+    "localeKey": "p2InseqWrench",
+    "name": "Inseq gas pipe wrench",
+    "file": "inseq-gas-pipe-wrench.png",
+    "itemGroup": "tools",
+    "streamerName": "Inseq",
+    "twitchLogin": "inseq",
+    "rarity": "rare"
+  },
+  {
+    "id": "p2-tigzresq-splint",
+    "localeKey": "p2TigzresqSplint",
+    "name": "Tigzresq splint",
+    "file": "tigzresq-splint.webp",
+    "itemGroup": "tools",
+    "streamerName": "Tigzresq",
+    "twitchLogin": "tigzresq",
+    "rarity": "rare"
+  },
+  {
+    "id": "p2-old-firesteel",
+    "localeKey": "p2OldFiresteel",
+    "name": "Old firesteel",
+    "file": "old-firesteel.png",
+    "itemGroup": "tools",
+    "streamerName": "Eroktic",
+    "twitchLogin": "eroktic",
+    "rarity": "rare"
+  },
+  {
+    "id": "p2-dunduk-floppy",
+    "localeKey": "p2DundukFloppy",
+    "name": "Dunduk floppy disk",
+    "file": "dunduk-floppy-disk.png",
+    "itemGroup": "electronics",
+    "streamerName": "Dunduk",
+    "twitchLogin": "dunduk",
+    "rarity": "epic"
+  },
+  {
+    "id": "p2-golden-1gphone",
+    "localeKey": "p2Golden1GPhone",
+    "name": "Golden 1GPhone smartphone",
+    "file": "golden-1gphone-smartphone.png",
+    "itemGroup": "electronics",
+    "streamerName": "summit1g",
+    "twitchLogin": "summit1g",
+    "rarity": "legendary"
+  },
+  {
+    "id": "p2-desmondpilak-cd",
+    "localeKey": "p2DesmondpilakCd",
+    "name": "DesmondPilak CD",
+    "file": "desmondpilak-cd.png",
+    "itemGroup": "electronics",
+    "streamerName": "DesmondPilak",
+    "twitchLogin": "desmondpilak",
+    "rarity": "rare"
+  },
+  {
+    "id": "p2-cyborg-killer-vhs",
+    "localeKey": "p2CyborgKillerVhs",
+    "name": "Video cassette with the Cyborg Killer movie",
+    "file": "cyborg-killer-vhs.png",
+    "itemGroup": "electronics",
+    "streamerName": "Bullseye",
+    "twitchLogin": "bullseye",
+    "rarity": "epic"
+  },
+  {
+    "id": "p2-wz-wallet",
+    "localeKey": "p2WzWallet",
+    "name": "WZ Wallet",
+    "file": "wz-wallet.png",
+    "itemGroup": "electronics",
+    "streamerName": "WillerZ",
+    "twitchLogin": "willerz",
+    "rarity": "epic"
+  },
+  {
+    "id": "p2-gingy-keychain",
+    "localeKey": "p2GingyKeychain",
+    "name": "Gingy keychain",
+    "file": "gingy-keychain.png",
+    "itemGroup": "electronics",
+    "streamerName": "Gingy",
+    "twitchLogin": "gingy",
+    "rarity": "rare"
+  },
+  {
+    "id": "p2-missam-forklift-key",
+    "localeKey": "p2MissamForkliftKey",
+    "name": "Missam forklift key",
+    "file": "missam-forklift-key.png",
+    "itemGroup": "electronics",
+    "streamerName": "Missam",
+    "twitchLogin": "missam",
+    "rarity": "rare"
+  },
+  {
+    "id": "p2-veritas-guitar-pick",
+    "localeKey": "p2VeritasGuitarPick",
+    "name": "Veritas guitar pick",
+    "file": "veritas-guitar-pick.png",
+    "itemGroup": "valuables",
+    "streamerName": "Veritas",
+    "twitchLogin": "veritas",
+    "rarity": "legendary"
+  },
+  {
+    "id": "p2-baddie-red-beard",
+    "localeKey": "p2BaddieRedBeard",
+    "name": "Baddie's red beard",
+    "file": "baddie-red-beard.png",
+    "itemGroup": "valuables",
+    "streamerName": "Baddie",
+    "twitchLogin": "baddie",
+    "rarity": "rare"
+  },
+  {
+    "id": "p2-tamatthi-kunai",
+    "localeKey": "p2TamatthiKunai",
+    "name": "Tamatthi kunai knife replica",
+    "file": "tamatthi-kunai-replica.png",
+    "itemGroup": "valuables",
+    "streamerName": "Tamatthi",
+    "twitchLogin": "tamatthi",
+    "rarity": "common"
+  },
+  {
+    "id": "p2-kc130-model",
+    "localeKey": "p2Kc130Model",
+    "name": "LM KC-130 model aircraft",
+    "file": "lm-kc-130-model-aircraft.png",
+    "itemGroup": "valuables",
+    "streamerName": "Onepeg",
+    "twitchLogin": "onepeg",
+    "rarity": "legendary"
+  },
+  {
+    "id": "p2-silver-badge",
+    "localeKey": "p2SilverBadge",
+    "name": "Silver Badge",
+    "file": "silver-badge.png",
+    "itemGroup": "valuables",
+    "streamerName": "DeadlySlob",
+    "twitchLogin": "deadlyslob",
+    "rarity": "secret"
+  },
+  {
+    "id": "p2-antique-axe",
+    "localeKey": "p2AntiqueAxe",
+    "name": "Antique axe",
+    "file": "antique-axe.png",
+    "itemGroup": "valuables",
+    "streamerName": "Grimmmz",
+    "twitchLogin": "grimmmz",
+    "rarity": "legendary"
+  },
+  {
+    "id": "p2-golden-rooster",
+    "localeKey": "p2GoldenRooster",
+    "name": "Golden rooster figurine",
+    "file": "golden-rooster-figurine.png",
+    "itemGroup": "valuables",
+    "streamerName": "Community",
+    "twitchLogin": "community",
+    "rarity": "epic"
+  },
+  {
+    "id": "p2-golden-egg",
+    "localeKey": "p2GoldenEgg",
+    "name": "Golden egg",
+    "file": "golden-egg.png",
+    "itemGroup": "valuables",
+    "streamerName": "BadJuJu",
+    "twitchLogin": "badjuju",
+    "rarity": "epic"
+  }
+]

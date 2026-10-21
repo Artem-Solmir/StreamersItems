@@ -2,45 +2,48 @@ import { createWriteStream } from 'node:fs'
 import { mkdir } from 'node:fs/promises'
 import { pipeline } from 'node:stream/promises'
 import { Readable } from 'node:stream'
+import { readFileSync } from 'node:fs'
 
 /** @typedef {{ slug: string, kappaFile?: string, bsgId?: string }} AssetSpec */
 
+const catalog = JSON.parse(
+  readFileSync(
+    new URL('../src/features/projects/data/tarkov-collector-items.json', import.meta.url),
+    'utf8',
+  ),
+)
+
+/** @type {Record<string, { kappaFile?: string, bsgId?: string }>} */
+const KAPPA_OVERRIDES = {
+  'domontovich-ushanka.webp': { kappaFile: 'domontovich-ushanka-hat.webp' },
+  'bottle-of-ymxc-water.png': { kappaFile: 'bottle-of-yxmc-water.png' },
+  'can-of-dr-lupo-coffee-beans.png': {
+    kappaFile: 'can-of-dr-lupo-27s-coffee-beans.png',
+  },
+  'can-of-ratcola-soda.webp': { kappaFile: 'can-of-ratcola-soda.webp' },
+  'deadlyslob-beard-oil.png': { kappaFile: 'deadlyslob-27s-beard-oil.png' },
+  'lvndmark-rat-poison.png': { kappaFile: 'lvndmark-27s-rat-poison.png' },
+  'baddie-red-beard.png': { kappaFile: 'baddie-27s-red-beard.png' },
+  'cyborg-killer-vhs.png': {
+    kappaFile: 'video-cassette-with-the-cyborg-killer-movie.png',
+  },
+  'viibiin-sneaker.png': { bsgId: '66b37eb4acff495a29492407' },
+  'inseq-gas-pipe-wrench.png': { bsgId: '66b37f114410565a8f6789e2' },
+  'tamatthi-kunai-replica.png': {
+    kappaFile: 'tamatthi-kunai-knife-replica.png',
+  },
+}
+
 /** @type {AssetSpec[]} */
-const ASSETS = [
-  { slug: 'nut-sack-balaclava', kappaFile: 'nut-sack-balaclava.webp' },
-  { slug: 'domontovich-ushanka', kappaFile: 'domontovich-ushanka-hat.webp' },
-  { slug: 'pestily-plague-mask', kappaFile: 'pestily-plague-mask.png' },
-  { slug: 'shroud-half-mask', kappaFile: 'shroud-half-mask.png' },
-  { slug: 'johnb-liquid-dnb-glasses', kappaFile: 'johnb-liquid-dnb-glasses.png' },
-  { slug: 'viibiin-sneaker', kappaFile: 'viibiin-sneaker.png', bsgId: '66b37eb4acff495a29492407' },
-  { slug: 'press-pass-noiceguy', kappaFile: 'press-pass-issued-for-noiceguy-.png' },
-  { slug: 'raven-figurine', kappaFile: 'raven-figurine.png' },
-  { slug: 'loot-lord-plushie', kappaFile: 'loot-lord-plushie.png' },
-  { slug: 'mastichin-figurine', bsgId: '68f261f6928cd23ddf0471fd' },
-  { slug: 'sheefgg-piggy-bank', kappaFile: 'sheefgg-piggy-bank.png' },
-  { slug: 'politician-mutkevich-figurine', bsgId: '655c66e40b2de553b618d4b8' },
-  { slug: 'ryzhy-figurine', bsgId: '655c67782a1356436041c9c5' },
-  { slug: 'duck-figurine', bsgId: '697cddb414e932098005748d' },
-  { slug: 'lm-kc-130-model-aircraft', kappaFile: 'lm-kc-130-model-aircraft.png' },
-  { slug: 'bottle-of-ymxc-water', kappaFile: 'bottle-of-yxmc-water.png' },
-  { slug: 'can-of-gigabeef-meat', kappaFile: 'can-of-gigabeef-meat.png' },
-  { slug: 'french-bakery-baguette', kappaFile: 'french-bakery-baguette.png' },
-  { slug: 'mr-holodilnick-thermal-bag', bsgId: '5c093db286f7740a1b2617e3' },
-  { slug: 'inseq-gas-pipe-wrench', kappaFile: 'inseq-gas-pipe-wrench.png', bsgId: '66b37f114410565a8f6789e2' },
-  { slug: 'fireklean-gun-lube', kappaFile: 'fireklean-gun-lube.png' },
-  { slug: 'deadlyslob-beard-oil', kappaFile: 'deadlyslob-27s-beard-oil.png' },
-  { slug: 'lvndmark-rat-poison', kappaFile: 'lvndmark-27s-rat-poison.png' },
-  { slug: 'mazoni-golden-dumbbell', kappaFile: 'mazoni-golden-dumbbell.webp', bsgId: '6937edb912d456a817083e82' },
-  { slug: 'tigzresq-splint', kappaFile: 'tigzresq-splint.webp' },
-  { slug: 'missam-forklift-key', kappaFile: 'missam-forklift-key.png' },
-  { slug: 'veritas-guitar-pick', kappaFile: 'veritas-guitar-pick.png' },
-  { slug: 'dunduk-floppy-disk', kappaFile: 'dunduk-floppy-disk.png' },
-  { slug: 'desmondpilak-cd', kappaFile: 'desmondpilak-cd.png' },
-  { slug: 'cyborg-killer-vhs', kappaFile: 'video-cassette-with-the-cyborg-killer-movie.png' },
-  { slug: 'silver-badge', kappaFile: 'silver-badge.png' },
-  { slug: 'wz-wallet', kappaFile: 'wz-wallet.png' },
-  { slug: 'battered-antique-book', kappaFile: 'battered-antique-book.png' },
-]
+const ASSETS = catalog.map((entry) => {
+  const slug = entry.file.replace(/\.(webp|png|jpg)$/i, '')
+  const override = KAPPA_OVERRIDES[entry.file] ?? {}
+  return {
+    slug,
+    kappaFile: override.kappaFile ?? entry.file,
+    bsgId: override.bsgId,
+  }
+})
 
 const OUT_DIR = new URL('../public/items/tarkov/collector/', import.meta.url)
 

@@ -13,3 +13,8 @@ export const getProjectBySlug = (
   slug: string,
 ): StreamerItemsProject | undefined =>
   STREAMER_ITEM_PROJECTS.find((project) => project.slug === slug)
+
+export const getProjectById = (
+  id: string,
+): StreamerItemsProject | undefined =>
+  STREAMER_ITEM_PROJECTS.find((project) => project.id === id)

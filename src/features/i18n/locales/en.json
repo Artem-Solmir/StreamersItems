@@ -2,6 +2,11 @@
   "meta": {
     "title": "StreamersItems"
   },
+  "sidebar": {
+    "ariaLabel": "Site navigation",
+    "navLabel": "Games",
+    "gamesTitle": "Games"
+  },
   "language": {
     "label": "Language",
     "en": "English",

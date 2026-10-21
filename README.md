@@ -41,14 +41,32 @@ npm run dev
 
 В `vercel.json` fallback на `index.html` срабатывает только для запросов с `Accept: text/html`, чтобы `/items/*` и другие файлы из `public/` не подменялись HTML.
 
-### Если деплой не стартует после merge в `main`
+### Если автодеплой из GitHub не срабатывает
 
-1. [Vercel Dashboard](https://vercel.com) → проект **StreamersItems** → **Deployments** — есть ли деплой для последнего коммита на `main`?
-2. **Settings → Git** — репозиторий подключён, **Production Branch** = `main`.
-3. Нет ли **Ignored Build Step**, который отменяет сборку.
-4. **Deployments → … → Redeploy** на нужном коммите или пустой push в `main`, чтобы снова сработал webhook.
+**Симптом:** merge в `main` есть, а на [streamers-items.vercel.app](https://streamers-items.vercel.app) старый JS-бандл / 404 на новых файлах в `public/`. В GitHub у коммита **нет** Vercel check.
 
-На GitHub у последних merge часто **нет** Vercel check — значит webhook не доходит; переподключение Git в Vercel обычно помогает.
+**Вариант A — починить Git в Vercel**
+
+1. [Vercel Dashboard](https://vercel.com) → проект → **Deployments** — есть ли деплой для SHA на `main`?
+2. **Settings → Git** → **Disconnect** и снова **Connect** репозиторий `Artem-Solmir/StreamersItems`, **Production Branch** = `main`.
+3. **Settings → Git → Ignored Build Step** — поле пустое (или не блокирует `main`).
+4. **Deployments → … → Redeploy** для последнего коммита `main`.
+
+**Вариант B — автодеплой через GitHub Actions (рекомендуется, если webhook мёртв)**
+
+Workflow: [`.github/workflows/vercel-production.yml`](.github/workflows/vercel-production.yml) — на каждый push в `main` (и вручную **Actions → Run workflow**).
+
+Один раз добавьте **GitHub → Repository → Settings → Secrets and variables → Actions**:
+
+| Secret | Где взять |
+|--------|-----------|
+| `VERCEL_TOKEN` | [vercel.com/account/tokens](https://vercel.com/account/tokens) → Create (scope: deploy) |
+| `VERCEL_ORG_ID` | Vercel → Team Settings → **Team ID** (личный аккаунт: Settings → General) |
+| `VERCEL_PROJECT_ID` | Project **StreamersItems** → Settings → General → **Project ID** |
+
+После сохранения секретов: **Actions → Vercel production deploy → Run workflow** или любой push в `main`.
+
+Локально те же ID лежат в `.vercel/project.json` после `npx vercel link` (файл не коммитится).
 
 ### Analytics и Speed Insights
 

@@ -1,0 +1,442 @@
+{
+  "p2NutSackBalaclava": {
+    "ru": {
+      "description": "Балаклава Nut Sack от TheBurntPeanut — мемный headwear из пула стримерских предметов.",
+      "funFact": "Добавлена в конце 2025; спавнится на Scav, как другая streamer-косметика."
+    },
+    "en": {
+      "description": "TheBurntPeanut’s Nut Sack balaclava — meme-tier headwear from the streamer item pool.",
+      "funFact": "Added in late 2025; spawns on Scavs like other streamer cosmetics."
+    }
+  },
+  "p2DomontovichUshanka": {
+    "ru": {
+      "description": "Ушанка Домонтовича — зимний cosplay с авторской меткой.",
+      "funFact": "Часть расширяющегося списка предметов русскоязычных стримеров."
+    },
+    "en": {
+      "description": "Domontovich ushanka — cold-raid cosplay with a creator tag.",
+      "funFact": "Part of the expanding streamer item roster tied to Russian creators."
+    }
+  },
+  "p2GloriousEMask": {
+    "ru": {
+      "description": "Лёгкая бронемаска Glorious E — face cover стримера Glorious_E с высоким шансом ricochet.",
+      "funFact": "Дроп с Scav; маска для тех, кто не отступает из перестрелки."
+    },
+    "en": {
+      "description": "Glorious E lightweight armored mask — face cover tied to Glorious_E with strong ricochet odds.",
+      "funFact": "Scav loot; built for creators who never back down from a fight."
+    }
+  },
+  "p2PestilyMask": {
+    "ru": {
+      "description": "Маска чумного доктора Pestily — узнаётся в чате раньше голоса.",
+      "funFact": "Классика streamer items с ранних вайпов."
+    },
+    "en": {
+      "description": "Pestily plague mask — the mask chat recognizes before the voice line.",
+      "funFact": "Classic streamer item since early Tarkov wipes."
+    }
+  },
+  "p2ShroudHalfMask": {
+    "ru": {
+      "description": "Полумаска Shroud — минимум маски, максимум узнаваемости.",
+      "funFact": "Дроп с Scav; любимый flex-слот."
+    },
+    "en": {
+      "description": "Shroud half-mask — minimal face cover, maximum streamer recognition.",
+      "funFact": "Drops from Scavs; a staple flex slot."
+    }
+  },
+  "p2SmokeBalaclava": {
+    "ru": {
+      "description": "Балаклава Smoke — отсылка к стримеру Smoke из мира Tarkov и DayZ.",
+      "funFact": "В игре с патча 12.9; один из старейших cosmetic streamer items."
+    },
+    "en": {
+      "description": "Smoke balaclava — a nod to Smoke, the Tarkov and DayZ streamer.",
+      "funFact": "In-game since patch 12.9; one of the oldest streamer cosmetics."
+    }
+  },
+  "p2JohnbGlasses": {
+    "ru": {
+      "description": "Очки JohnB Liquid DNB — фирменные «очки Dunduk» в луте.",
+      "funFact": "В комьюнити часто зовут «очки Dunduk»."
+    },
+    "en": {
+      "description": "JohnB Liquid DNB glasses — Dunduk’s signature shades as in-game loot.",
+      "funFact": "Often called «Dunduk glasses» in the community."
+    }
+  },
+  "p2ViibiinSneaker": {
+    "ru": {
+      "description": "Кроссовки Viibiin — обувь, которую рады видеть в хайлайте.",
+      "funFact": "Сейфы и куртки прячут их с удовольствием."
+    },
+    "en": {
+      "description": "Viibiin sneaker — footwear loot that feels like a highlight reel drop.",
+      "funFact": "Safes and jacket raids love hiding these."
+    }
+  },
+  "p2DrdBodyArmor": {
+    "ru": {
+      "description": "Бронежилет DRD — стиль Dr. Disrespect: класс 3 как PACA, но куда заметнее.",
+      "funFact": "Spawн на Scav; фиолетово-чёрный силуэт видно издалека."
+    },
+    "en": {
+      "description": "DRD body armor — Dr. Disrespect styling: class 3 like a PACA, impossible to miss.",
+      "funFact": "Scav spawns; the purple-and-black silhouette gives you away."
+    }
+  },
+  "p2FakeMustache": {
+    "ru": {
+      "description": "Накладные усы Sequisha — face cover для лёгкого RP и мемов.",
+      "funFact": "Иногда уже на Scav; удобно фармить через scav raids."
+    },
+    "en": {
+      "description": "Sequisha’s fake mustache — face cover for light RP and meme raids.",
+      "funFact": "Scavs sometimes spawn wearing it; easy to farm on scav runs."
+    }
+  },
+  "p2RavenFigurine": {
+    "ru": {
+      "description": "Статуэтка ворона — трофей победы Markstrom на турнире.",
+      "funFact": "Дорогой safe spawn; чистый flex."
+    },
+    "en": {
+      "description": "Raven figurine — trophy from Markstrom’s tournament win.",
+      "funFact": "High-value safe spawn; pure flex."
+    }
+  },
+  "p2AxelParrot": {
+    "ru": {
+      "description": "Фигурка попугая Axel — collectible из сейфов в духе других figurine-предметов.",
+      "funFact": "Нужна и для Collector, и для квестов вроде Living High is Not a Crime."
+    },
+    "en": {
+      "description": "Axel parrot figurine — a safe-spawn collectible like the other figurine streamer items.",
+      "funFact": "Required for Collector and quests such as Living High is Not a Crime."
+    }
+  },
+  "p2LootLordPlushie": {
+    "ru": {
+      "description": "Плюш Loot Lord — маскот AquaFPS / Lupo.",
+      "funFact": "Sports bag; чат зовёт его Lupo."
+    },
+    "en": {
+      "description": "Loot Lord plushie — AquaFPS / Lupo mascot in plush form.",
+      "funFact": "Sports bags; chat always calls it Lupo."
+    }
+  },
+  "p2BearBuddy": {
+    "ru": {
+      "description": "Плюш BEAR Buddy от Anne Munition — 2×2 игрушка с отсылкой к фракции BEAR.",
+      "funFact": "Sports bag; один из крупных plush-предметов в списке Collector."
+    },
+    "en": {
+      "description": "BEAR Buddy plush from Anne Munition — a 2×2 toy nodding to the BEAR faction.",
+      "funFact": "Sports bags; one of the bulky plushies on the Collector list."
+    }
+  },
+  "p2BakeezyCookbook": {
+    "ru": {
+      "description": "Поваренная книга BakeEzy — barter/craft-лут; QR на обложке ведёт на его YouTube.",
+      "funFact": "Safes; используется в hideout, у Ragman и в рецептах."
+    },
+    "en": {
+      "description": "BakeEzy cook book — barter and craft loot with a QR on the cover linking to his YouTube.",
+      "funFact": "Safes; used in hideout upgrades, Ragman barters, and crafts."
+    }
+  },
+  "p2AntiqueBook": {
+    "ru": {
+      "description": "Потрепанная антикварная книга — том DobbyKillStreak.",
+      "funFact": "Safe loot; история hand-in на квестах."
+    },
+    "en": {
+      "description": "Battered antique book — DobbyKillStreak’s dusty tome.",
+      "funFact": "Safe loot; quest hand-in history on some accounts."
+    }
+  },
+  "p2SheefggPiggyBank": {
+    "ru": {
+      "description": "Копилка SheefGG — мини-кейс под рубли со стримерским брендом.",
+      "funFact": "Marked rooms; flex экономики."
+    },
+    "en": {
+      "description": "SheefGG piggy bank — mini stash for roubles with streamer branding.",
+      "funFact": "Marked rooms and late-wipe economy flex."
+    }
+  },
+  "p2YmxWater": {
+    "ru": {
+      "description": "Бутылка воды YMXC — брендированная вода стримера.",
+      "funFact": "Food spawns и ration crates."
+    },
+    "en": {
+      "description": "Bottle of YMXC water — creator-branded hydration loot.",
+      "funFact": "Food spawns and ration crates on Customs and beyond."
+    }
+  },
+  "p2LupoCoffee": {
+    "ru": {
+      "description": "Банка кофейных зёрен Dr. Lupo — коллаб KingsCoast в виде ration loot.",
+      "funFact": "Ration crates и sports bags; классика food streamer items."
+    },
+    "en": {
+      "description": "Can of Dr. Lupo’s coffee beans — KingsCoast collab turned ration-crate loot.",
+      "funFact": "Ration crates and sports bags; a classic food streamer item."
+    }
+  },
+  "p2GigabeefMeat": {
+    "ru": {
+      "description": "Банка тушенки GigaBeef — стримерская тушонка.",
+      "funFact": "Ration crates; food trio 2026."
+    },
+    "en": {
+      "description": "Can of GigaBeef meat — tushonka energy with streamer label.",
+      "funFact": "Ration crates; wipe 1.1 streamer food trio."
+    }
+  },
+  "p2RatCola": {
+    "ru": {
+      "description": "RatCola General Sam — газировка про rat playstyle из его легендарного ролика.",
+      "funFact": "Sports bags; consumable, которым пользуются и chads, и rats."
+    },
+    "en": {
+      "description": "General Sam’s RatCola — soda celebrating the rat playstyle from his famous video.",
+      "funFact": "Sports bags; a consumable chads and rats drink alike."
+    }
+  },
+  "p2EnglishTea42": {
+    "ru": {
+      "description": "English Tea 42 Signature Blend Sacriel — чай «42nd» для military-сообщества стримера.",
+      "funFact": "Ration crates; иногда barter у Therapist и craft-рецепты."
+    },
+    "en": {
+      "description": "Sacriel’s 42 Signature Blend English Tea — the «42nd» tea for his military-minded community.",
+      "funFact": "Ration crates; sometimes Therapist barter and craft recipes."
+    }
+  },
+  "p2FrenchBaguette": {
+    "ru": {
+      "description": "Французский багет — длинный хлеб Cocaoo_.",
+      "funFact": "Food spawns; часть food streamer набора."
+    },
+    "en": {
+      "description": "French bakery baguette — Cocaoo_’s long bread for short raids.",
+      "funFact": "Food spawns; part of the 2026 food streamer set."
+    }
+  },
+  "p2Fireklean": {
+    "ru": {
+      "description": "#FireKlean — золотая смазка Klean.",
+      "funFact": "Labs tech; классика с 2018."
+    },
+    "en": {
+      "description": "#FireKlean gun lube — Klean’s iconic gold tube.",
+      "funFact": "Labs tech / streamer item classic since 2018."
+    }
+  },
+  "p2DeadlyslobBeardOil": {
+    "ru": {
+      "description": "Масло для бороды Deadlyslob — OG streamer item.",
+      "funFact": "Shoreline / Interchange; bait для вeteranов."
+    },
+    "en": {
+      "description": "Deadlyslob’s beard oil — OG streamer item from early wipes.",
+      "funFact": "Shoreline and interchange counters; collector veteran bait."
+    }
+  },
+  "p2LvndmarkRatPoison": {
+    "ru": {
+      "description": "Крысиный яд LVNDMARK — мем с серьёзной ценой на барахолке.",
+      "funFact": "Sports bags и шкафы."
+    },
+    "en": {
+      "description": "LVNDMARK’s rat poison — meme consumable with serious flea price.",
+      "funFact": "Sports bags and filing cabinets."
+    }
+  },
+  "p2InseqWrench": {
+    "ru": {
+      "description": "Красный разводной ключ Inseq — яркий tool flex.",
+      "funFact": "Technical crates."
+    },
+    "en": {
+      "description": "Inseq gas pipe wrench — adjustable wrench with streamer paint.",
+      "funFact": "Technical crates; bright red tool flex."
+    }
+  },
+  "p2TigzresqSplint": {
+    "ru": {
+      "description": "Шина Tigzresq — мед streamer item про ноги.",
+      "funFact": "Medical spawns."
+    },
+    "en": {
+      "description": "Tigzresq splint — medical streamer item for leg meta jokes.",
+      "funFact": "Medical spawns across maps."
+    }
+  },
+  "p2OldFiresteel": {
+    "ru": {
+      "description": "Старое кресало Old Firesteel dayzru — streamer item с гравировкой автора.",
+      "funFact": "RB-AM/RB-GN на Reserve; с patch 1.0.5 не для Kappa, но всё ещё в луте."
+    },
+    "en": {
+      "description": "Old Firesteel from dayzru — a streamer item engraved with the creator’s name.",
+      "funFact": "Reserve RB-AM/RB-GN; off the Kappa list since 1.0.5 but still lootable."
+    }
+  },
+  "p2DundukFloppy": {
+    "ru": {
+      "description": "Дискета Dunduk — retro под Tarkov.Help.",
+      "funFact": "Шкафы и сейфы."
+    },
+    "en": {
+      "description": "Dunduk floppy disk — retro storage for Tarkov.Help vibes.",
+      "funFact": "Filing cabinets and safes."
+    }
+  },
+  "p2Golden1GPhone": {
+    "ru": {
+      "description": "Golden 1GPhone Summit1G — смартфон с гравировкой 1G в tech-луте.",
+      "funFact": "Interchange Rasmussen/Techlight; высокая цена у торговцев."
+    },
+    "en": {
+      "description": "Summit1G’s Golden 1GPhone — a engraved smartphone in tech-store loot.",
+      "funFact": "Interchange Rasmussen and Techlight; traders pay well for it."
+    }
+  },
+  "p2DesmondpilakCd": {
+    "ru": {
+      "description": "CD DesmondPilak — музыкальный streamer loot.",
+      "funFact": "Safes."
+    },
+    "en": {
+      "description": "DesmondPilak CD — album loot from the Tarkov DJ.",
+      "funFact": "Safe spawns; audio meme item."
+    }
+  },
+  "p2CyborgKillerVhs": {
+    "ru": {
+      "description": "Кассета «Киборг-убийца» — VHS от Проходимца.",
+      "funFact": "Шкафы; ностальгия по VHS."
+    },
+    "en": {
+      "description": "Cassette with «Cyborg Killer» — Проходимец VHS collectable.",
+      "funFact": "Filing cabinets; VHS streamer nostalgia."
+    }
+  },
+  "p2WzWallet": {
+    "ru": {
+      "description": "Кошелёк WZ — wallet loot WillerZ.",
+      "funFact": "Карманы Scav; классика экономики."
+    },
+    "en": {
+      "description": "WZ Wallet — WillerZ wallet loot.",
+      "funFact": "Scav pockets; economy streamer classic."
+    }
+  },
+  "p2GingyKeychain": {
+    "ru": {
+      "description": "Брелок Gingy — мини-контейнер на 4 ключа от стримера Gingy.",
+      "funFact": "Куртки и Scav; редкий, но полезный key stash."
+    },
+    "en": {
+      "description": "Gingy keychain — a mini container holding four keys from streamer Gingy.",
+      "funFact": "Jackets and Scavs; a rare but handy key stash."
+    }
+  },
+  "p2MissamForkliftKey": {
+    "ru": {
+      "description": "Ключ Missam — мем погрузчика DanExert.",
+      "funFact": "Куртки; маленький ключ, громкая реакция чата."
+    },
+    "en": {
+      "description": "Missam forklift key — DanExert / Missam forklift meme key.",
+      "funFact": "Jacket pockets; tiny key, big chat reaction."
+    }
+  },
+  "p2VeritasGuitarPick": {
+    "ru": {
+      "description": "Медиатор Veritas — маленький лут, большая узнаваемость.",
+      "funFact": "Safes и Labs saferoom."
+    },
+    "en": {
+      "description": "Veritas guitar pick — tiny loot, huge streamer recognition.",
+      "funFact": "Safes and Labs saferoom routes."
+    }
+  },
+  "p2BaddieRedBeard": {
+    "ru": {
+      "description": "Рыже-красная борода Baddie — wearable в духе новогодних Santa beard.",
+      "funFact": "Jackets; чистый cosmetic flex без брони."
+    },
+    "en": {
+      "description": "Baddie’s red beard — wearable gear in the spirit of holiday Santa beards.",
+      "funFact": "Jackets; pure cosmetic flex with no armor."
+    }
+  },
+  "p2TamatthiKunai": {
+    "ru": {
+      "description": "Реплика кунай Tamatthi — стиль, не meta.",
+      "funFact": "Safes; streamer item с 2024."
+    },
+    "en": {
+      "description": "Tamatthi kunai knife replica — melee memento, not meta, all style.",
+      "funFact": "Safes; streamer item since 2024 drops."
+    }
+  },
+  "p2Kc130Model": {
+    "ru": {
+      "description": "Модель LM KC-130 — отсылка AirwingMarine к авиации.",
+      "funFact": "Labs office / arsenal на некоторых вайпах."
+    },
+    "en": {
+      "description": "LM KC-130 model aircraft — AirwingMarine’s aviation nod.",
+      "funFact": "Labs manager office / arsenal spawns on some wipes."
+    }
+  },
+  "p2SilverBadge": {
+    "ru": {
+      "description": "Серебряный жетон — полированная streamer медаль.",
+      "funFact": "Старый collector piece; статусный слот."
+    },
+    "en": {
+      "description": "Silver Badge — polished streamer medallion.",
+      "funFact": "Older collector piece; still a status slot."
+    }
+  },
+  "p2AntiqueAxe": {
+    "ru": {
+      "description": "Антикварный топор Wycc220 — melee с гравировкой WYCC на лезвии и рукояти.",
+      "funFact": "Scav spawn; OG streamer item и квестовый hand-in."
+    },
+    "en": {
+      "description": "Antique axe for Wycc220 — melee with WYCC engraved on the bit and handle.",
+      "funFact": "Scav spawns; OG streamer item and quest hand-in."
+    }
+  },
+  "p2GoldenRooster": {
+    "ru": {
+      "description": "Золотой петух ChickenPrism — figurine из high-tier loot spawns.",
+      "funFact": "После patch 1.0.5 не для Kappa; нужен ×2 для hideout Scav Case и Hall of Fame."
+    },
+    "en": {
+      "description": "Golden rooster figurine for ChickenPrism — high-tier loot spawn trophy.",
+      "funFact": "Off the Kappa list since 1.0.5; you need two for Scav Case and Hall of Fame."
+    }
+  },
+  "p2GoldenEgg": {
+    "ru": {
+      "description": "Золотое яйцо MeYer — ценный collectible для Living High и Collector.",
+      "funFact": "Safes; на корпусе надпись Meyer."
+    },
+    "en": {
+      "description": "MeYer’s golden egg — a prized collectible for Living High and Collector.",
+      "funFact": "Safes; Meyer’s name is inscribed on the shell."
+    }
+  }
+}

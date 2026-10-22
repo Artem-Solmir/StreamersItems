@@ -285,6 +285,47 @@
         "electronics": "Electronics, containers & keys",
         "valuables": "Valuables & souvenirs"
       }
+    },
+    "rustLoot": {
+      "label": "Project 3",
+      "title": "Rust streamer drops & lore",
+      "subtitle": "Twitch drops and streamer skins in Rust — armor, «legal» sights, and base gadgets. Tap a slot to mark it collected.",
+      "filterAll": "All categories",
+      "categories": {
+        "armorCamo": "Streamer armor & camouflage",
+        "weaponsSights": "Weapons with «cheater» sights",
+        "buildTactical": "Living, building & tactics"
+      },
+      "items": {
+        "p3NinjaSuit": {
+          "description": "Full cloth ninja suit for hiding in the dark. Replaces your default clothing set.",
+          "funFact": "Legendary Twitch Drop for BaboAbe: craft day-one for 60 cloth and 2 sewing kits, 25% bullet protection on the whole body, replaces jacket/pants/boots/gloves — and no legal equivalent if you missed it."
+        },
+        "p3BigGrinMask": {
+          "description": "Heavy metal facemask painted with a huge toothy white grin.",
+          "funFact": "Not a drop itself — a streamer-popularized flex skin. $500–800 on Steam; die to Big Grin and you’re probably fighting a 10k-hour demon."
+        },
+        "p3Mp5OilRats": {
+          "description": "MP5 SMG in acid green with the Oil Rats logo.",
+          "funFact": "Approved «legal aimbot»: a cutout iron sight with full view vs the stock MP5 block — the $0 reflex streamers swear by."
+        },
+        "p3AkTrainwreck": {
+          "description": "Assault Rifle (AK) wrapped in neon patterns and Trainwreckstv branding.",
+          "funFact": "A PVP favorite: the front sight glows at night so you keep crosshair awareness without lasers or flashlights giving you away."
+        },
+        "p3HoboBarrel": {
+          "description": "Rusty barrel with a campfire inside — hobo romance vibes.",
+          "funFact": "Stats like a 50-wood fire, but a tall flat hitbox makes it a pocket boost for jumping enemy walls and balconies without building stairs."
+        },
+        "p3IndustrialDoor": {
+          "description": "Sheet metal door with a small rectangular window.",
+          "funFact": "Counter to door campers: peek the street through bulletproof glass without opening — no extra grates or window frames."
+        },
+        "p3PokoPlush": {
+          "description": "Cute plush you can place on the floor or bed in your base.",
+          "funFact": "Hardcore Rust hated the Pokimane drop era — streamers raided bases and left plushies everywhere to troll «too cute» decorators."
+        }
+      }
     }
   },
   "inventory": {

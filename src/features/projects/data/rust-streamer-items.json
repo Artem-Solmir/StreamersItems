@@ -1,0 +1,72 @@
+[
+  {
+    "id": "p3-ninja-suit",
+    "localeKey": "p3NinjaSuit",
+    "name": "Ninja Suit",
+    "file": "ninja-suit.png",
+    "itemGroup": "armorCamo",
+    "streamerName": "BaboAbe",
+    "twitchLogin": "baboabe",
+    "rarity": "legendary"
+  },
+  {
+    "id": "p3-big-grin-mask",
+    "localeKey": "p3BigGrinMask",
+    "name": "Big Grin Metal Facemask",
+    "file": "big-grin-facemask.png",
+    "itemGroup": "armorCamo",
+    "streamerName": "Influencer icon",
+    "twitchLogin": "rust",
+    "rarity": "secret"
+  },
+  {
+    "id": "p3-mp5-oil-rats",
+    "localeKey": "p3Mp5OilRats",
+    "name": "MP5 | Oil Rats",
+    "file": "mp5-oil-rats.png",
+    "itemGroup": "weaponsSights",
+    "streamerName": "Oil Rats",
+    "twitchLogin": "oilrats",
+    "rarity": "epic"
+  },
+  {
+    "id": "p3-ak-trainwreck",
+    "localeKey": "p3AkTrainwreck",
+    "name": "Assault Rifle | Trainwreck",
+    "file": "ak-trainwreck.png",
+    "itemGroup": "weaponsSights",
+    "streamerName": "Trainwreckstv",
+    "twitchLogin": "trainwreckstv",
+    "rarity": "legendary"
+  },
+  {
+    "id": "p3-hobo-barrel",
+    "localeKey": "p3HoboBarrel",
+    "name": "Hobo Barrel",
+    "file": "hobo-barrel.png",
+    "itemGroup": "buildTactical",
+    "streamerName": "Rust community",
+    "twitchLogin": "rust",
+    "rarity": "epic"
+  },
+  {
+    "id": "p3-industrial-door",
+    "localeKey": "p3IndustrialDoor",
+    "name": "Industrial Door",
+    "file": "industrial-door.png",
+    "itemGroup": "buildTactical",
+    "streamerName": "Twitch Drops",
+    "twitchLogin": "rust",
+    "rarity": "rare"
+  },
+  {
+    "id": "p3-poko-plush",
+    "localeKey": "p3PokoPlush",
+    "name": "Poko Plush",
+    "file": "poko-plush.png",
+    "itemGroup": "buildTactical",
+    "streamerName": "Pokimane",
+    "twitchLogin": "pokimane",
+    "rarity": "common"
+  }
+]

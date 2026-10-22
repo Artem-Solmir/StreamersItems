@@ -23,7 +23,7 @@
     "cs2Loadouts": {
       "label": "Project 1",
       "title": "Streamer CS2 loadouts",
-      "subtitle": "The first StreamersItems collection — iconic skins and knives from streamers you follow. Tap a slot to mark it collected.",
+      "subtitle": "Streamer loadouts plus CS2 skins, graffiti, stickers, and map legends — tap a slot to mark it collected.",
       "items": {
         "p1BusterGoldAk": {
           "description": "A full-gold AK from Buster’s on-stream flex loadout — the kind of skin chat spams «inspect» for.",
@@ -48,7 +48,50 @@
         "p1StarterUsp": {
           "description": "Buster’s starter USP — not the flashiest gun, but every inventory legend begins with pistol rounds.",
           "funFact": "Ticket to Hell is a community favorite for budget blue loadouts — cheap entry, big personality."
+        },
+        "p1M4Howl": {
+          "description": "The receiver features a snarling wolf. Contraband quality.",
+          "funFact": "The only Contraband skin in the game. Its art was stolen; Valve replaced the design, removed it from cases, and blocked Steam Market sales (trade only). It became a cult flex with absurd prices."
+        },
+        "p1GraffitiFlyingAwper": {
+          "description": "Wall art of a winged sniper holding a scoped AWP.",
+          "funFact": "Commemorates coldzera’s MLG Columbus 2016 jump on Mirage B site: two no-scope kills on Liquid mid-air, then two more — a swing that flipped the match."
+        },
+        "p1GraffitiDefuseInFire": {
+          "description": "Wall art of a CT burning alive while still defusing the bomb.",
+          "funFact": "Honors olofmeister at ESL One Cologne 2014: at 14–14 he held defuse through a Molotov on Overpass B and died the instant the bomb was defused for the win."
+        },
+        "p1BizonJudgementAnubis": {
+          "description": "Egyptian motifs and Anubis-inspired art. Covert (red) quality.",
+          "funFact": "The Bizon is infamous for weak armor penetration — and this is its only Covert skin. Chroma 3 openers groaned when a red AK or M4 roll turned into the «royal Bizon»."
+        },
+        "p1StickerDickstacy": {
+          "description": "Autograph sticker of pro player DickStacy from a Major.",
+          "funFact": "Valve rejected his signature art multiple times for being too explicit. He got approved with giant «DICK» text — bought in bulk for meme crafts."
+        },
+        "p1StickerHowl": {
+          "description": "Sticker showing a wolf’s head.",
+          "funFact": "Like the M4A4 Howl, the sticker was hit by a copyright claim — art replaced, old version made Contraband, and its capsule removed from the game."
+        },
+        "p1MusicEz4ence": {
+          "description": "Music kit track by Finnish band The Verkkars, dedicated to team ENCE.",
+          "funFact": "Started as a fan meme when ENCE shocked everyone at Katowice 2019. Valve added it officially — now it’s the classic MVP troll anthem."
+        },
+        "p1InfernoBananaBarrels": {
+          "description": "Map environment prop.",
+          "funFact": "Old Inferno banana had a yellow car and barrels. NiP’s Xizt kept dying to Molotovs or getting stuck there — fans called it «Xizt’s barrels». Remakes removed the car, but veterans remember."
+        },
+        "p1OverpassOlofBoost": {
+          "description": "Invisible ledge texture under the player’s feet.",
+          "funFact": "DreamHack Winter 2014: Fnatic used a three-man boost so olofmeister stood on a pixel ledge with full AWP vision at 3–12 vs LDLC. Scandal, forfeit, patch — and the «no walking on air» sign joke on Overpass."
         }
+      },
+      "filterAll": "All categories",
+      "categories": {
+        "streamerLoadouts": "Streamer loadouts",
+        "skinsGraffiti": "Skins & graffiti with history",
+        "stickersMusic": "Stickers, music & kits",
+        "mapLegends": "Legendary map lore"
       }
     },
     "tarkovLoot": {

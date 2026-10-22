@@ -1,0 +1,92 @@
+{
+  "p1M4Howl": {
+    "ru": {
+      "description": "На корпус нанесено изображение оскалившегося волка. Контрабандное качество.",
+      "funFact": "Это единственный скин качества «Контрабанда» в игре. Его авторы украли чужой рисунок волка. Когда это вскрылось, Valve заменили дизайн, удалили скин из кейсов и запретили его торговать на торговой площадке (только обмен). Скин стал культовым и стоит баснословных денег."
+    },
+    "en": {
+      "description": "The receiver features a snarling wolf. Contraband quality.",
+      "funFact": "The only Contraband skin in the game. Its art was stolen; Valve replaced the design, removed it from cases, and blocked Steam Market sales (trade only). It became a cult flex with absurd prices."
+    }
+  },
+  "p1GraffitiFlyingAwper": {
+    "ru": {
+      "description": "Рисунок на стене, изображающий крылатого снайпера с винтовкой AWP под прицелом.",
+      "funFact": "Граффити посвящено легендарному моменту бразильского игрока coldzera на турнире MLG Columbus 2016. Он прыгнул с AWP на позиции «каролина» и без прицела (no-scope) убил двоих игроков Liquid в прыжке, а затем сделал еще два фрага. Момент перевернул ход матча."
+    },
+    "en": {
+      "description": "Wall art of a winged sniper holding a scoped AWP.",
+      "funFact": "Commemorates coldzera’s MLG Columbus 2016 jump on Mirage B site: two no-scope kills on Liquid mid-air, then two more — a swing that flipped the match."
+    }
+  },
+  "p1GraffitiDefuseInFire": {
+    "ru": {
+      "description": "Рисунок спецназовца в огне, который продолжает дефузить бомбу.",
+      "funFact": "Посвящено шведскому игроку olofmeister из Fnatic на ESL One Cologne 2014. На счете 14:14 он начал разминировать бомбу, когда под него прилетел вражеский «Молотов». Олоф не отпустил кнопку и сгорел ровно в ту же миллисекунду, когда бомба была обезврежена, принеся команде победу."
+    },
+    "en": {
+      "description": "Wall art of a CT burning alive while still defusing the bomb.",
+      "funFact": "Honors olofmeister at ESL One Cologne 2014: at 14–14 he held defuse through a Molotov on Overpass B and died the instant the bomb was defused for the win."
+    }
+  },
+  "p1BizonJudgementAnubis": {
+    "ru": {
+      "description": "Навеяно египетскими мотивами и богом Анубисом. Тайное качество.",
+      "funFact": "«Бизон» традиционно считается одним из худших пистолетов-пулеметов в игре из-за слабого пробития брони. Факт в том, что это единственный скин на Бизон «Тайного» (красного) качества, из-за чего игроки, открывавшие кейс Chroma 3, искренне горели, когда вместо сочного калаша или эмки им выпадал этот «королевский Бизон»."
+    },
+    "en": {
+      "description": "Egyptian motifs and Anubis-inspired art. Covert (red) quality.",
+      "funFact": "The Bizon is infamous for weak armor penetration — and this is its only Covert skin. Chroma 3 openers groaned when a red AK or M4 roll turned into the «royal Bizon»."
+    }
+  },
+  "p1StickerDickstacy": {
+    "ru": {
+      "description": "Наклейка с автографом профессионального игрока Дика Стейси с турнира мейджор.",
+      "funFact": "Австралийский игрок DickStacy стал легендой из-за своего ника. Valve несколько раз отклоняли его дизайн автографа, потому что он пытался нарисовать член в буквах. В итоге он обошел систему, просто написав слово «DICK» огромным шрифтом. Эти наклейки скупали миллионами ради шуточных крафтов на оружии."
+    },
+    "en": {
+      "description": "Autograph sticker of pro player DickStacy from a Major.",
+      "funFact": "Valve rejected his signature art multiple times for being too explicit. He got approved with giant «DICK» text — bought in bulk for meme crafts."
+    }
+  },
+  "p1StickerHowl": {
+    "ru": {
+      "description": "Наклейка с изображением головы волка.",
+      "funFact": "Как и скин M4A4, наклейка попала под раздачу из-за нарушения авторских прав. Ее оригинальный дизайн тоже заменили, а старую версию сделали «Контрабандной». Капсулу, из которой она падала, удалили из игры."
+    },
+    "en": {
+      "description": "Sticker showing a wolf’s head.",
+      "funFact": "Like the M4A4 Howl, the sticker was hit by a copyright claim — art replaced, old version made Contraband, and its capsule removed from the game."
+    }
+  },
+  "p1MusicEz4ence": {
+    "ru": {
+      "description": "Музыкальный трек финской группы The Verkkars, посвященный киберспортивной команде ENCE.",
+      "funFact": "Песня изначально была фанатским мемом про финскую команду ENCE, которая неожиданно для всех дошла до финала Мажора в Катовице 2019. Трек стал настолько вирусным, что Valve официально добавили его в игру, и он стал главным гимном MVP для троллинга оппонентов."
+    },
+    "en": {
+      "description": "Music kit track by Finnish band The Verkkars, dedicated to team ENCE.",
+      "funFact": "Started as a fan meme when ENCE shocked everyone at Katowice 2019. Valve added it officially — now it’s the classic MVP troll anthem."
+    }
+  },
+  "p1InfernoBananaBarrels": {
+    "ru": {
+      "description": "Элемент окружения карты.",
+      "funFact": "На старых версиях карты Inferno на позиции «Банан» стояла желтая машина, а рядом с ней — бочки. Игрок Xizt из NiP славился тем, что постоянно застревал в этих бочках или задыхался там от «Молотовых». Комментаторы и фанаты прозвали эту позицию «Бочки Ксиста». В более поздних ремейках карты машину убрали, оставив на её месте другие укрытия, но старые игроки помнят."
+    },
+    "en": {
+      "description": "Map environment prop.",
+      "funFact": "Old Inferno banana had a yellow car and barrels. NiP’s Xizt kept dying to Molotovs or getting stuck there — fans called it «Xizt’s barrels». Remakes removed the car, but veterans remember."
+    }
+  },
+  "p1OverpassOlofBoost": {
+    "ru": {
+      "description": "Невидимая текстура под ногами игрока.",
+      "funFact": "На турнире DreamHack Winter 2014 команда Fnatic летела на карте Overpass со счетом 3:12 против LDLC. Во второй половине они использовали баг карты — построили «подсадку» из трех человек, благодаря которой olofmeister взлетел в воздух на невидимый пиксель. Оттуда он видел всю карту с AWP и расстреливал врагов, которые вообще не понимали, откуда прилетает. Этот момент вызвал гигантский скандал, Fnatic в итоге снялись с турнира, а баг оперативно пофиксили, повесив на этом месте шутливый знак «Ходить по воздуху запрещено»."
+    },
+    "en": {
+      "description": "Invisible ledge texture under the player’s feet.",
+      "funFact": "DreamHack Winter 2014: Fnatic used a three-man boost so olofmeister stood on a pixel ledge with full AWP vision at 3–12 vs LDLC. Scandal, forfeit, patch — and the «no walking on air» sign joke on Overpass."
+    }
+  }
+}

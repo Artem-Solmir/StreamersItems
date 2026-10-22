@@ -1,0 +1,72 @@
+{
+  "p3NinjaSuit": {
+    "ru": {
+      "description": "Полный тканевый костюм ниндзя, скрывающий бойца в ночи. Заменяет базовый комплект одежды.",
+      "funFact": "Самый имбовый предмет в истории Twitch Drops. Этот костюм, созданный в честь стримера BaboAbe, можно скрафтить в первый же день вайпа всего за 60 ткани и 2 швейных набора. При этом он дает 25% защиты от пуль на всё тело и полностью заменяет собой куртку, штаны, ботинки и перчатки. Те, кто пропустил этот дроп, до сих пор плачут на форумах, так как легального аналога в игре нет."
+    },
+    "en": {
+      "description": "Full cloth ninja suit for hiding in the dark. Replaces your default clothing set.",
+      "funFact": "Legendary Twitch Drop for BaboAbe: craft day-one for 60 cloth and 2 sewing kits, 25% bullet protection on the whole body, replaces jacket/pants/boots/gloves — and no legal equivalent if you missed it."
+    }
+  },
+  "p3BigGrinMask": {
+    "ru": {
+      "description": "Тяжелая металлическая маска на лицо с нарисованной огромной белой зубастой улыбкой.",
+      "funFact": "Это не прямой Twitch Drop, а скин, популяризированный топовыми стримерами, ставший символом доминации в Rust. Из-за своей редкости и того, что в ней бегали самые жестокие ПВП-стримеры, маска обрела культовый статус. Сегодня её цена на торговой площадке Steam превышает $500–$800, и если вас убивает человек в «Большой ухмылке» — скорее всего, у него в игре больше 10 тысяч часов."
+    },
+    "en": {
+      "description": "Heavy metal facemask painted with a huge toothy white grin.",
+      "funFact": "Not a drop itself — a streamer-popularized flex skin. $500–800 on Steam; die to Big Grin and you’re probably fighting a 10k-hour demon."
+    }
+  },
+  "p3Mp5OilRats": {
+    "ru": {
+      "description": "Пистолет-пулемет MP5 в кастомной кислотно-зеленой расцветке с логотипом масляной крысы.",
+      "funFact": "Легальный чит на прицел. Разработчики одобрили дизайн от стримера Oil Rats, в котором мушка (iron sight) была сделана с аккуратным полукруглым вырезом сверху. В отличие от стандартного громоздкого прицела MP5, который закрывает половину экрана, этот скин дает идеальный обзор при стрельбе. Игроки называют его «мушкой за $0», которая заменяет прицел со светящейся точкой."
+    },
+    "en": {
+      "description": "MP5 SMG in acid green with the Oil Rats logo.",
+      "funFact": "Approved «legal aimbot»: a cutout iron sight with full view vs the stock MP5 block — the $0 reflex streamers swear by."
+    }
+  },
+  "p3AkTrainwreck": {
+    "ru": {
+      "description": "Автомат Калашникова (АК-47), покрытый неоновыми узорами и логотипом стримера.",
+      "funFact": "Один из первых и самых дорогих сердцу ПВП-шеров автоматов. Мушка этого калаша ярко светится в темноте неоновым цветом. В ночных перестрелках в Rust, когда экран становится абсолютно черным, владельцы этого стримерского скина видят центр своего экрана без использования лазерных прицелов или фонарей, которые выдают позицию."
+    },
+    "en": {
+      "description": "Assault Rifle (AK) wrapped in neon patterns and Trainwreckstv branding.",
+      "funFact": "A PVP favorite: the front sight glows at night so you keep crosshair awareness without lasers or flashlights giving you away."
+    }
+  },
+  "p3HoboBarrel": {
+    "ru": {
+      "description": "Ржавая металлическая бочка, в которой горит костер. Навевает атмосферу романтики бродяжничества.",
+      "funFact": "Этот предмет полностью ломает физику строительства. По характеристикам это обычный костер за 50 дерева, но хитбокс бочки сделан высокими и плоским. Игроки используют этот стримерский дроп как карманную подсадку: бочку ставят под стены вражеских баз, запрыгивают на нее и проникают на чужие балконы без постройки лестниц."
+    },
+    "en": {
+      "description": "Rusty barrel with a campfire inside — hobo romance vibes.",
+      "funFact": "Stats like a 50-wood fire, but a tall flat hitbox makes it a pocket boost for jumping enemy walls and balconies without building stairs."
+    }
+  },
+  "p3IndustrialDoor": {
+    "ru": {
+      "description": "Железная дверь из листового металла с небольшим прямоугольным окошком посередине.",
+      "funFact": "Идеальное средство против «дверных кемперов» (игроков, которые сидят с дробовиками у вашего выхода). Через прозрачное бронестекло в этой двери вы можете полностью осматривать улицу перед базой, не открывая её. В обычной игре для этого нужно ставить дорогие решетки или тратить ресурсы на оконные проемы."
+    },
+    "en": {
+      "description": "Sheet metal door with a small rectangular window.",
+      "funFact": "Counter to door campers: peek the street through bulletproof glass without opening — no extra grates or window frames."
+    }
+  },
+  "p3PokoPlush": {
+    "ru": {
+      "description": "Милая плюшевая подушка-игрушка, которую можно разместить на полу или кровати в вашем убежище.",
+      "funFact": "Самый ненавистный предмет среди суровых выживальщиков. Когда Facepunch добавили дропы популярной стримерши Pokimane, хардкорное комьюнити Rust устроило бунт, заявляя, что милые розовые ушки и аниме-стиль уничтожают суровую атмосферу игры. В ответ стримеры начали массово рейдить базы и заставлять их этими плюшевыми игрушками, чтобы поиздеваться над владельцами."
+    },
+    "en": {
+      "description": "Cute plush you can place on the floor or bed in your base.",
+      "funFact": "Hardcore Rust hated the Pokimane drop era — streamers raided bases and left plushies everywhere to troll «too cute» decorators."
+    }
+  }
+}

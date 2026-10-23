@@ -1,14 +1,17 @@
-import { useState, type FormEvent } from 'react'
+import { useMemo, useState, type FormEvent } from 'react'
 import clsx from 'clsx'
 import { useTranslation } from 'react-i18next'
 import {
-  issuesToFieldErrors,
-  validateSuggestForm,
-  type SuggestValidationField,
-} from '@/features/suggest/validateSuggestForm'
+  createSuggestFormSchema,
+  normalizeSourceUrl,
+  validateSuggestFieldSync,
+  validateSuggestFormSync,
+  type SuggestFormField,
+  type SuggestFormValues,
+} from '@/features/suggest/suggestFormSchema'
 import styles from '@/features/suggest/components/SuggestItemForm/SuggestItemForm.module.css'
 
-type SubmitState = 'idle' | 'loading' | 'success' | 'error' | 'validation'
+type SubmitState = 'idle' | 'loading' | 'success' | 'error'
 
 const GAME_OPTIONS = [
   'cs2',
@@ -26,32 +29,30 @@ const GAME_LABEL: Record<(typeof GAME_OPTIONS)[number], string> = {
   other: 'Other',
 }
 
-const normalizeSourceUrl = (url: string): string => {
-  if (url === '') {
-    return ''
-  }
-  if (/^https?:\/\//i.test(url)) {
-    return url
-  }
-  return `https://${url}`
+const INITIAL_VALUES: SuggestFormValues = {
+  gameChoice: GAME_OPTIONS[0],
+  gameOther: '',
+  itemName: '',
+  streamer: '',
+  description: '',
+  funFact: '',
+  sourceUrl: '',
+  email: '',
 }
 
 const mapApiInvalidFields = (
   fields: string[] | undefined,
   translate: (key: string) => string,
-): Partial<Record<SuggestValidationField, string>> => {
+): Partial<Record<SuggestFormField, string>> => {
   if (!fields?.length) {
     return {}
   }
-  const errors: Partial<Record<SuggestValidationField, string>> = {}
+  const errors: Partial<Record<SuggestFormField, string>> = {}
   for (const field of fields) {
-    if (
-      field === 'gameOther' ||
-      field === 'itemName' ||
-      field === 'email' ||
-      field === 'sourceUrl'
-    ) {
-      errors[field] = translate(`suggest.validation.${field}`)
+    if (field in INITIAL_VALUES) {
+      errors[field as SuggestFormField] = translate(
+        `suggest.validation.${field}`,
+      )
     }
   }
   return errors
@@ -73,65 +74,83 @@ const FieldError = ({
 export const SuggestItemForm = () => {
   const { t, i18n } = useTranslation()
   const [submitState, setSubmitState] = useState<SubmitState>('idle')
-  const [gameChoice, setGameChoice] = useState<string>(GAME_OPTIONS[0])
-  const [gameOther, setGameOther] = useState('')
+  const [values, setValues] = useState<SuggestFormValues>(INITIAL_VALUES)
   const [fieldErrors, setFieldErrors] = useState<
-    Partial<Record<SuggestValidationField, string>>
+    Partial<Record<SuggestFormField, string>>
   >({})
+  const [website, setWebsite] = useState('')
 
-  const clearFieldError = (field: SuggestValidationField) => {
+  const schema = useMemo(
+    () =>
+      createSuggestFormSchema({
+        gameOther: t('suggest.validation.gameOther'),
+        itemName: t('suggest.validation.itemName'),
+        email: t('suggest.validation.email'),
+        sourceUrl: t('suggest.validation.sourceUrl'),
+      }),
+    [t, i18n.language],
+  )
+
+  const runFieldValidation = (
+    field: SuggestFormField,
+    nextValues: SuggestFormValues,
+  ) => {
+    const message = validateSuggestFieldSync(schema, field, nextValues)
     setFieldErrors((prev) => {
-      if (!prev[field]) {
-        return prev
-      }
       const next = { ...prev }
-      delete next[field]
+      if (message) {
+        next[field] = message
+      } else {
+        delete next[field]
+      }
       return next
     })
+  }
+
+  const setFieldValue = <K extends SuggestFormField>(
+    field: K,
+    value: SuggestFormValues[K],
+  ) => {
+    const nextValues = { ...values, [field]: value }
+    setValues(nextValues)
+    runFieldValidation(field, nextValues)
+    if (field === 'gameChoice') {
+      runFieldValidation('gameOther', nextValues)
+    }
+  }
+
+  const resolveGame = (formValues: SuggestFormValues): string => {
+    if (formValues.gameChoice === 'other') {
+      return formValues.gameOther.trim()
+    }
+    return (
+      GAME_LABEL[formValues.gameChoice as (typeof GAME_OPTIONS)[number]] ?? ''
+    )
   }
 
   const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     setSubmitState('idle')
 
-    const form = event.currentTarget
-    const data = new FormData(form)
-    const gameFromSelect = GAME_LABEL[gameChoice as (typeof GAME_OPTIONS)[number]]
-    const game =
-      gameChoice === 'other'
-        ? String(data.get('gameOther') ?? '').trim()
-        : (gameFromSelect ?? String(data.get('gameOther') ?? '').trim())
-
-    const itemName = String(data.get('itemName') ?? '').trim()
-    const email = String(data.get('email') ?? '').trim()
-    const sourceUrl = normalizeSourceUrl(String(data.get('sourceUrl') ?? '').trim())
-
-    const issues = validateSuggestForm({
-      gameChoice,
-      game,
-      itemName,
-      email,
-      sourceUrl,
-    })
-
-    if (issues.length > 0) {
-      setFieldErrors(issuesToFieldErrors(issues, t))
-      setSubmitState('validation')
+    const errors = validateSuggestFormSync(schema, values)
+    if (Object.keys(errors).length > 0) {
+      setFieldErrors(errors)
       return
     }
 
     setFieldErrors({})
     setSubmitState('loading')
 
+    const game = resolveGame(values)
     const payload = {
       game,
-      itemName,
-      streamer: String(data.get('streamer') ?? '').trim(),
-      description: String(data.get('description') ?? '').trim(),
-      funFact: String(data.get('funFact') ?? '').trim(),
-      sourceUrl,
-      email,
-      website: String(data.get('website') ?? '').trim(),
+      itemName: values.itemName.trim(),
+      streamer: values.streamer.trim(),
+      description: values.description.trim(),
+      funFact: values.funFact.trim(),
+      sourceUrl: normalizeSourceUrl(values.sourceUrl.trim()),
+      email: values.email.trim(),
+      website: website.trim(),
       locale: i18n.language,
     }
 
@@ -151,7 +170,7 @@ export const SuggestItemForm = () => {
             const fromApi = mapApiInvalidFields(body.invalidFields, t)
             if (Object.keys(fromApi).length > 0) {
               setFieldErrors(fromApi)
-              setSubmitState('validation')
+              setSubmitState('idle')
               return
             }
           } catch {
@@ -163,14 +182,15 @@ export const SuggestItemForm = () => {
       }
 
       setSubmitState('success')
-      form.reset()
-      setGameChoice(GAME_OPTIONS[0])
-      setGameOther('')
+      setValues(INITIAL_VALUES)
+      setWebsite('')
       setFieldErrors({})
     } catch {
       setSubmitState('error')
     }
   }
+
+  const hasVisibleErrors = Object.keys(fieldErrors).length > 0
 
   return (
     <section className={styles.section} aria-labelledby="suggest-title">
@@ -190,11 +210,8 @@ export const SuggestItemForm = () => {
             id="suggest-game"
             name="gameChoice"
             className={styles.select}
-            value={gameChoice}
-            onChange={(event) => {
-              setGameChoice(event.target.value)
-              clearFieldError('gameOther')
-            }}
+            value={values.gameChoice}
+            onChange={(event) => setFieldValue('gameChoice', event.target.value)}
           >
             {GAME_OPTIONS.map((game) => (
               <option key={game} value={game}>
@@ -204,7 +221,7 @@ export const SuggestItemForm = () => {
           </select>
         </div>
 
-        {gameChoice === 'other' ? (
+        {values.gameChoice === 'other' ? (
           <div className={styles.field}>
             <label className={styles.label} htmlFor="suggest-game-other">
               {t('suggest.fields.gameOther')}{' '}
@@ -220,11 +237,10 @@ export const SuggestItemForm = () => {
                 fieldErrors.gameOther && styles.inputInvalid,
               )}
               type="text"
-              value={gameOther}
-              onChange={(event) => {
-                setGameOther(event.target.value)
-                clearFieldError('gameOther')
-              }}
+              value={values.gameOther}
+              onChange={(event) =>
+                setFieldValue('gameOther', event.target.value)
+              }
               maxLength={120}
               autoComplete="off"
               aria-invalid={fieldErrors.gameOther ? true : undefined}
@@ -254,9 +270,10 @@ export const SuggestItemForm = () => {
               fieldErrors.itemName && styles.inputInvalid,
             )}
             type="text"
+            value={values.itemName}
+            onChange={(event) => setFieldValue('itemName', event.target.value)}
             maxLength={200}
             autoComplete="off"
-            onChange={() => clearFieldError('itemName')}
             aria-invalid={fieldErrors.itemName ? true : undefined}
             aria-describedby={
               fieldErrors.itemName ? 'suggest-item-name-error' : undefined
@@ -278,6 +295,8 @@ export const SuggestItemForm = () => {
             name="streamer"
             className={styles.input}
             type="text"
+            value={values.streamer}
+            onChange={(event) => setFieldValue('streamer', event.target.value)}
             maxLength={120}
             autoComplete="off"
           />
@@ -292,6 +311,10 @@ export const SuggestItemForm = () => {
             name="description"
             className={styles.textarea}
             rows={4}
+            value={values.description}
+            onChange={(event) =>
+              setFieldValue('description', event.target.value)
+            }
             maxLength={2000}
           />
         </div>
@@ -305,6 +328,8 @@ export const SuggestItemForm = () => {
             name="funFact"
             className={styles.textarea}
             rows={3}
+            value={values.funFact}
+            onChange={(event) => setFieldValue('funFact', event.target.value)}
             maxLength={2000}
           />
         </div>
@@ -323,8 +348,11 @@ export const SuggestItemForm = () => {
             type="text"
             inputMode="url"
             placeholder="https://..."
+            value={values.sourceUrl}
+            onChange={(event) =>
+              setFieldValue('sourceUrl', event.target.value)
+            }
             maxLength={500}
-            onChange={() => clearFieldError('sourceUrl')}
             aria-invalid={fieldErrors.sourceUrl ? true : undefined}
             aria-describedby={
               fieldErrors.sourceUrl ? 'suggest-source-error' : undefined
@@ -343,9 +371,10 @@ export const SuggestItemForm = () => {
             name="email"
             className={clsx(styles.input, fieldErrors.email && styles.inputInvalid)}
             type="email"
+            value={values.email}
+            onChange={(event) => setFieldValue('email', event.target.value)}
             autoComplete="email"
             maxLength={254}
-            onChange={() => clearFieldError('email')}
             aria-invalid={fieldErrors.email ? true : undefined}
             aria-describedby={
               fieldErrors.email ? 'suggest-email-error' : undefined
@@ -360,6 +389,8 @@ export const SuggestItemForm = () => {
             id="suggest-website"
             name="website"
             type="text"
+            value={website}
+            onChange={(event) => setWebsite(event.target.value)}
             tabIndex={-1}
             autoComplete="off"
           />
@@ -380,7 +411,7 @@ export const SuggestItemForm = () => {
               {t('suggest.success')}
             </p>
           ) : null}
-          {submitState === 'validation' ? (
+          {hasVisibleErrors ? (
             <p className={clsx(styles.message, styles.messageError)}>
               {t('suggest.validationSummary')}
             </p>

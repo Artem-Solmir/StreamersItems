@@ -133,11 +133,18 @@ export default async function handler(
   const email = trim(body.email, MAX_LEN.email)
   const locale = trim(body.locale, MAX_LEN.locale)
 
-  if (!game || !itemName) {
+  const invalidFields: string[] = []
+  if (!game) {
+    invalidFields.push('gameOther')
+  }
+  if (!itemName) {
+    invalidFields.push('itemName')
+  }
+  if (invalidFields.length > 0) {
     return response.status(400).json({
       error: 'VALIDATION_FAILED',
       reason: 'MISSING_REQUIRED',
-      fields: { game: Boolean(game), itemName: Boolean(itemName) },
+      invalidFields,
     })
   }
 
@@ -145,6 +152,7 @@ export default async function handler(
     return response.status(400).json({
       error: 'VALIDATION_FAILED',
       reason: 'INVALID_EMAIL',
+      invalidFields: ['email'],
     })
   }
 
@@ -152,6 +160,7 @@ export default async function handler(
     return response.status(400).json({
       error: 'VALIDATION_FAILED',
       reason: 'INVALID_SOURCE_URL',
+      invalidFields: ['sourceUrl'],
     })
   }
 

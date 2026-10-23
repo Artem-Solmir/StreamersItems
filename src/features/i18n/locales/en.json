@@ -18,6 +18,14 @@
     "submitting": "Sending…",
     "success": "Thanks! Your suggestion was saved.",
     "error": "Could not submit. Try again later or check the Google Sheet server setup.",
+    "validationSummary": "Fix the fields marked below.",
+    "requiredMark": "required",
+    "validation": {
+      "gameOther": "Enter the game name.",
+      "itemName": "Enter the item name.",
+      "email": "Invalid email address.",
+      "sourceUrl": "Link must look like https://… or domain.com/…"
+    },
     "fields": {
       "game": "Game",
       "gameOther": "Game name",

@@ -18,6 +18,40 @@ const trim = (value: unknown, max: number): string => {
   return value.trim().slice(0, max)
 }
 
+const parseRequestBody = (raw: unknown): Record<string, unknown> => {
+  if (raw === null || raw === undefined) {
+    return {}
+  }
+  if (typeof raw === 'string') {
+    if (raw.trim() === '') {
+      return {}
+    }
+    try {
+      const parsed = JSON.parse(raw) as unknown
+      return typeof parsed === 'object' && parsed !== null && !Array.isArray(parsed)
+        ? (parsed as Record<string, unknown>)
+        : {}
+    } catch {
+      return {}
+    }
+  }
+  if (typeof raw === 'object' && !Array.isArray(raw)) {
+    return raw as Record<string, unknown>
+  }
+  return {}
+}
+
+/** Accepts bare domains; API requires http(s) for URL constructor. */
+const normalizeSourceUrl = (url: string): string => {
+  if (url === '') {
+    return ''
+  }
+  if (/^https?:\/\//i.test(url)) {
+    return url
+  }
+  return `https://${url}`
+}
+
 const isValidEmail = (email: string): boolean =>
   email === '' || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
 
@@ -81,7 +115,7 @@ export default async function handler(
     return response.status(503).json({ error: 'SHEETS_NOT_CONFIGURED' })
   }
 
-  const body = request.body ?? {}
+  const body = parseRequestBody(request.body)
   const honeypot = trim(body.website, 200)
   if (honeypot) {
     return response.status(200).json({ ok: true })
@@ -94,16 +128,40 @@ export default async function handler(
   const streamer = trim(body.streamer, MAX_LEN.streamer)
   const description = trim(body.description, MAX_LEN.description)
   const funFact = trim(body.funFact, MAX_LEN.funFact)
-  const sourceUrl = trim(body.sourceUrl, MAX_LEN.sourceUrl)
+  const sourceUrlRaw = trim(body.sourceUrl, MAX_LEN.sourceUrl)
+  const sourceUrl = normalizeSourceUrl(sourceUrlRaw)
   const email = trim(body.email, MAX_LEN.email)
   const locale = trim(body.locale, MAX_LEN.locale)
 
-  if (!game || !itemName) {
-    return response.status(400).json({ error: 'VALIDATION_FAILED' })
+  const invalidFields: string[] = []
+  if (!game) {
+    invalidFields.push('gameOther')
+  }
+  if (!itemName) {
+    invalidFields.push('itemName')
+  }
+  if (invalidFields.length > 0) {
+    return response.status(400).json({
+      error: 'VALIDATION_FAILED',
+      reason: 'MISSING_REQUIRED',
+      invalidFields,
+    })
   }
 
-  if (!isValidEmail(email) || !isValidUrl(sourceUrl)) {
-    return response.status(400).json({ error: 'VALIDATION_FAILED' })
+  if (!isValidEmail(email)) {
+    return response.status(400).json({
+      error: 'VALIDATION_FAILED',
+      reason: 'INVALID_EMAIL',
+      invalidFields: ['email'],
+    })
+  }
+
+  if (!isValidUrl(sourceUrl)) {
+    return response.status(400).json({
+      error: 'VALIDATION_FAILED',
+      reason: 'INVALID_SOURCE_URL',
+      invalidFields: ['sourceUrl'],
+    })
   }
 
   const payload = {

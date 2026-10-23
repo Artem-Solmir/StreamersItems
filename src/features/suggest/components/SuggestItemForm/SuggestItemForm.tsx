@@ -21,6 +21,16 @@ const GAME_LABEL: Record<(typeof GAME_OPTIONS)[number], string> = {
   other: 'Other',
 }
 
+const normalizeSourceUrl = (url: string): string => {
+  if (url === '') {
+    return ''
+  }
+  if (/^https?:\/\//i.test(url)) {
+    return url
+  }
+  return `https://${url}`
+}
+
 export const SuggestItemForm = () => {
   const { t, i18n } = useTranslation()
   const [submitState, setSubmitState] = useState<SubmitState>('idle')
@@ -33,10 +43,11 @@ export const SuggestItemForm = () => {
 
     const form = event.currentTarget
     const data = new FormData(form)
+    const gameFromSelect = GAME_LABEL[gameChoice as (typeof GAME_OPTIONS)[number]]
     const game =
       gameChoice === 'other'
         ? String(data.get('gameOther') ?? '').trim()
-        : GAME_LABEL[gameChoice as (typeof GAME_OPTIONS)[number]]
+        : (gameFromSelect ?? String(data.get('gameOther') ?? '').trim())
 
     const payload = {
       game,
@@ -44,7 +55,7 @@ export const SuggestItemForm = () => {
       streamer: String(data.get('streamer') ?? '').trim(),
       description: String(data.get('description') ?? '').trim(),
       funFact: String(data.get('funFact') ?? '').trim(),
-      sourceUrl: String(data.get('sourceUrl') ?? '').trim(),
+      sourceUrl: normalizeSourceUrl(String(data.get('sourceUrl') ?? '').trim()),
       email: String(data.get('email') ?? '').trim(),
       website: String(data.get('website') ?? '').trim(),
       locale: i18n.language,
@@ -184,9 +195,9 @@ export const SuggestItemForm = () => {
             id="suggest-source"
             name="sourceUrl"
             className={styles.input}
-            type="url"
+            type="text"
             inputMode="url"
-            placeholder="https://"
+            placeholder="https://..."
             maxLength={500}
           />
         </div>

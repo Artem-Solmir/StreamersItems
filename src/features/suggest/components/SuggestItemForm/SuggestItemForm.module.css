@@ -1,0 +1,134 @@
+.section {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0 1.5rem 2.5rem;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  margin: 0 0 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-h);
+  line-height: 1.2;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.hint {
+  font-size: 0.75rem;
+  color: var(--text);
+  opacity: 0.85;
+}
+
+.input,
+.textarea,
+.select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.625rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  background: var(--bg-card, #131822);
+  color: var(--text-h);
+  font: inherit;
+  line-height: 1.4;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.input:focus-visible,
+.textarea:focus-visible,
+.select:focus-visible {
+  outline: none;
+  border-color: var(--accent-neon, #00ffcc);
+  box-shadow: 0 0 0 0.125rem rgba(0, 255, 204, 0.25);
+}
+
+.textarea {
+  min-height: 5rem;
+  resize: vertical;
+}
+
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.submit {
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--accent-neon, #00ffcc);
+  background: rgba(0, 255, 204, 0.12);
+  color: var(--text-h);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease;
+}
+
+.submit:hover:not(:disabled) {
+  background: rgba(0, 255, 204, 0.22);
+}
+
+.submit:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.message {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+.messageSuccess {
+  color: var(--accent-neon, #00ffcc);
+}
+
+.messageError {
+  color: #f87171;
+}

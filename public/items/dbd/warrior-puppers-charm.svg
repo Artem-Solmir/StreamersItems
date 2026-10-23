@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Warrior Puppers charm">
+  <rect width="512" height="512" rx="64" fill="#1a0f24"/>
+  <circle cx="256" cy="280" r="120" fill="#f4c542"/>
+  <circle cx="220" cy="250" r="14" fill="#1a0f24"/>
+  <circle cx="292" cy="250" r="14" fill="#1a0f24"/>
+  <path d="M210 310 Q256 340 302 310" stroke="#1a0f24" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M320 200 L380 160 L360 240 Z" fill="#9146ff" stroke="#ede6ff" stroke-width="6"/>
+  <path d="M140 320 L100 380 L180 360 Z" fill="#5c3d8f"/>
+</svg>

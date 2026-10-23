@@ -1,0 +1,53 @@
+[
+  {
+    "id": "p4-warrior-puppers",
+    "localeKey": "p4WarriorPuppers",
+    "name": "Warrior Puppers Charm",
+    "file": "warrior-puppers-charm.svg",
+    "itemGroup": "charms",
+    "streamerName": "Puppers",
+    "twitchLogin": "puppers",
+    "rarity": "legendary",
+    "enableGlitch": true
+  },
+  {
+    "id": "p4-vic-viper",
+    "localeKey": "p4VicViper",
+    "name": "Vic Viper Charm",
+    "file": "vic-viper-charm.svg",
+    "itemGroup": "charms",
+    "streamerName": "Konami Easter egg",
+    "twitchLogin": "deadbydaylight",
+    "rarity": "epic"
+  },
+  {
+    "id": "p4-pandatv-shirt",
+    "localeKey": "p4PandaTvShirt",
+    "name": "PandaTV Shirt (Dwight / Meg)",
+    "file": "pandatv-shirt.svg",
+    "itemGroup": "merch",
+    "streamerName": "PandaTV",
+    "twitchLogin": "deadbydaylight",
+    "rarity": "secret"
+  },
+  {
+    "id": "p4-h2o-delirious-jacket",
+    "localeKey": "p4H2oDeliriousJacket",
+    "name": "H2O Delirious Jacket (Ace)",
+    "file": "h2o-delirious-jacket.svg",
+    "itemGroup": "merch",
+    "streamerName": "H2O Delirious",
+    "twitchLogin": "h2odelirious",
+    "rarity": "legendary"
+  },
+  {
+    "id": "p4-twitch-claudette",
+    "localeKey": "p4TwitchClaudette",
+    "name": "Twitch Hoodie (Claudette)",
+    "file": "twitch-claudette-hoodie.svg",
+    "itemGroup": "merch",
+    "streamerName": "Twitch",
+    "twitchLogin": "twitch",
+    "rarity": "epic"
+  }
+]

@@ -1,0 +1,62 @@
+{
+  "p4WarriorPuppers": {
+    "ru": {
+      "description": "Памятный амулет в виде верного пса-воина с фиолетовым щитом, сияющий во тьме тумана.",
+      "howToGet": "Ввести постоянный промокод WARRIORPUPPERS в магазине игры.",
+      "funFact": "Самый эмоциональный амулет в игре. Он добавлен в память о невероятно позитивном стримере Max \"Puppers\", который был одним из главных популяризаторов DBD на Twitch с первых дней ее релиза. Макс боролся с БАС (боковым амиотрофическим склерозом) и трагически ушел из жизни в 2023 году. Разработчики добавили его любимого пса в игру, чтобы наследие стримера продолжало жить в Тумане."
+    },
+    "en": {
+      "description": "A memorial charm of a loyal warrior pup with a purple shield, glowing in the Fog.",
+      "howToGet": "Redeem the permanent code WARRIORPUPPERS in the in-game store.",
+      "funFact": "A tribute to Max \"Puppers\", who helped grow DBD on Twitch from day one. He fought ALS and passed in 2023 — Behaviour added his dog so his legacy stays in the Fog."
+    }
+  },
+  "p4VicViper": {
+    "ru": {
+      "description": "Миниатюрная копия легендарного межзвездного истребителя из классических аркад.",
+      "howToGet": "Пасхалка: выбрать Шерил Мейсон или Палача (Пирамидоголового), вернуться в главное меню и ввести Код Konami (Вверх-Вверх-Вниз-Вниз-Влево-Вправо-Влево-Вправо, затем A-B-Start или X-O-Options на геймпаде).",
+      "funFact": "Этот скрытый амулет обожают стримить хардкорные геймеры. Он отсылает к стримам-марафонам по ретро-играм Konami (серия Gradius и Silent Hill)."
+    },
+    "en": {
+      "description": "A miniature of the classic arcade starfighter.",
+      "howToGet": "Easter egg: select Cheryl Mason or The Executioner, return to the main menu, enter the Konami Code (↑↑↓↓←→←→ + A/B/Start or X/O/Options).",
+      "funFact": "Speedrun and retro streamers love showing this off — a nod to Konami marathons (Gradius × Silent Hill)."
+    }
+  },
+  "p4PandaTvShirt": {
+    "ru": {
+      "description": "Простая хлопковая футболка серого цвета с ярким золотым логотипом PandaTV на груди.",
+      "howToGet": "Изначально выдавалась только официальным стримерам китайской платформы PandaTV. Сегодня это один из редчайших предметов кастомизации.",
+      "funFact": "Из-за закрытия стриминговой платформы PandaTV эти футболки превратились в цифровой раритет. Игроки, у которых они остались, считаются настоящими динозаврами Dead by Daylight, начавшими играть еще в 2016–2017 годах."
+    },
+    "en": {
+      "description": "Simple grey cotton tee with a bold gold PandaTV logo.",
+      "howToGet": "Originally for official PandaTV (China) streamers only — now one of the rarest cosmetics.",
+      "funFact": "After PandaTV shut down, these shirts became digital fossils — a badge for 2016–2017 era players."
+    }
+  },
+  "p4H2oDeliriousJacket": {
+    "ru": {
+      "description": "Стильная синяя куртка с уникальными нашивками и безумным маскотом на спине.",
+      "howToGet": "Выдавалась в виде редких DLC-кодов популярным ютуберам и стримерам из банды H2O Delirious и Ohmwrecker.",
+      "funFact": "Наличие этой куртки у выжившего Эйса в лобби мгновенно меняет поведение Маньяка. Стримерские куртки привлекают колоссальное количество внимания: убийцы часто начинают «туннелить» (бегать только за этим игроком) и «кемперить» его на крюке, просто чтобы доказать, что они убили обладателя редчайшего стримерского скина."
+    },
+    "en": {
+      "description": "Stylish blue jacket with patches and a wild mascot on the back (Ace Visconti).",
+      "howToGet": "Rare DLC codes for H2O Delirious / Ohmwrecker creator circle YouTubers and streamers.",
+      "funFact": "Ace in this jacket is a magnet for tunneling and hook camping — killers want the clip of downing a rare streamer skin."
+    }
+  },
+  "p4TwitchClaudette": {
+    "ru": {
+      "description": "Фирменная фиолетовая спортивная кофта с капюшоном и ярким белым логотипом Twitch.",
+      "howToGet": "Выдавалась эксклюзивно участникам выставки TwitchCon 2016 и официальным стримерам-партнерам Behaviour Interactive.",
+      "funFact": "Символ «токсичного» геймплея. В сообществе DBD закрепился стойкий стереотип: если вы видите Клодетт в фиолетовой Twitch-кофте, она будет профессионально бегать от вас вокруг досок (паллет), кликать фонариком прямо в глаза и приседать на корточки (t-bag), издеваясь над маньяком."
+    },
+    "en": {
+      "description": "Official purple Twitch hoodie with a white logo (Claudette).",
+      "howToGet": "TwitchCon 2016 attendees and Behaviour partner streamers only.",
+      "funFact": "Community meme: purple-hoodie Claudette will loop pallets, blind you, and teabag — peak «toxic» survivor energy."
+    }
+  }
+}

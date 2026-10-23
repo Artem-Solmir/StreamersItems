@@ -20,7 +20,7 @@ export const StreamerItemCard = ({
   isCollected,
   onToggleCollect,
 }: StreamerItemCardProps) => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const cardRef = useRef<HTMLElement>(null)
   useTilt(cardRef)
 
@@ -32,6 +32,8 @@ export const StreamerItemCard = ({
 
   const copyBase = `${projectTranslationKey}.items.${item.localeKey}`
   const description = t(`${copyBase}.description`)
+  const howToGetKey = `${copyBase}.howToGet`
+  const howToGet = i18n.exists(howToGetKey) ? t(howToGetKey) : null
   const funFact = t(`${copyBase}.funFact`)
 
   const cardStyle = {
@@ -99,6 +101,14 @@ export const StreamerItemCard = ({
         <span className={styles.gameName}>{item.game}</span>
         <h3 className={styles.itemName}>{item.name}</h3>
         <p className={styles.itemDescription}>{description}</p>
+        {howToGet ? (
+          <div className={clsx(styles.funFact, styles.howToGet)}>
+            <span className={styles.funFactLabel}>
+              {t('inventory.howToGetLabel')}
+            </span>
+            <p className={styles.funFactText}>{howToGet}</p>
+          </div>
+        ) : null}
         <div className={styles.funFact}>
           <span className={styles.funFactLabel}>{t('inventory.funFactLabel')}</span>
           <p className={styles.funFactText}>{funFact}</p>

@@ -18,6 +18,12 @@
   color: var(--text-h);
 }
 
+.menuNav {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
 .navTitle {
   margin: 0 0 0.5rem;
   padding: 0 0.5rem;
@@ -52,6 +58,8 @@
   font: inherit;
   text-align: left;
   color: var(--text-h);
+  text-decoration: none;
+  box-sizing: border-box;
   transition:
     background 0.2s ease,
     border-color 0.2s ease,

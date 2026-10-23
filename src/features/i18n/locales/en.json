@@ -5,7 +5,38 @@
   "sidebar": {
     "ariaLabel": "Site navigation",
     "navLabel": "Games",
-    "gamesTitle": "Games"
+    "gamesTitle": "Games",
+    "menuLabel": "Menu",
+    "menuTitle": "Menu",
+    "suggestItems": "Suggest an item",
+    "suggestItemsHint": "Ideas for the catalog"
+  },
+  "suggest": {
+    "title": "Suggest an item",
+    "subtitle": "Tell us which streamer item to add — game, name, description, and links. Submissions go to a spreadsheet for review.",
+    "submit": "Submit",
+    "submitting": "Sending…",
+    "success": "Thanks! Your suggestion was saved.",
+    "error": "Could not submit. Try again later or check the Google Sheet server setup.",
+    "fields": {
+      "game": "Game",
+      "gameOther": "Game name",
+      "itemName": "Item name",
+      "streamer": "Streamer / creator",
+      "streamerHint": "Optional — who the item is tied to.",
+      "description": "Description or short pitch",
+      "funFact": "Fun fact or story",
+      "sourceUrl": "Link (wiki, clip, market)",
+      "email": "Email",
+      "emailHint": "Optional — if you want a reply."
+    },
+    "games": {
+      "cs2": "Counter-Strike 2",
+      "tarkov": "Escape from Tarkov",
+      "rust": "Rust",
+      "dbd": "Dead by Daylight",
+      "other": "Other game"
+    }
   },
   "language": {
     "label": "Language",

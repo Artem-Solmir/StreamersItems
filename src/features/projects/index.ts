@@ -1,6 +1,7 @@
 export { PROJECT_01_CS2_LOADOUTS } from '@/features/projects/data/project-01-cs2-loadouts'
 export { PROJECT_02_ESCAPE_FROM_TARKOV } from '@/features/projects/data/project-02-escape-from-tarkov'
 export { PROJECT_03_RUST_STREAMER_LOOT } from '@/features/projects/data/project-03-rust-streamer-loot'
+export { PROJECT_04_DEAD_BY_DAYLIGHT } from '@/features/projects/data/project-04-dead-by-daylight'
 export { GameSidebar } from '@/features/projects/components/GameSidebar'
 export {
   FIRST_STREAMER_ITEMS_PROJECT,

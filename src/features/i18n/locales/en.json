@@ -357,6 +357,43 @@
           "funFact": "Hardcore Rust hated the Pokimane drop era — streamers raided bases and left plushies everywhere to troll «too cute» decorators."
         }
       }
+    },
+    "dbdLoot": {
+      "label": "Project 4",
+      "title": "Dead by Daylight streamer loot",
+      "subtitle": "Charms and legendary streamer cosmetics in the Fog — tap a slot to mark it collected.",
+      "filterAll": "All categories",
+      "categories": {
+        "charms": "Charms",
+        "merch": "Legendary streamer merch"
+      },
+      "items": {
+        "p4WarriorPuppers": {
+          "description": "A memorial charm of a loyal warrior pup with a purple shield, glowing in the Fog.",
+          "howToGet": "Redeem the permanent code WARRIORPUPPERS in the in-game store.",
+          "funFact": "A tribute to Max \"Puppers\", who helped grow DBD on Twitch from day one. He fought ALS and passed in 2023 — Behaviour added his dog so his legacy stays in the Fog."
+        },
+        "p4VicViper": {
+          "description": "A miniature of the classic arcade starfighter.",
+          "howToGet": "Easter egg: select Cheryl Mason or The Executioner, return to the main menu, enter the Konami Code (↑↑↓↓←→←→ + A/B/Start or X/O/Options).",
+          "funFact": "Speedrun and retro streamers love showing this off — a nod to Konami marathons (Gradius × Silent Hill)."
+        },
+        "p4PandaTvShirt": {
+          "description": "Simple grey cotton tee with a bold gold PandaTV logo.",
+          "howToGet": "Originally for official PandaTV (China) streamers only — now one of the rarest cosmetics.",
+          "funFact": "After PandaTV shut down, these shirts became digital fossils — a badge for 2016–2017 era players."
+        },
+        "p4H2oDeliriousJacket": {
+          "description": "Stylish blue jacket with patches and a wild mascot on the back (Ace Visconti).",
+          "howToGet": "Rare DLC codes for H2O Delirious / Ohmwrecker creator circle YouTubers and streamers.",
+          "funFact": "Ace in this jacket is a magnet for tunneling and hook camping — killers want the clip of downing a rare streamer skin."
+        },
+        "p4TwitchClaudette": {
+          "description": "Official purple Twitch hoodie with a white logo (Claudette).",
+          "howToGet": "TwitchCon 2016 attendees and Behaviour partner streamers only.",
+          "funFact": "Community meme: purple-hoodie Claudette will loop pallets, blind you, and teabag — peak «toxic» survivor energy."
+        }
+      }
     }
   },
   "inventory": {
@@ -368,7 +405,8 @@
     "hint": "Neon live dot = streamer online. Legendary and secret items glitch on hover.",
     "funFactLabel": "Fun fact",
     "categoryFiltersLabel": "Item categories",
-    "filteredCount": "{{collected}} / {{count}} in category"
+    "filteredCount": "{{collected}} / {{count}} in category",
+    "howToGetLabel": "How to get"
   },
   "home": {
     "getStarted": "Get started",

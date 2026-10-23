@@ -128,6 +128,14 @@
   background: rgba(0, 0, 0, 0.25);
 }
 
+.howToGet {
+  border-left-color: var(--twitch-purple, #9146ff);
+}
+
+.howToGet .funFactLabel {
+  color: var(--twitch-purple, #9146ff);
+}
+
 .funFactLabel {
   display: block;
   font-size: 0.6875rem;

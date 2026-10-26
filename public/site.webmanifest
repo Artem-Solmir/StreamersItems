@@ -1,7 +1,7 @@
 {
-  "name": "StreamersItems",
+  "name": "StreamersItems — streamer in-game items",
   "short_name": "StreamersItems",
-  "description": "Streamer item collections from CS2, Escape from Tarkov, and more.",
+  "description": "Streamer skins, charms, and collector loot in CS2, Tarkov, Rust, and Dead by Daylight.",
   "icons": [
     {
       "src": "/icon-192.png",

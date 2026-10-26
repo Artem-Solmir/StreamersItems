@@ -1,8 +1,10 @@
 import clsx from 'clsx'
 import { useTranslation } from 'react-i18next'
-import { NavLink, useLocation, useNavigate } from 'react-router-dom'
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 import type { StreamerItemsProject } from '@/features/projects/types'
 import { useSelectedProjectStore } from '@/features/projects/store/useSelectedProjectStore'
+import { localePath } from '@/features/seo'
+import { useRouteLocale } from '@/hooks/useRouteLocale'
 import styles from '@/features/projects/components/GameSidebar/GameSidebar.module.css'
 
 interface GameSidebarProps {
@@ -13,6 +15,7 @@ export const GameSidebar = ({ projects }: GameSidebarProps) => {
   const { t } = useTranslation()
   const navigate = useNavigate()
   const location = useLocation()
+  const locale = useRouteLocale()
   const selectedProjectId = useSelectedProjectStore(
     (state) => state.selectedProjectId,
   )
@@ -20,14 +23,16 @@ export const GameSidebar = ({ projects }: GameSidebarProps) => {
 
   return (
     <aside className={styles.sidebar} aria-label={t('sidebar.ariaLabel')}>
-      <p className={styles.brand}>{t('meta.title')}</p>
+      <Link to={localePath(locale)} className={styles.brand}>
+        {t('meta.siteName')}
+      </Link>
 
       <nav className={styles.menuNav} aria-label={t('sidebar.menuLabel')}>
         <p className={styles.navTitle}>{t('sidebar.menuTitle')}</p>
         <ul className={styles.list}>
           <li>
             <NavLink
-              to="/suggest-items"
+              to={localePath(locale, '/suggest-items')}
               className={({ isActive }) =>
                 clsx(styles.gameButton, isActive && styles.gameButtonActive)
               }
@@ -43,8 +48,11 @@ export const GameSidebar = ({ projects }: GameSidebarProps) => {
         <p className={styles.navTitle}>{t('sidebar.gamesTitle')}</p>
         <ul className={styles.list}>
           {projects.map((project) => {
+            const gamePath = localePath(locale, `/games/${project.slug}`)
             const isActive =
-              location.pathname === '/' && project.id === selectedProjectId
+              location.pathname === gamePath ||
+              (location.pathname === localePath(locale) &&
+                project.id === selectedProjectId)
 
             return (
               <li key={project.id}>
@@ -57,7 +65,7 @@ export const GameSidebar = ({ projects }: GameSidebarProps) => {
                   aria-current={isActive ? 'page' : undefined}
                   onClick={() => {
                     selectProject(project.id)
-                    void navigate('/')
+                    void navigate(gamePath)
                   }}
                 >
                   <span className={styles.gameName}>{project.primaryGame}</span>

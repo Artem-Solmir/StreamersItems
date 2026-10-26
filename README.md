@@ -72,5 +72,20 @@ Workflow: [`.github/workflows/vercel-production.yml`](.github/workflows/vercel-p
 
 - [@vercel/analytics](https://vercel.com/docs/analytics) — `<Analytics />` в `src/main.tsx` → Vercel → **Analytics**.
 - [@vercel/speed-insights](https://vercel.com/docs/speed-insights) — `<SpeedInsights />` в `src/main.tsx` → Vercel → **Speed Insights**.
+- Событие **`item_page_view`** (slug, game, locale) отправляется со страниц предметов `/en/items/...` и `/ru/items/...`.
 
 На Hobby при необходимости включите Web Analytics / Speed Insights в настройках проекта.
+
+## SEO
+
+- **URL:** `/en` и `/ru` — каталог; `/en/games/{projectSlug}` — коллекция по игре; `/en/items/{itemSlug}` — карточка предмета (slug = `id` в каталоге).
+- **Meta:** компонент `PageMeta` (`src/features/seo/`) — title, description, canonical, hreflang, Open Graph.
+- **Production URL:** задайте `VITE_SITE_URL` в Vercel (без слэша в конце) для canonical и sitemap.
+- **Sitemap / robots:** `npm run build` запускает `scripts/generate-sitemap.mjs` → `public/sitemap.xml`, `public/robots.txt`.
+
+### Запуск в Search Console / Вебмастер
+
+1. Подтвердите домен в [Google Search Console](https://search.google.com/search-console) и [Yandex Webmaster](https://webmaster.yandex.ru).
+2. Отправьте sitemap: `https://<ваш-домен>/sitemap.xml`.
+3. Проверьте индексацию URL Inspection для пары страниц предметов (`/en/items/...`, `/ru/items/...`).
+4. В Vercel Analytics смотрите частоту `item_page_view` после появления органики.

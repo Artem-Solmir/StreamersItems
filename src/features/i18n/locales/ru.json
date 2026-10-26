@@ -1,6 +1,23 @@
 {
   "meta": {
-    "title": "StreamersItems"
+    "siteName": "StreamersItems",
+    "title": "StreamersItems",
+    "defaultTitle": "Стримерские предметы в играх — CS2, Tarkov, Rust, DBD | StreamersItems",
+    "defaultDescription": "Каталог стримерских скинов, амулетов и коллекционного лута в CS2, Escape from Tarkov, Rust и Dead by Daylight — лор, как получить и отметить «собрано».",
+    "ogImage": "/icon-512.png",
+    "titleTemplates": {
+      "home": "Стримерские предметы в играх — CS2, Tarkov, Rust, DBD | StreamersItems",
+      "game": "Стримерский лут {{game}} | StreamersItems",
+      "item": "{{itemName}} ({{game}}) — {{streamer}} | StreamersItems",
+      "suggest": "Предложить предмет | StreamersItems",
+      "notFound": "Предмет не найден | StreamersItems"
+    },
+    "itemNotFoundTitle": "Предмет не найден",
+    "itemNotFoundDescription": "Такого стримерского предмета пока нет в каталоге.",
+    "breadcrumbsHome": "Главная",
+    "relatedItems": "Ещё из этой игры",
+    "viewItem": "Страница предмета",
+    "collectToggle": "Отметить «собрано»"
   },
   "sidebar": {
     "ariaLabel": "Навигация по сайту",

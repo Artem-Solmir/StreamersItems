@@ -18,8 +18,8 @@ const TWITCH_AVATARS = {
     'https://static-cdn.jtvnw.net/jtv_user_pictures/c754eebf-745b-4e0a-814a-10bcaecaabbc-profile_image-300x300.png',
   m0nesy:
     'https://static-cdn.jtvnw.net/jtv_user_pictures/48ebf0b9-c1ac-4a87-af36-6e05a123461e-profile_image-300x300.png',
-  counterstrike:
-    'https://static-cdn.jtvnw.net/jtv_user_pictures/7ed5e0b6-0321-4e29-a428-144aeca85a7f-profile_image-300x300.png',
+  csgo:
+    'https://static-cdn.jtvnw.net/jtv_user_pictures/d143c2a2-33d8-485d-b4cd-0abe19ccce20-profile_image-300x300.png',
 } as const
 
 /** Static files from /public/items — Steam economy CDN (360×360). */
@@ -59,8 +59,8 @@ const item = (
 
 const community = {
   name: 'Counter-Strike',
-  twitchLogin: 'counterstrike',
-  avatarUrl: TWITCH_AVATARS.counterstrike,
+  twitchLogin: 'csgo',
+  avatarUrl: TWITCH_AVATARS.csgo,
   isLive: false,
 }
 

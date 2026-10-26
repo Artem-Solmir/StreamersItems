@@ -9,6 +9,7 @@
 }
 
 .brand {
+  display: block;
   margin: 0 0 1rem;
   padding: 0 0.5rem;
   font-size: 0.875rem;
@@ -16,6 +17,11 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-h);
+  text-decoration: none;
+}
+
+.brand:hover {
+  color: var(--accent-neon, #00ffcc);
 }
 
 .menuNav {

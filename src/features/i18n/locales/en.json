@@ -1,6 +1,23 @@
 {
   "meta": {
-    "title": "StreamersItems"
+    "siteName": "StreamersItems",
+    "title": "StreamersItems",
+    "defaultTitle": "Streamer in-game items — CS2, Tarkov, Rust, DBD | StreamersItems",
+    "defaultDescription": "Catalog of streamer skins, charms, and collector loot in CS2, Escape from Tarkov, Rust, and Dead by Daylight — lore, how to get, and collect your set.",
+    "ogImage": "/icon-512.png",
+    "titleTemplates": {
+      "home": "Streamer in-game items — CS2, Tarkov, Rust, DBD | StreamersItems",
+      "game": "{{game}} streamer items | StreamersItems",
+      "item": "{{itemName}} ({{game}}) — {{streamer}} | StreamersItems",
+      "suggest": "Suggest a streamer item | StreamersItems",
+      "notFound": "Item not found | StreamersItems"
+    },
+    "itemNotFoundTitle": "Item not found",
+    "itemNotFoundDescription": "This streamer item is not in the catalog yet.",
+    "breadcrumbsHome": "Home",
+    "relatedItems": "More from this game",
+    "viewItem": "View item page",
+    "collectToggle": "Mark collected"
   },
   "sidebar": {
     "ariaLabel": "Site navigation",

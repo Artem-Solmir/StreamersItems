@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Vic Viper charm">
-  <rect width="512" height="512" rx="64" fill="#0a1628"/>
-  <path d="M80 280 L200 220 L420 260 L360 300 L200 280 Z" fill="#47bfff" stroke="#fff" stroke-width="4"/>
-  <path d="M200 220 L240 160 L280 220" fill="#fff"/>
-  <circle cx="120" cy="270" r="16" fill="#ff4466"/>
-  <rect x="340" y="248" width="40" height="12" rx="4" fill="#9146ff"/>
-</svg>

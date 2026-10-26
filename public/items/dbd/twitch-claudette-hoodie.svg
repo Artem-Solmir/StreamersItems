@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Twitch Claudette hoodie">
-  <rect width="512" height="512" rx="64" fill="#1a0f24"/>
-  <path d="M150 200 Q256 80 362 200 L380 420 H132 Z" fill="#9146ff" stroke="#a78bfa" stroke-width="6"/>
-  <path d="M196 200 L196 320 M316 200 L316 320" stroke="#6d28d9" stroke-width="10"/>
-  <path d="M200 360 H312" stroke="#fff" stroke-width="16" stroke-linecap="round"/>
-  <path d="M312 360 L340 340 V380 H312 Z" fill="#fff"/>
-</svg>

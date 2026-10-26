@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="PandaTV shirt">
-  <rect width="512" height="512" rx="64" fill="#121218"/>
-  <path d="M140 120 H372 L400 400 H112 Z" fill="#6b7280" stroke="#9ca3af" stroke-width="6"/>
-  <ellipse cx="256" cy="200" rx="90" ry="36" fill="#fbbf24"/>
-  <text x="256" y="210" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="700" font-size="28" fill="#1a0f24">PandaTV</text>
-</svg>

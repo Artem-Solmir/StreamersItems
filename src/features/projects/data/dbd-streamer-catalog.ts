@@ -30,6 +30,7 @@ interface DbdCatalogEntry {
 
 const img = (file: string) => `${IMAGE_BASE}/${file}`
 
+/** Streamer charms & merch (UI icons: deadbydaylight.wiki.gg game filenames). */
 export const DBD_STREAMER_CATALOG: DbdCatalogEntry[] =
   catalogItems as DbdCatalogEntry[]
 

@@ -21,6 +21,24 @@ export const GameSidebar = ({ projects }: GameSidebarProps) => {
   return (
     <aside className={styles.sidebar} aria-label={t('sidebar.ariaLabel')}>
       <p className={styles.brand}>{t('meta.title')}</p>
+
+      <nav className={styles.menuNav} aria-label={t('sidebar.menuLabel')}>
+        <p className={styles.navTitle}>{t('sidebar.menuTitle')}</p>
+        <ul className={styles.list}>
+          <li>
+            <NavLink
+              to="/suggest-items"
+              className={({ isActive }) =>
+                clsx(styles.gameButton, isActive && styles.gameButtonActive)
+              }
+            >
+              <span className={styles.gameName}>{t('sidebar.suggestItems')}</span>
+              <span className={styles.gameMeta}>{t('sidebar.suggestItemsHint')}</span>
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+
       <nav aria-label={t('sidebar.navLabel')}>
         <p className={styles.navTitle}>{t('sidebar.gamesTitle')}</p>
         <ul className={styles.list}>
@@ -50,23 +68,6 @@ export const GameSidebar = ({ projects }: GameSidebarProps) => {
               </li>
             )
           })}
-        </ul>
-      </nav>
-
-      <nav className={styles.menuNav} aria-label={t('sidebar.menuLabel')}>
-        <p className={styles.navTitle}>{t('sidebar.menuTitle')}</p>
-        <ul className={styles.list}>
-          <li>
-            <NavLink
-              to="/suggest-items"
-              className={({ isActive }) =>
-                clsx(styles.gameButton, isActive && styles.gameButtonActive)
-              }
-            >
-              <span className={styles.gameName}>{t('sidebar.suggestItems')}</span>
-              <span className={styles.gameMeta}>{t('sidebar.suggestItemsHint')}</span>
-            </NavLink>
-          </li>
         </ul>
       </nav>
     </aside>

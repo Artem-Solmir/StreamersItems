@@ -1,0 +1,75 @@
+[
+  {
+    "id": "p5-ninja",
+    "localeKey": "p5Ninja",
+    "name": "Ninja (Icon Series)",
+    "file": "ninja-outfit.png",
+    "itemGroup": "iconSeries",
+    "streamerName": "Ninja",
+    "twitchLogin": "ninja",
+    "rarity": "legendary",
+    "enableGlitch": true
+  },
+  {
+    "id": "p5-bugha",
+    "localeKey": "p5Bugha",
+    "name": "Bugha (Icon Series)",
+    "file": "bugha-outfit.png",
+    "itemGroup": "iconSeries",
+    "streamerName": "Bugha",
+    "twitchLogin": "bugha",
+    "rarity": "legendary",
+    "enableGlitch": true
+  },
+  {
+    "id": "p5-loserfruit",
+    "localeKey": "p5Loserfruit",
+    "name": "Loserfruit (Icon Series)",
+    "file": "loserfruit-outfit.png",
+    "itemGroup": "iconSeries",
+    "streamerName": "Loserfruit",
+    "twitchLogin": "loserfruit",
+    "rarity": "epic"
+  },
+  {
+    "id": "p5-thegrefg",
+    "localeKey": "p5TheGrefg",
+    "name": "TheGrefg (Icon Series)",
+    "file": "thegrefg-outfit.png",
+    "itemGroup": "iconSeries",
+    "streamerName": "TheGrefg",
+    "twitchLogin": "thegrefg",
+    "rarity": "legendary"
+  },
+  {
+    "id": "p5-renegade-raider",
+    "localeKey": "p5RenegadeRaider",
+    "name": "Renegade Raider",
+    "file": "renegade-raider-outfit.png",
+    "itemGroup": "viralAndOg",
+    "streamerName": "Season 1 OG",
+    "twitchLogin": "fortnite",
+    "rarity": "secret",
+    "enableGlitch": true
+  },
+  {
+    "id": "p5-boogie-down",
+    "localeKey": "p5BoogieDown",
+    "name": "Boogie Down",
+    "file": "boogie-down-emote.png",
+    "itemGroup": "viralAndOg",
+    "streamerName": "Epic 2FA reward",
+    "twitchLogin": "fortnite",
+    "rarity": "epic"
+  },
+  {
+    "id": "p5-orange-justice",
+    "localeKey": "p5OrangeJustice",
+    "name": "Orange Justice",
+    "file": "orange-justice-emote.png",
+    "itemGroup": "viralAndOg",
+    "streamerName": "Fortnite meme meta",
+    "twitchLogin": "fortnite",
+    "rarity": "rare"
+  }
+]

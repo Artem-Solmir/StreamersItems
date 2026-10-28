@@ -60,6 +60,7 @@
       "tarkov": "Escape from Tarkov",
       "rust": "Rust",
       "dbd": "Dead by Daylight",
+      "fortnite": "Fortnite",
       "other": "Other game"
     }
   },
@@ -417,6 +418,53 @@
           "description": "Official purple Twitch hoodie with a white logo (Claudette).",
           "howToGet": "TwitchCon 2016 attendees and Behaviour partner streamers only.",
           "funFact": "Community meme: purple-hoodie Claudette will loop pallets, blind you, and teabag — peak «toxic» survivor energy."
+        }
+      }
+    },
+    "fortniteLoot": {
+      "label": "Project 5",
+      "title": "Fortnite streamer loot",
+      "subtitle": "Icon Series creator outfits and viral stream-era cosmetics — tap a slot to mark it collected.",
+      "filterAll": "All categories",
+      "categories": {
+        "iconSeries": "Icon Series creators",
+        "viralAndOg": "Viral & OG stream meta"
+      },
+      "items": {
+        "p5Ninja": {
+          "description": "Icon Series Tyler \"Ninja\" Blevins outfit — headband, high-tops, and peak-Fortnite stream energy.",
+          "howToGet": "Item Shop — Ninja set (Icon Series). Today only when Epic rotates it back, not Battle Pass.",
+          "funFact": "The skin landed when Ninja was pushing Fortnite to the top of Twitch. A lobby inspect in a 2019–2020 clip is instant nostalgia."
+        },
+        "p5Bugha": {
+          "description": "Icon Series Kyle \"Bugha\" Giersdorf — 2019 World Cup champion look and competitive streamer badge.",
+          "howToGet": "Item Shop — Bugha set (Icon Series) tied to his World Cup win.",
+          "funFact": "After MSG finals, this outfit became the competitive Fortnite flex on streams — not whale money, just aim credentials."
+        },
+        "p5Loserfruit": {
+          "description": "Icon Series Kathleen \"Loserfruit\" Belsten — bright Aussie streamer style and playful on-brand colors.",
+          "howToGet": "Item Shop — Loserfruit (Icon Series) creator collaboration.",
+          "funFact": "Her long Twitch run tracks Fortnite's creator boom — the Icon outfit still shows up in AU streamer montages and charity events."
+        },
+        "p5TheGrefg": {
+          "description": "Icon Series TheGrefg — Spanish mega-streamer outfit built for maximum hype and fire motifs.",
+          "howToGet": "Item Shop — TheGrefg (Icon Series), unveiled during his record-breaking reveal stream.",
+          "funFact": "His cosmetic reveal stream smashed concurrent viewer records — a landmark Epic × streamer collab moment."
+        },
+        "p5RenegadeRaider": {
+          "description": "OG Season 1 shop skin — early \"renegade\" look that became status currency in first-wave Fortnite streams.",
+          "howToGet": "Season 1 Item Shop (2017) — long retired; only legacy accounts.",
+          "funFact": "Raider in a 2018 stream lobby triggers instant \"account age?\" chat — genuine digital vintage."
+        },
+        "p5BoogieDown": {
+          "description": "Classic emote rewarded for enabling two-factor authentication on your Epic account.",
+          "howToGet": "Free: enable 2FA in Epic account settings and claim the Fortnite reward.",
+          "funFact": "Streamers turned Boogie Down into \"security goes hard\" — a rare free emote everyone recognizes in clips."
+        },
+        "p5OrangeJustice": {
+          "description": "Viral dance emote from the clip era and endless \"Justice\" chat spam on Twitch.",
+          "howToGet": "Item Shop — Orange Justice (uncommon emote) on rotation.",
+          "funFact": "Orange Justice after a stream snipe was 2018 clip gold — still ironic BM in creator lobbies today."
         }
       }
     }

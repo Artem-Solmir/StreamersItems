@@ -18,6 +18,7 @@ const GAME_OPTIONS = [
   'tarkov',
   'rust',
   'dbd',
+  'fortnite',
   'other',
 ] as const
 
@@ -26,6 +27,7 @@ const GAME_LABEL: Record<(typeof GAME_OPTIONS)[number], string> = {
   tarkov: 'Escape from Tarkov',
   rust: 'Rust',
   dbd: 'Dead by Daylight',
+  fortnite: 'Fortnite',
   other: 'Other',
 }
 

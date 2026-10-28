@@ -1,0 +1,86 @@
+{
+  "p5Ninja": {
+    "ru": {
+      "description": "Icon Series — образ Tyler «Ninja» Blevins: синий хай-топ, headband и культовая энергия peak-Fortnite стримов.",
+      "howToGet": "Item Shop — набор Ninja (Icon Series). Сейчас только через возвраты в магазине, не в Battle Pass.",
+      "funFact": "Релиз скина совпал с эпохой, когда Ninja тащил Fortnite на Twitch в топ мира. Любой лобби-Inspect этого outfit в клипе 2019–2020 — мгновенный «мы помним»."
+    },
+    "en": {
+      "description": "Icon Series Tyler \"Ninja\" Blevins outfit — headband, high-tops, and peak-Fortnite stream energy.",
+      "howToGet": "Item Shop — Ninja set (Icon Series). Today only when Epic rotates it back, not Battle Pass.",
+      "funFact": "The skin landed when Ninja was pushing Fortnite to the top of Twitch. A lobby inspect in a 2019–2020 clip is instant nostalgia."
+    }
+  },
+  "p5Bugha": {
+    "ru": {
+      "description": "Icon Series Kyle «Bugha» Giersdorf — World Cup 2019, холодный gamer look и фирменный рюкзак meta.",
+      "howToGet": "Item Shop — набор Bugha (Icon Series) после победы на Fortnite World Cup Solo.",
+      "funFact": "После финала в Madison Square Garden этот skin стал символом «компetitive Fortnite» на стримах: не flex доната, а flex aim."
+    },
+    "en": {
+      "description": "Icon Series Kyle \"Bugha\" Giersdorf — 2019 World Cup champion look and competitive streamer badge.",
+      "howToGet": "Item Shop — Bugha set (Icon Series) tied to his World Cup win.",
+      "funFact": "After MSG finals, this outfit became the competitive Fortnite flex on streams — not whale money, just aim credentials."
+    }
+  },
+  "p5Loserfruit": {
+    "ru": {
+      "description": "Icon Series Kathleen «Loserfruit» Belsten — австралийский стримерский стиль с фирменным playful vibe.",
+      "howToGet": "Item Shop — Loserfruit (Icon Series), часть creator collaboration Epic.",
+      "funFact": "Loserfruit years на Twitch совпали с ростом FN creator economy — её Icon skin часто всплывает в «AU streamer» montage и charity streams."
+    },
+    "en": {
+      "description": "Icon Series Kathleen \"Loserfruit\" Belsten — bright Aussie streamer style and playful on-brand colors.",
+      "howToGet": "Item Shop — Loserfruit (Icon Series) creator collaboration.",
+      "funFact": "Her long Twitch run tracks Fortnite's creator boom — the Icon outfit still shows up in AU streamer montages and charity events."
+    }
+  },
+  "p5TheGrefg": {
+    "ru": {
+      "description": "Icon Series TheGrefg — испанский стример-миллионник, outfit с огненным силуэтом и максимальным hype-фактором.",
+      "howToGet": "Item Shop — TheGrefg (Icon Series); анонс с рекordным стримом одновременных зрителей.",
+      "funFact": "Презентация скина на стриме Grefg била viewership records — один из главных «streamer × Epic» моментов в истории FN."
+    },
+    "en": {
+      "description": "Icon Series TheGrefg — Spanish mega-streamer outfit built for maximum hype and fire motifs.",
+      "howToGet": "Item Shop — TheGrefg (Icon Series), unveiled during his record-breaking reveal stream.",
+      "funFact": "His cosmetic reveal stream smashed concurrent viewer records — a landmark Epic × streamer collab moment."
+    }
+  },
+  "p5RenegadeRaider": {
+    "ru": {
+      "description": "OG Season Shop скин — ранний «renegade» look, который стал валютой статуса в эпоху первых FN-стримов.",
+      "howToGet": "Season 1 Item Shop (2017) — сейчас не продаётся; только аккаунты того периода.",
+      "funFact": "Renegade Raider в лобби на стриме 2018 года = чат сразу пишет «account age check». Реальный цифровой vintage."
+    },
+    "en": {
+      "description": "OG Season 1 shop skin — early \"renegade\" look that became status currency in first-wave Fortnite streams.",
+      "howToGet": "Season 1 Item Shop (2017) — long retired; only legacy accounts.",
+      "funFact": "Raider in a 2018 stream lobby triggers instant \"account age?\" chat — genuine digital vintage."
+    }
+  },
+  "p5BoogieDown": {
+    "ru": {
+      "description": "Легендарная emote награда за включение двухфакторной защиты аккаунта Epic.",
+      "howToGet": "Бесплатно: включить 2FA в настройках Epic Games и забрать награду в Fortnite.",
+      "funFact": "Стримеры массово показывали Boogie Down как «безопасность can dance» — один из немногих free emotes, которые все узнают в клипе."
+    },
+    "en": {
+      "description": "Classic emote rewarded for enabling two-factor authentication on your Epic account.",
+      "howToGet": "Free: enable 2FA in Epic account settings and claim the Fortnite reward.",
+      "funFact": "Streamers turned Boogie Down into \"security goes hard\" — a rare free emote everyone recognizes in clips."
+    }
+  },
+  "p5OrangeJustice": {
+    "ru": {
+      "description": "Культовая dance emote из эры viral Fortnite clips и «Justice» memes в Twitch chat.",
+      "howToGet": "Item Shop — Orange Justice (uncommon emote), периодически возвращается в ротации.",
+      "funFact": "Orange Justice + stream sniping + post-elimination dance = формула клипов 2018. До сих пор используется как ironic BM на стримах."
+    },
+    "en": {
+      "description": "Viral dance emote from the clip era and endless \"Justice\" chat spam on Twitch.",
+      "howToGet": "Item Shop — Orange Justice (uncommon emote) on rotation.",
+      "funFact": "Orange Justice after a stream snipe was 2018 clip gold — still ironic BM in creator lobbies today."
+    }
+  }
+}
